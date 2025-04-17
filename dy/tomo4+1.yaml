@@ -81,11 +81,11 @@ dns:
 
 proxies:
   - {"name":"🇩🇪德国[CT8-xhttp]","type":"vless","server":"104.17.246.203","port":443,"uuid":"d5fd9125-cd52-b16b-5408-d203f9532da7","tls":true,"servername":"ct8.owg.dpdns.org","network":"xhttp","client-fingerprint":"chrome"}
-  - {"name":"🇺🇸美国专线-🍅番茄云📶","type":"trojan","server":"104.17.237.84","port":443,"udp":true,"password":"YsdpqUsSWQihOsDD","sni":"tomatocloud.tgdaosheng.ggff.net","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"tomatocloud.tgdaosheng.ggff.net"}}}
+  - {"name":"🇺🇸美国专线-🍅番茄云📶","type":"trojan","server":"104.17.237.84","port":443,"udp":true,"password":"YsdpqUsSWQihOsDD","sni":"tomatocloud.tgdaosheng.ggff.net","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"tomatocloud.tgdaosheng.ggff.net"}}}
   - {"name":"🇺🇸美国-🚀火箭云","type":"vless","server":"172.67.68.157","port":443,"uuid":"7804e51b-a0c1-444b-98bc-4f85544ccea4","tls":true,"servername":"rocketcloud.cchappy.eu.org","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"rocketcloud.cchappy.eu.org"}},"client-fingerprint":"android"}
-  - {"name":"🇺🇸美国-🍅番茄云","type":"trojan","server":"104.26.13.54","port":443,"udp":true,"password":"YsdpqUsSWQihOsDD","sni":"tomatocloud.tgdaosheng.ggff.net","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"tomatocloud.tgdaosheng.ggff.net"}}}
+  - {"name":"🇺🇸美国-🍅番茄云","type":"trojan","server":"104.26.13.54","port":443,"udp":true,"password":"YsdpqUsSWQihOsDD","sni":"tomatocloud.tgdaosheng.ggff.net","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"tomatocloud.tgdaosheng.ggff.net"}}}
   - {"name":"🇺🇸美国-TGDS100(vless)","type":"vless","server":"104.26.15.148","port":443,"uuid":"9943c5be-242d-46a7-9695-b42234f324c5","tls":true,"servername":"vless.tgdaosheng.ggff.net","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"vless.tgdaosheng.ggff.net"}},"client-fingerprint":"android"}
-  - {"name":"🇺🇸美国-TGDS100(trojan)","type":"trojan","server":"172.67.158.207","port":443,"udp":true,"password":"fW5gBraym6eppMJLWp","sni":"trojan.tgdaosheng.ggff.net","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"trojan.tgdaosheng.ggff.net"}}}
+  - {"name":"🇺🇸美国-TGDS100(trojan)","type":"trojan","server":"172.67.158.207","port":443,"udp":true,"password":"fW5gBraym6eppMJLWp","sni":"trojan.tgdaosheng.ggff.net","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"trojan.tgdaosheng.ggff.net"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
