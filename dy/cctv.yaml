@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2025-04-21 23:17:29
+# 创建时间：2025-04-21 23:26:08
 # 使用模版：ACL4SSR.ini
-# 节点数量：15
+# 节点数量：14
 # 节点类型：trojan, vless, ss
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 ####################################
@@ -96,7 +96,6 @@ proxies:
   - {"name":"🇺🇸美国-TGDS100(trojan)","type":"trojan","server":"103.160.204.106","port":443,"udp":true,"password":"fW5gBraym6eppMJLWp","sni":"trojan.tgdaosheng.ggff.net","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"trojan.tgdaosheng.ggff.net"}}}
   - {"name":"🇯🇵日本-🍅","type":"trojan","server":"160.16.76.226","port":443,"udp":true,"password":"YsdpqUsSWQihOsDD","sni":"tomatocloud.tgdaosheng.ggff.net","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"tomatocloud.tgdaosheng.ggff.net"}},"alpn":["h3"]}
   - {"name":"🇯🇵日本-🍅+域名","type":"trojan","server":"jp.tgdaosheng.dpdns.org","port":443,"udp":true,"password":"YsdpqUsSWQihOsDD","sni":"tomatocloud.tgdaosheng.ggff.net","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"tomatocloud.tgdaosheng.ggff.net"}},"alpn":["h3"]}
-  - {"name":"🇩🇪德国[CT8-xhttp]","type":"vless","server":"104.17.246.203","port":443,"uuid":"d5fd9125-cd52-b16b-5408-d203f9532da7","tls":true,"servername":"ct8.owg.dpdns.org","network":"xhttp","client-fingerprint":"chrome"}
   - {"name":"🇭🇰 标准 专线 香港 03-a","type":"ss","server":"gzbgp.tgds.dpdns.org","port":14003}
   - {"name":"🇸🇬 标准 专线 狮城 01-a","type":"ss","server":"gzbgp.tgds.dpdns.org","port":14011}
   - {"name":"🇰🇷 高级 专线 韩国 01-a","type":"ss","server":"shbgp.tgds.dpdns.org","port":14141}
@@ -117,7 +116,6 @@ proxy-groups:
       - 🇺🇸美国-TGDS100(trojan)
       - 🇯🇵日本-🍅
       - 🇯🇵日本-🍅+域名
-      - 🇩🇪德国[CT8-xhttp]
       - 🇭🇰 标准 专线 香港 03-a
       - 🇸🇬 标准 专线 狮城 01-a
       - 🇰🇷 高级 专线 韩国 01-a
@@ -138,7 +136,6 @@ proxy-groups:
       - 🇺🇸美国-TGDS100(trojan)
       - 🇯🇵日本-🍅
       - 🇯🇵日本-🍅+域名
-      - 🇩🇪德国[CT8-xhttp]
       - 🇭🇰 标准 专线 香港 03-a
       - 🇸🇬 标准 专线 狮城 01-a
       - 🇰🇷 高级 专线 韩国 01-a
@@ -159,7 +156,6 @@ proxy-groups:
       - 🇺🇸美国-TGDS100(trojan)
       - 🇯🇵日本-🍅
       - 🇯🇵日本-🍅+域名
-      - 🇩🇪德国[CT8-xhttp]
       - 🇭🇰 标准 专线 香港 03-a
       - 🇸🇬 标准 专线 狮城 01-a
       - 🇰🇷 高级 专线 韩国 01-a
@@ -179,7 +175,6 @@ proxy-groups:
       - 🇺🇸美国-TGDS100(trojan)
       - 🇯🇵日本-🍅
       - 🇯🇵日本-🍅+域名
-      - 🇩🇪德国[CT8-xhttp]
       - 🇭🇰 标准 专线 香港 03-a
       - 🇸🇬 标准 专线 狮城 01-a
       - 🇰🇷 高级 专线 韩国 01-a
@@ -199,7 +194,6 @@ proxy-groups:
       - 🇺🇸美国-TGDS100(trojan)
       - 🇯🇵日本-🍅
       - 🇯🇵日本-🍅+域名
-      - 🇩🇪德国[CT8-xhttp]
       - 🇭🇰 标准 专线 香港 03-a
       - 🇸🇬 标准 专线 狮城 01-a
       - 🇰🇷 高级 专线 韩国 01-a
@@ -219,7 +213,6 @@ proxy-groups:
       - 🇺🇸美国-TGDS100(trojan)
       - 🇯🇵日本-🍅
       - 🇯🇵日本-🍅+域名
-      - 🇩🇪德国[CT8-xhttp]
       - 🇭🇰 标准 专线 香港 03-a
       - 🇸🇬 标准 专线 狮城 01-a
       - 🇰🇷 高级 专线 韩国 01-a
@@ -256,7 +249,6 @@ proxy-groups:
       - 🇺🇸美国-TGDS100(trojan)
       - 🇯🇵日本-🍅
       - 🇯🇵日本-🍅+域名
-      - 🇩🇪德国[CT8-xhttp]
       - 🇭🇰 标准 专线 香港 03-a
       - 🇸🇬 标准 专线 狮城 01-a
       - 🇰🇷 高级 专线 韩国 01-a
