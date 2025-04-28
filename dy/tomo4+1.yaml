@@ -80,95 +80,109 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"🇺🇸美国专线丨🍅番茄云📶","type":"trojan","server":"154.211.8.24","port":443,"udp":true,"password":"YsdpqUsSWQihOsDD","sni":"tomatocloud.tgdaosheng.ggff.net","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"tomatocloud.tgdaosheng.ggff.net"}}}
-  - {"name":"🇺🇸美国-🍅番茄云","type":"trojan","server":"154.194.0.85","port":443,"udp":true,"password":"YsdpqUsSWQihOsDD","sni":"tomatocloud.tgdaosheng.ggff.net","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"tomatocloud.tgdaosheng.ggff.net"}}}
-  - {"name":"🇺🇸美国-🚀火箭云","type":"vless","server":"154.211.8.36","port":443,"uuid":"7804e51b-a0c1-444b-98bc-4f85544ccea4","tls":true,"servername":"rocketcloud.cchappy.eu.org","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"rocketcloud.cchappy.eu.org"}},"client-fingerprint":"android"}
-  - {"name":"🇺🇸美国-TGDS100(vless)","type":"vless","server":"154.211.8.212","port":443,"uuid":"9943c5be-242d-46a7-9695-b42234f324c5","tls":true,"servername":"vless.tgdaosheng.ggff.net","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"vless.tgdaosheng.ggff.net"}},"client-fingerprint":"android"}
-  - {"name":"🇺🇸美国-TGDS100(trojan)","type":"trojan","server":"103.160.204.106","port":443,"udp":true,"password":"fW5gBraym6eppMJLWp","sni":"trojan.tgdaosheng.ggff.net","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"trojan.tgdaosheng.ggff.net"}}}
-  - {"name":"🇯🇵日本-🍅","type":"trojan","server":"160.16.76.226","port":443,"udp":true,"password":"YsdpqUsSWQihOsDD","sni":"tomatocloud.tgdaosheng.ggff.net","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"tomatocloud.tgdaosheng.ggff.net"}},"alpn":["h3"]}
-  - {"name":"🇯🇵日本-🍅+域名","type":"trojan","server":"jp.tgdaosheng.dpdns.org","port":443,"udp":true,"password":"YsdpqUsSWQihOsDD","sni":"tomatocloud.tgdaosheng.ggff.net","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"tomatocloud.tgdaosheng.ggff.net"}},"alpn":["h3"]}
-  - {"name":"🇯🇵日本-🍅+域名-2","type":"trojan","server":"jp2.tgdaosheng.dpdns.org","port":443,"udp":true,"password":"YsdpqUsSWQihOsDD","sni":"tomatocloud.tgdaosheng.ggff.net","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"tomatocloud.tgdaosheng.ggff.net"}},"alpn":["h3"]}
+  - {"name":"🇸🇬 新加坡","type":"vless","server":"104.17.249.203","port":443,"uuid":"565ccfd9-b5c3-412a-9252-8fd039245b89","tls":true,"servername":"reducing-formerly-fiscal-democratic.trycloudflare.com","network":"ws","ws-opts":{"path":"/565ccfd9-b5c3-412a-9252-8fd039245b89-vless?ed=2048","headers":{"host":"reducing-formerly-fiscal-democratic.trycloudflare.com"}}}
+  - {"name":"🇺🇸 美国","type":"vless","server":"160.16.76.226","port":443,"uuid":"f25ebe08-6e49-40cf-954a-eb29ec82759a","tls":true,"servername":"glance-ampland-displaying-fold.trycloudflare.com","network":"ws","ws-opts":{"path":"/f25ebe08-6e49-40cf-954a-eb29ec82759a-vless?ed=2048","headers":{"host":"glance-ampland-displaying-fold.trycloudflare.com"}}}
+  - {"name":"🇫🇷 法国","type":"vless","server":"104.17.249.203","port":443,"uuid":"8489c372-36a3-4eab-9d43-cbfcc5c7bd80","tls":true,"servername":"dan-respectively-announcements-ver.trycloudflare.com","network":"ws","ws-opts":{"path":"/8489c372-36a3-4eab-9d43-cbfcc5c7bd80-vless?ed=2048","headers":{"host":"dan-respectively-announcements-ver.trycloudflare.com"}}}
+  - {"name":"🇯🇵 日本 1-🍅","type":"trojan","server":"jp.tgdaosheng.dpdns.org","port":443,"udp":true,"password":"YsdpqUsSWQihOsDD","sni":"tomatocloud.tgdaosheng.ggff.net","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"tomatocloud.tgdaosheng.ggff.net"}},"alpn":["h3"]}
+  - {"name":"🇯🇵 日本 2-🍅","type":"trojan","server":"jp2.tgdaosheng.dpdns.org","port":443,"udp":true,"password":"YsdpqUsSWQihOsDD","sni":"tomatocloud.tgdaosheng.ggff.net","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"tomatocloud.tgdaosheng.ggff.net"}},"alpn":["h3"]}
+  - {"name":"🇬🇧 英国 🍅","type":"trojan","server":"154.194.0.85","port":443,"udp":true,"password":"YsdpqUsSWQihOsDD","sni":"tomatocloud.tgdaosheng.ggff.net","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"tomatocloud.tgdaosheng.ggff.net"}},"alpn":["h3"]}
+  - {"name":"🇺🇸 美国 🚀火箭云","type":"vless","server":"154.211.8.36","port":443,"uuid":"7804e51b-a0c1-444b-98bc-4f85544ccea4","tls":true,"servername":"rocketcloud.cchappy.eu.org","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"rocketcloud.cchappy.eu.org"}},"client-fingerprint":"android"}
+  - {"name":"🇺🇸 美国 专线📶-🍅","type":"trojan","server":"154.211.8.24","port":443,"udp":true,"password":"YsdpqUsSWQihOsDD","sni":"tomatocloud.tgdaosheng.ggff.net","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"tomatocloud.tgdaosheng.ggff.net"}}}
+  - {"name":"🇺🇸 美国 TGDS100-VLESS","type":"vless","server":"154.211.8.212","port":443,"uuid":"9943c5be-242d-46a7-9695-b42234f324c5","tls":true,"servername":"vless.tgdaosheng.ggff.net","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"vless.tgdaosheng.ggff.net"}},"client-fingerprint":"android"}
+  - {"name":"🇺🇸 美国 TGDS100 Trojan","type":"trojan","server":"103.160.204.106","port":443,"udp":true,"password":"fW5gBraym6eppMJLWp","sni":"trojan.tgdaosheng.ggff.net","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"trojan.tgdaosheng.ggff.net"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇺🇸美国专线丨🍅番茄云📶
-      - 🇺🇸美国-🍅番茄云
-      - 🇺🇸美国-🚀火箭云
-      - 🇺🇸美国-TGDS100(vless)
-      - 🇺🇸美国-TGDS100(trojan)
-      - 🇯🇵日本-🍅
-      - 🇯🇵日本-🍅+域名
-      - 🇯🇵日本-🍅+域名-2
+      - 🇸🇬 新加坡
+      - 🇺🇸 美国
+      - 🇫🇷 法国
+      - 🇯🇵 日本 1-🍅
+      - 🇯🇵 日本 2-🍅
+      - 🇬🇧 英国 🍅
+      - 🇺🇸 美国 🚀火箭云
+      - 🇺🇸 美国 专线📶-🍅
+      - 🇺🇸 美国 TGDS100-VLESS
+      - 🇺🇸 美国 TGDS100 Trojan
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇺🇸美国专线丨🍅番茄云📶
-      - 🇺🇸美国-🍅番茄云
-      - 🇺🇸美国-🚀火箭云
-      - 🇺🇸美国-TGDS100(vless)
-      - 🇺🇸美国-TGDS100(trojan)
-      - 🇯🇵日本-🍅
-      - 🇯🇵日本-🍅+域名
-      - 🇯🇵日本-🍅+域名-2
+      - 🇸🇬 新加坡
+      - 🇺🇸 美国
+      - 🇫🇷 法国
+      - 🇯🇵 日本 1-🍅
+      - 🇯🇵 日本 2-🍅
+      - 🇬🇧 英国 🍅
+      - 🇺🇸 美国 🚀火箭云
+      - 🇺🇸 美国 专线📶-🍅
+      - 🇺🇸 美国 TGDS100-VLESS
+      - 🇺🇸 美国 TGDS100 Trojan
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇺🇸美国专线丨🍅番茄云📶
-      - 🇺🇸美国-🍅番茄云
-      - 🇺🇸美国-🚀火箭云
-      - 🇺🇸美国-TGDS100(vless)
-      - 🇺🇸美国-TGDS100(trojan)
-      - 🇯🇵日本-🍅
-      - 🇯🇵日本-🍅+域名
-      - 🇯🇵日本-🍅+域名-2
+      - 🇸🇬 新加坡
+      - 🇺🇸 美国
+      - 🇫🇷 法国
+      - 🇯🇵 日本 1-🍅
+      - 🇯🇵 日本 2-🍅
+      - 🇬🇧 英国 🍅
+      - 🇺🇸 美国 🚀火箭云
+      - 🇺🇸 美国 专线📶-🍅
+      - 🇺🇸 美国 TGDS100-VLESS
+      - 🇺🇸 美国 TGDS100 Trojan
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇺🇸美国专线丨🍅番茄云📶
-      - 🇺🇸美国-🍅番茄云
-      - 🇺🇸美国-🚀火箭云
-      - 🇺🇸美国-TGDS100(vless)
-      - 🇺🇸美国-TGDS100(trojan)
-      - 🇯🇵日本-🍅
-      - 🇯🇵日本-🍅+域名
-      - 🇯🇵日本-🍅+域名-2
+      - 🇸🇬 新加坡
+      - 🇺🇸 美国
+      - 🇫🇷 法国
+      - 🇯🇵 日本 1-🍅
+      - 🇯🇵 日本 2-🍅
+      - 🇬🇧 英国 🍅
+      - 🇺🇸 美国 🚀火箭云
+      - 🇺🇸 美国 专线📶-🍅
+      - 🇺🇸 美国 TGDS100-VLESS
+      - 🇺🇸 美国 TGDS100 Trojan
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇺🇸美国专线丨🍅番茄云📶
-      - 🇺🇸美国-🍅番茄云
-      - 🇺🇸美国-🚀火箭云
-      - 🇺🇸美国-TGDS100(vless)
-      - 🇺🇸美国-TGDS100(trojan)
-      - 🇯🇵日本-🍅
-      - 🇯🇵日本-🍅+域名
-      - 🇯🇵日本-🍅+域名-2
+      - 🇸🇬 新加坡
+      - 🇺🇸 美国
+      - 🇫🇷 法国
+      - 🇯🇵 日本 1-🍅
+      - 🇯🇵 日本 2-🍅
+      - 🇬🇧 英国 🍅
+      - 🇺🇸 美国 🚀火箭云
+      - 🇺🇸 美国 专线📶-🍅
+      - 🇺🇸 美国 TGDS100-VLESS
+      - 🇺🇸 美国 TGDS100 Trojan
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇺🇸美国专线丨🍅番茄云📶
-      - 🇺🇸美国-🍅番茄云
-      - 🇺🇸美国-🚀火箭云
-      - 🇺🇸美国-TGDS100(vless)
-      - 🇺🇸美国-TGDS100(trojan)
-      - 🇯🇵日本-🍅
-      - 🇯🇵日本-🍅+域名
-      - 🇯🇵日本-🍅+域名-2
+      - 🇸🇬 新加坡
+      - 🇺🇸 美国
+      - 🇫🇷 法国
+      - 🇯🇵 日本 1-🍅
+      - 🇯🇵 日本 2-🍅
+      - 🇬🇧 英国 🍅
+      - 🇺🇸 美国 🚀火箭云
+      - 🇺🇸 美国 专线📶-🍅
+      - 🇺🇸 美国 TGDS100-VLESS
+      - 🇺🇸 美国 TGDS100 Trojan
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -191,14 +205,16 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸美国专线丨🍅番茄云📶
-      - 🇺🇸美国-🍅番茄云
-      - 🇺🇸美国-🚀火箭云
-      - 🇺🇸美国-TGDS100(vless)
-      - 🇺🇸美国-TGDS100(trojan)
-      - 🇯🇵日本-🍅
-      - 🇯🇵日本-🍅+域名
-      - 🇯🇵日本-🍅+域名-2
+      - 🇸🇬 新加坡
+      - 🇺🇸 美国
+      - 🇫🇷 法国
+      - 🇯🇵 日本 1-🍅
+      - 🇯🇵 日本 2-🍅
+      - 🇬🇧 英国 🍅
+      - 🇺🇸 美国 🚀火箭云
+      - 🇺🇸 美国 专线📶-🍅
+      - 🇺🇸 美国 TGDS100-VLESS
+      - 🇺🇸 美国 TGDS100 Trojan
 
 rules:
 # 本地/局域网地址
