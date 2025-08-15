@@ -69,8 +69,6 @@ proxies:
   - {name: 🇸🇬 新加坡-4, server: 50019.20250808iplcin.top, port: 50019, type: vmess, uuid: d086274c-9628-4dc2-80e2-1284f4baaa12, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: 🇸🇬 新加坡-5, server: 50009.20250808iplcin.top, port: 50009, type: vmess, uuid: d086274c-9628-4dc2-80e2-1284f4baaa12, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: 🇰🇷 韩国-1, server: 61.111.250.34, port: 443, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, tfo: false, skip-cert-verify: false, servername: j9r5p5.p8x.gqer5.63zk1me67m1.s3bgd.pac38zu78.tn5a3.gx1rvdw1.mqeskmh.fxj.e5z9qbfryh4.ft2qyks.dka.msj397cooy69.ex5o5sg17rxz.zeno.hh6w6b9sm6.g43sg2gy.vbtt.w6tpm94rixl3.uxm02wkfojdya7xmuu4gp3xjela8wrdr4fpti33lao.nudt.edu.kg, network: ws, ws-opts: {path: "/snippets/?ip=61.111.250.34", headers: {Host: j9r5p5.p8x.gqer5.63zk1me67m1.s3bgd.pac38zu78.tn5a3.gx1rvdw1.mqeskmh.fxj.e5z9qbfryh4.ft2qyks.dka.msj397cooy69.ex5o5sg17rxz.zeno.hh6w6b9sm6.g43sg2gy.vbtt.w6tpm94rixl3.uxm02wkfojdya7xmuu4gp3xjela8wrdr4fpti33lao.nudt.edu.kg}}}
-  - {name: 🇫🇷 法国-1, server: 45.118.133.29, port: 2053, type: vless, uuid: fb17858d-cd6b-4f69-aa82-a478ee8c9284, tls: true, tfo: false, skip-cert-verify: false, network: h2, h2-opts: {path: 69e3b5a7, host: [rmyfr.ovo2024.dpdns.org]}}
-  - {name: 🇫🇷 法国-2, server: denver.ns.cloudflare.com, port: 443, type: trojan, password: f69dae9e-371b-4571-b64b-2e7c9abdbafb, sni: g2.ikun.us.kg, skip-cert-verify: false, network: ws, ws-opts: {path: "/trojan-argo?ed=2560", headers: {Host: g2.ikun.us.kg}}}
   - {name: 🇮🇹 意大利, server: 45.118.133.29, port: 2087, type: vless, uuid: 638b9b3d-8f68-4ccc-a34d-53b590d125cc, tls: true, tfo: false, skip-cert-verify: false, network: h2, h2-opts: {path: 0d2dbbf7, host: [69it.ovo2024.dpdns.org]}}
   - {name: 🇩🇪 德国, server: web.xhamster.biz.id, port: 443, type: vless, uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1, tls: true, tfo: false, skip-cert-verify: false, servername: web.xhamster.biz.id, client-fingerprint: chrome, network: ws, ws-opts: {path: /Free-CF-Proxy-AT4, headers: {Host: web.xhamster.biz.id}}}
   - {name: 🇺🇦 乌克兰, server: 2.56.245.9, port: 20357, type: vless, uuid: 1036ed52-d1fe-410e-a961-0db84299dd5e, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}}
@@ -104,8 +102,6 @@ proxy-groups:
       - 🇸🇬 新加坡-4
       - 🇸🇬 新加坡-5
       - 🇰🇷 韩国-1
-      - 🇫🇷 法国-1
-      - 🇫🇷 法国-2
       - 🇮🇹 意大利
       - 🇩🇪 德国
       - 🇺🇦 乌克兰
@@ -139,8 +135,6 @@ proxy-groups:
       - 🇸🇬 新加坡-4
       - 🇸🇬 新加坡-5
       - 🇰🇷 韩国-1
-      - 🇫🇷 法国-1
-      - 🇫🇷 法国-2
       - 🇮🇹 意大利
       - 🇩🇪 德国
       - 🇺🇦 乌克兰
@@ -174,8 +168,6 @@ proxy-groups:
       - 🇸🇬 新加坡-4
       - 🇸🇬 新加坡-5
       - 🇰🇷 韩国-1
-      - 🇫🇷 法国-1
-      - 🇫🇷 法国-2
       - 🇮🇹 意大利
       - 🇩🇪 德国
       - 🇺🇦 乌克兰
@@ -208,8 +200,6 @@ proxy-groups:
       - 🇸🇬 新加坡-4
       - 🇸🇬 新加坡-5
       - 🇰🇷 韩国-1
-      - 🇫🇷 法国-1
-      - 🇫🇷 法国-2
       - 🇮🇹 意大利
       - 🇩🇪 德国
       - 🇺🇦 乌克兰
@@ -242,8 +232,6 @@ proxy-groups:
       - 🇸🇬 新加坡-4
       - 🇸🇬 新加坡-5
       - 🇰🇷 韩国-1
-      - 🇫🇷 法国-1
-      - 🇫🇷 法国-2
       - 🇮🇹 意大利
       - 🇩🇪 德国
       - 🇺🇦 乌克兰
@@ -276,8 +264,6 @@ proxy-groups:
       - 🇸🇬 新加坡-4
       - 🇸🇬 新加坡-5
       - 🇰🇷 韩国-1
-      - 🇫🇷 法国-1
-      - 🇫🇷 法国-2
       - 🇮🇹 意大利
       - 🇩🇪 德国
       - 🇺🇦 乌克兰
@@ -311,8 +297,6 @@ proxy-groups:
       - 🇸🇬 新加坡-4
       - 🇸🇬 新加坡-5
       - 🇰🇷 韩国-1
-      - 🇫🇷 法国-1
-      - 🇫🇷 法国-2
       - 🇮🇹 意大利
       - 🇩🇪 德国
       - 🇺🇦 乌克兰
@@ -362,8 +346,6 @@ proxy-groups:
       - 🇸🇬 新加坡-4
       - 🇸🇬 新加坡-5
       - 🇰🇷 韩国-1
-      - 🇫🇷 法国-1
-      - 🇫🇷 法国-2
       - 🇮🇹 意大利
       - 🇩🇪 德国
       - 🇺🇦 乌克兰
