@@ -4,7 +4,6 @@ mode: Rule
 ipv6: true
 log-level: fatal
 external-controller: 127.0.0.1:9090
-
 dns:
   enable: true
   listen: 0.0.0.0:53
