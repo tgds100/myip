@@ -5,7 +5,7 @@ ipv6: true
 external-controller: :9090
 dns:
   enable: true
-  ipv6: true
+  ipv6: false
   listen: 127.0.0.1:5450
   enhanced-mode: redir-host
   default-nameserver:
