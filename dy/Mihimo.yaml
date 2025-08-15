@@ -1,29 +1,17 @@
 port: 7890
-allow-lan: false
+socks-port: 7891
+allow-lan: true
 mode: Rule
-ipv6: true
-external-controller: :9090
-dns:
-  enable: true
-  ipv6: false
-  listen: 127.0.0.1:5450
-  enhanced-mode: redir-host
-  default-nameserver:
-    - 223.6.6.6
-    - 182.254.116.116
-    - 8.8.8.8
-    - 180.76.76.76
-  nameserver:
-    - https://doh.pub/dns-query
-    - https://dns.google/dns-query
-    - https://dns.alidns.com/dns-query
+log-level: info
+external-controller: 127.0.0.1:9090
 proxies:
   - {name: 🏳️‍🌈 免费流量丨TG频道：t.me/tgds100, server: zgo.tazhi.de, port: 17265, type: vmess, uuid: cc1ec9ad-e11f-410a-a9f7-bc7e5b42000e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: zgo.tazhi.de, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: zgo.tazhi.de}}}
-  - {name: 🇺🇸 美国-1, server: 50001.20250808iplcin.top, port: 50001, type: vmess, uuid: d086274c-9628-4dc2-80e2-1284f4baaa12, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇺🇸 美国-2, server: 50007.20250808iplcin.top, port: 50007, type: vmess, uuid: d086274c-9628-4dc2-80e2-1284f4baaa12, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇺🇸 美国-3, server: 50008.20250808iplcin.top, port: 50008, type: vmess, uuid: d086274c-9628-4dc2-80e2-1284f4baaa12, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇺🇸 美国-4, server: 50016.20250808iplcin.top, port: 50016, type: vmess, uuid: d086274c-9628-4dc2-80e2-1284f4baaa12, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇺🇸 美国-5, server: 50015.20250808iplcin.top, port: 50015, type: vmess, uuid: d086274c-9628-4dc2-80e2-1284f4baaa12, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇺🇸 美国-1, server: 50007.20250808iplcin.top, port: 50007, type: vmess, uuid: d086274c-9628-4dc2-80e2-1284f4baaa12, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇺🇸 美国-2, server: 50008.20250808iplcin.top, port: 50008, type: vmess, uuid: d086274c-9628-4dc2-80e2-1284f4baaa12, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇺🇸 美国-3, server: ppg-us.05vr9nyqg5.download, port: 10821, type: trojan, password: 342ef623-bd7d-47c3-ac04-d5c3529c1828, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: false}
+  - {name: 🇺🇸 美国-4, server: ppg-us.05vr9nyqg5.download, port: 10823, type: trojan, password: 342ef623-bd7d-47c3-ac04-d5c3529c1828, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: false}
+  - {name: 🇺🇸 美国-5, server: ppg-us.05vr9nyqg5.download, port: 10820, type: trojan, password: 342ef623-bd7d-47c3-ac04-d5c3529c1828, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: false}
+  - {name: 🇺🇸 美国-6, server: ppg-us.05vr9nyqg5.download, port: 10826, type: trojan, password: 342ef623-bd7d-47c3-ac04-d5c3529c1828, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: false}
   - {name: 🇯🇵 日本-1, server: 50005.20250808iplcin.top, port: 50005, type: vmess, uuid: d086274c-9628-4dc2-80e2-1284f4baaa12, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: 🇯🇵 日本-2, server: 50006.20250808iplcin.top, port: 50006, type: vmess, uuid: d086274c-9628-4dc2-80e2-1284f4baaa12, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: 🇯🇵 日本-3, server: 50011.20250808iplcin.top, port: 50011, type: vmess, uuid: d086274c-9628-4dc2-80e2-1284f4baaa12, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
@@ -59,6 +47,7 @@ proxy-groups:
       - 🇺🇸 美国-3
       - 🇺🇸 美国-4
       - 🇺🇸 美国-5
+      - 🇺🇸 美国-6
       - 🇯🇵 日本-1
       - 🇯🇵 日本-2
       - 🇯🇵 日本-3
@@ -93,6 +82,7 @@ proxy-groups:
       - 🇺🇸 美国-3
       - 🇺🇸 美国-4
       - 🇺🇸 美国-5
+      - 🇺🇸 美国-6
       - 🇯🇵 日本-1
       - 🇯🇵 日本-2
       - 🇯🇵 日本-3
@@ -128,6 +118,7 @@ proxy-groups:
       - 🇺🇸 美国-3
       - 🇺🇸 美国-4
       - 🇺🇸 美国-5
+      - 🇺🇸 美国-6
       - 🇯🇵 日本-1
       - 🇯🇵 日本-2
       - 🇯🇵 日本-3
@@ -175,6 +166,7 @@ proxy-groups:
       - 🇺🇸 美国-3
       - 🇺🇸 美国-4
       - 🇺🇸 美国-5
+      - 🇺🇸 美国-6
       - 🇯🇵 日本-1
       - 🇯🇵 日本-2
       - 🇯🇵 日本-3
@@ -221,6 +213,7 @@ proxy-groups:
       - 🇺🇸 美国-3
       - 🇺🇸 美国-4
       - 🇺🇸 美国-5
+      - 🇺🇸 美国-6
       - 🇯🇵 日本-1
       - 🇯🇵 日本-2
       - 🇯🇵 日本-3
@@ -255,6 +248,7 @@ proxy-groups:
       - 🇺🇸 美国-3
       - 🇺🇸 美国-4
       - 🇺🇸 美国-5
+      - 🇺🇸 美国-6
       - 🇯🇵 日本-1
       - 🇯🇵 日本-2
       - 🇯🇵 日本-3
@@ -290,6 +284,7 @@ proxy-groups:
       - 🇺🇸 美国-3
       - 🇺🇸 美国-4
       - 🇺🇸 美国-5
+      - 🇺🇸 美国-6
       - 🇯🇵 日本-1
       - 🇯🇵 日本-2
       - 🇯🇵 日本-3
@@ -334,6 +329,7 @@ proxy-groups:
       - 🇺🇸 美国-3
       - 🇺🇸 美国-4
       - 🇺🇸 美国-5
+      - 🇺🇸 美国-6
       - 🇯🇵 日本-1
       - 🇯🇵 日本-2
       - 🇯🇵 日本-3
