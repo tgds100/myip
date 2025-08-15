@@ -3,230 +3,191 @@ socks-port: 7891
 allow-lan: true
 mode: Rule
 log-level: info
-external-controller: 127.0.0.1:9090
+external-controller: :9090
 proxies:
-  - {name: TGDS跨境网络丨TG频道：t.me/tgds100, server: 104.237.153.68, port: 10001, type: vless, uuid: eec6b5f8-c888-4f90-bfec-4faf02ab38c0, tls: true, tfo: false, skip-cert-verify: false, reality-opts: {public-key: SAJIZcfC0vIS_QEJiqrHLNxPxKFtFqgvacE8CYKhHWs, short-id: "1a24af87" }, servername: yahoo.com, client-fingerprint: chrome, network: tcp}
-  - {name: 🇺🇸 美国-0丨家庭宽带IP, server: 154.64.239.128, port: 36122, type: vmess, uuid: 4a685295-0ad1-4f22-a996-ded9ff69cecf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇭🇰 美国-1丨谷歌定位在香港, server: 156.232.9.168, port: 20086, type: vmess, uuid: 945bbf81-c46b-47ee-9e66-6affe6f28442, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇺🇸 美国-2丨纽约ipv6, server: 2400:8d60:7::928f:c7f0, port: 47559, type: vless, uuid: 7fb47b7e-6347-4cac-b4ae-2d408e4deb1b, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /SAFGASFASZ}}
-  - {name: 🇺🇸 美国-3丨加州-洛杉矶, server: 38.175.219.134, port: 20086, type: vmess, uuid: 71744aaf-cd59-49bf-ad11-e496b1e110b5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇭🇰 香港 1, server: 47.243.177.147, port: 9443, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, tfo: false, skip-cert-verify: false, servername: j9r5p5.p8x.gqer5.63zk1me67m1.s3bgd.pac38zu78.tn5a3.gx1rvdw1.mqeskmh.fxj.e5z9qbfryh4.ft2qyks.dka.msj397cooy69.ex5o5sg17rxz.zeno.hh6w6b9sm6.g43sg2gy.vbtt.w6tpm94rixl3.uxm02wkfojdya7xmuu4gp3xjela8wrdr4fpti33lao.nudt.edu.kg, network: ws, ws-opts: {path: "/snippets?ip=47.83.16.29:9443", headers: {Host: j9r5p5.p8x.gqer5.63zk1me67m1.s3bgd.pac38zu78.tn5a3.gx1rvdw1.mqeskmh.fxj.e5z9qbfryh4.ft2qyks.dka.msj397cooy69.ex5o5sg17rxz.zeno.hh6w6b9sm6.g43sg2gy.vbtt.w6tpm94rixl3.uxm02wkfojdya7xmuu4gp3xjela8wrdr4fpti33lao.nudt.edu.kg}}}
-  - {name: 🇭🇰 香港 2, server: 103.185.249.183, port: 10245, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, tfo: false, skip-cert-verify: false, servername: j9r5p5.p8x.gqer5.63zk1me67m1.s3bgd.pac38zu78.tn5a3.gx1rvdw1.mqeskmh.fxj.e5z9qbfryh4.ft2qyks.dka.msj397cooy69.ex5o5sg17rxz.zeno.hh6w6b9sm6.g43sg2gy.vbtt.w6tpm94rixl3.uxm02wkfojdya7xmuu4gp3xjela8wrdr4fpti33lao.nudt.edu.kg, network: ws, ws-opts: {path: "/snippets?ip=103.185.249.183:10245", headers: {Host: j9r5p5.p8x.gqer5.63zk1me67m1.s3bgd.pac38zu78.tn5a3.gx1rvdw1.mqeskmh.fxj.e5z9qbfryh4.ft2qyks.dka.msj397cooy69.ex5o5sg17rxz.zeno.hh6w6b9sm6.g43sg2gy.vbtt.w6tpm94rixl3.uxm02wkfojdya7xmuu4gp3xjela8wrdr4fpti33lao.nudt.edu.kg}}}
-  - {name: 🇭🇰 香港 3, server: 47.243.43.241, port: 49529, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, tfo: false, skip-cert-verify: false, servername: j7a9n6.1qy8.af030wz.z4uwf0y1ad.p7jzjnqz.bi4lqwv25em.thla77n6av.s8ehdq1tk.k5mjfj2.6v4zdoxy0.alu2m9.lftnw48w9cs2.38ycc14b63.7ljhj2v8r1.8glyh7nu.zwft.d9llecb.8idc6rtvl.6d8.o12ugztsip9.oidc9jutxteimrp59av259b3qt.nudt.edu.kg, network: ws, ws-opts: {path: "/snippets/?ip=47.243.43.241:49529", headers: {Host: j7a9n6.1qy8.af030wz.z4uwf0y1ad.p7jzjnqz.bi4lqwv25em.thla77n6av.s8ehdq1tk.k5mjfj2.6v4zdoxy0.alu2m9.lftnw48w9cs2.38ycc14b63.7ljhj2v8r1.8glyh7nu.zwft.d9llecb.8idc6rtvl.6d8.o12ugztsip9.oidc9jutxteimrp59av259b3qt.nudt.edu.kg}}}
-  - {name: 🇯🇵 日本-1, server: 103.214.168.141, port: 20086, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, tfo: false, skip-cert-verify: false, servername: 3c8rn7.jx6fc1cj4cz.d4s9i9x9.ffk.uleq1mm.nhys9y5gh3c.x7nkqjd.7tiha0a.n2kivga.cfns6wpb5hhb.p6zk.31phkskaz.baw52r6.w4j.0abynmtzdb6.ccvkew765.6he.0963fdi934.llxrvri.rey0fn.ld9bgtphry37oku3z7u8ilmnez8mt2s9og5vzma.nudt.edu.kg, network: ws, ws-opts: {path: "/snippets/?ip=103.214.168.141:20086", headers: {Host: 3c8rn7.jx6fc1cj4cz.d4s9i9x9.ffk.uleq1mm.nhys9y5gh3c.x7nkqjd.7tiha0a.n2kivga.cfns6wpb5hhb.p6zk.31phkskaz.baw52r6.w4j.0abynmtzdb6.ccvkew765.6he.0963fdi934.llxrvri.rey0fn.ld9bgtphry37oku3z7u8ilmnez8mt2s9og5vzma.nudt.edu.kg}}}
-  - {name: 🇯🇵 日本-2丨ipv6, server: 2400:8902::f03c:95ff:fe9c:bd31, port: 26377, type: vless, uuid: dd4dc6e8-e5da-4612-86be-3905df10ac89, tls: true, tfo: false, skip-cert-verify: false, reality-opts: {public-key: U3VdQnvD5cQ8d2k3UwKOVtQfhUnXR39Rb4Q4yDsbc10, short-id: "297d5bc1" }, servername: yahoo.com, client-fingerprint: firefox, network: tcp}
-  - {name: 🇨🇳 中国台湾-桃园, server: 220.135.202.250, port: 81, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, tfo: false, skip-cert-verify: false, servername: kscu2c.y4s1b.qb8xf.to5fw.iwre5s.rvjjccr.721imkqwy.xi2.ttc.xxa92izz766n.m2cd8c6vhf.p3vr.a1qmd77.bypd2n94lm.bm5y.91r.gnbbhehk.bca4c.hhamgwkt6zm.tgik.5g7iasqyedwr7uhxozaplodpmjpzq1qrqsfxnattlnv0l49e7te08rlgh9qb.nudt.edu.kg, network: ws, ws-opts: {path: "/snippets/?ip=118.163.37.32:81", headers: {Host: kscu2c.y4s1b.qb8xf.to5fw.iwre5s.rvjjccr.721imkqwy.xi2.ttc.xxa92izz766n.m2cd8c6vhf.p3vr.a1qmd77.bypd2n94lm.bm5y.91r.gnbbhehk.bca4c.hhamgwkt6zm.tgik.5g7iasqyedwr7uhxozaplodpmjpzq1qrqsfxnattlnv0l49e7te08rlgh9qb.nudt.edu.kg}}}
-  - {name: 🇨🇳 中国台湾丨每日限定流量, server: 103.185.249.183, port: 10245, type: vless, uuid: 601e7e24-0697-4fed-9715-f3336ad5094c, tls: true, alpn: [h3], tfo: false, skip-cert-verify: false, servername: aboringdad.dpdns.org, client-fingerprint: random, network: ws, ws-opts: {path: "/socks5://MTox@[2404:a3c0:6:0:7c1d:a7ff:fe9c:5f6d]:20000", headers: {Host: aboringdad.dpdns.org}}}
-  - {name: 🇸🇬 新加坡-1丨ipv4, server: 45.118.133.29, port: 10001, type: vless, uuid: 5268c91a-3094-4e89-9aa0-d896be04f22c, tls: true, tfo: false, skip-cert-verify: false, reality-opts: {public-key: mH3-IUyUQ-s0oX0vSQxwPVmdWthucmg5dYGHej9QkSw, short-id: "1a24af87" }, servername: yahoo.com, client-fingerprint: firefox, network: tcp}
-  - {name: 🇸🇬 新加坡-2丨ipv6, server: 2a05:dfc1:8b85:6061:be24:11ff:fe87:63c5, port: 443, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, tfo: false, skip-cert-verify: false, servername: 1ael5o.r5c4.7r38ql.fenhvpb.n2z0d.1gm0ypotunp8.r5pr.rog5syaqbs.ng96lan6jkeu.jmqj18pnb0m.il2d9nocidzs.54s5v57r9wo.w08zfj5.lyo8x34.9hbsx27rki.ksh51ws.vf15.bzyr2.6q3cwqm60fg.ljvcdcu0udx.yq7tb4m2zmoykrq32h5itwuii.nudt.edu.kg, network: ws, ws-opts: {path: "/snippets/?ip=[2a05:dfc1:8b85:6061:be24:11ff:fe87:63c5]:443", headers: {Host: 1ael5o.r5c4.7r38ql.fenhvpb.n2z0d.1gm0ypotunp8.r5pr.rog5syaqbs.ng96lan6jkeu.jmqj18pnb0m.il2d9nocidzs.54s5v57r9wo.w08zfj5.lyo8x34.9hbsx27rki.ksh51ws.vf15.bzyr2.6q3cwqm60fg.ljvcdcu0udx.yq7tb4m2zmoykrq32h5itwuii.nudt.edu.kg}}}
-  - {name: 🇰🇷 韩国, server: 61.111.250.34, port: 443, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, tfo: false, skip-cert-verify: false, servername: j9r5p5.p8x.gqer5.63zk1me67m1.s3bgd.pac38zu78.tn5a3.gx1rvdw1.mqeskmh.fxj.e5z9qbfryh4.ft2qyks.dka.msj397cooy69.ex5o5sg17rxz.zeno.hh6w6b9sm6.g43sg2gy.vbtt.w6tpm94rixl3.uxm02wkfojdya7xmuu4gp3xjela8wrdr4fpti33lao.nudt.edu.kg, network: ws, ws-opts: {path: "/snippets/?ip=61.111.250.34", headers: {Host: j9r5p5.p8x.gqer5.63zk1me67m1.s3bgd.pac38zu78.tn5a3.gx1rvdw1.mqeskmh.fxj.e5z9qbfryh4.ft2qyks.dka.msj397cooy69.ex5o5sg17rxz.zeno.hh6w6b9sm6.g43sg2gy.vbtt.w6tpm94rixl3.uxm02wkfojdya7xmuu4gp3xjela8wrdr4fpti33lao.nudt.edu.kg}}}
-  - {name: 🇮🇩 印度尼西亚, server: 172.232.237.31, port: 59510, type: vless, uuid: f32b2dea-bf9c-4121-a2f0-ead6c5cfdf20, tls: true, tfo: false, skip-cert-verify: false, reality-opts: {public-key: inFC1tPAv0p3Mo-4q8SB-jdRGXCgATjlSQo09tTJgXs, short-id: "8ea151c2" }, servername: cloudflare.com, client-fingerprint: firefox, network: tcp}
-  - {name: 🇵🇭 菲律宾, server: 109.248.23.57, port: 10240, type: vmess, uuid: d0d542f0-5834-4cd5-94cc-a0473ed5ac0d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇲🇾 马来西亚, server: 38.211.230.143, port: 20086, type: vmess, uuid: e0f1d734-68f3-4928-b3d8-4fb9442b078a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇮🇳 印度, server: planb.mojcn.com, port: 16626, type: vmess, uuid: 2ce6bebe-6429-4214-99ed-ac22f5dbcb47, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: fd3577f740ec2e5f12c63a8d2e1538f1.mobgslb.tbcache.com}}}
-  - {name: 🇬🇧 英国-1, server: planb.mojcn.com, port: 16645, type: vmess, uuid: 2ce6bebe-6429-4214-99ed-ac22f5dbcb47, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: fd3577f740ec2e5f12c63a8d2e1538f1.mobgslb.tbcache.com}}}
-  - {name: 🇬🇧 英国-2, server: m.cnmjin.net, port: 16645, type: vmess, uuid: 2ce6bebe-6429-4214-99ed-ac22f5dbcb47, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: fd3577f740ec2e5f12c63a8d2e1538f1.mobgslb.tbcache.com}}}
-  - {name: 🇬🇧 英国-3, server: t.cnmjcn.cyou, port: 16645, type: vmess, uuid: 2ce6bebe-6429-4214-99ed-ac22f5dbcb47, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: fd3577f740ec2e5f12c63a8d2e1538f1.mobgslb.tbcache.com}}}
+  - {name: 免费流量丨TG频道：t.me/tgds100, server: zgo.tazhi.de, port: 17265, type: vmess, uuid: cc1ec9ad-e11f-410a-a9f7-bc7e5b42000e, alterId: 0, cipher: auto, tls: true, servername: zgo.tazhi.de, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: zgo.tazhi.de}}}
+  - {name: 美国-1, server: 50001.20250808iplcin.top, port: 50001, type: vmess, uuid: d086274c-9628-4dc2-80e2-1284f4baaa12, alterId: 0, cipher: auto, tls: false}
+  - {name: 美国-2, server: 50007.20250808iplcin.top, port: 50007, type: vmess, uuid: d086274c-9628-4dc2-80e2-1284f4baaa12, alterId: 0, cipher: auto, tls: false}
+  - {name: 美国-3, server: 50008.20250808iplcin.top, port: 50008, type: vmess, uuid: d086274c-9628-4dc2-80e2-1284f4baaa12, alterId: 0, cipher: auto, tls: false}
+  - {name: 美国-4, server: 50016.20250808iplcin.top, port: 50016, type: vmess, uuid: d086274c-9628-4dc2-80e2-1284f4baaa12, alterId: 0, cipher: auto, tls: false}
+  - {name: 美国-5, server: 50015.20250808iplcin.top, port: 50015, type: vmess, uuid: d086274c-9628-4dc2-80e2-1284f4baaa12, alterId: 0, cipher: auto, tls: false}
+  - {name: 日本-1, server: 50005.20250808iplcin.top, port: 50005, type: vmess, uuid: d086274c-9628-4dc2-80e2-1284f4baaa12, alterId: 0, cipher: auto, tls: false}
+  - {name: 日本-2, server: 50006.20250808iplcin.top, port: 50006, type: vmess, uuid: d086274c-9628-4dc2-80e2-1284f4baaa12, alterId: 0, cipher: auto, tls: false}
+  - {name: 日本-3, server: 50011.20250808iplcin.top, port: 50011, type: vmess, uuid: d086274c-9628-4dc2-80e2-1284f4baaa12, alterId: 0, cipher: auto, tls: false}
+  - {name: 日本-4, server: 50012.20250808iplcin.top, port: 50012, type: vmess, uuid: d086274c-9628-4dc2-80e2-1284f4baaa12, alterId: 0, cipher: auto, tls: false}
+  - {name: 日本-5, server: 50029.20250808iplcin.top, port: 50029, type: vmess, uuid: d086274c-9628-4dc2-80e2-1284f4baaa12, alterId: 0, cipher: auto, tls: false}
+  - {name: 日本-6, server: 50030.20250808iplcin.top, port: 50030, type: vmess, uuid: d086274c-9628-4dc2-80e2-1284f4baaa12, alterId: 0, cipher: auto, tls: false}
+  - {name: 中国台湾-2, server: 188.253.6.53, port: 25884, type: trojan, password: ttfang, sni: ttfang.fange.me, skip-cert-verify: true, network: ws, ws-opts: {path: /socks5://MTox@103.123.133.240:20000, headers: {Host: ttfang.fange.me}}}
+  - {name: 中国台湾-3, server: tw.smartelectro.eu.org, port: 23375, type: vmess, uuid: 50ce3cdd-84b5-49b1-bc8b-9d4877461786, alterId: 0, cipher: auto, tls: true, servername: tw.smartelectro.eu.org}
+  - {name: 中国台湾-4, server: tw2.smartelectro.eu.org, port: 12105, type: vmess, uuid: 50ce3cdd-84b5-49b1-bc8b-9d4877461786, alterId: 0, cipher: auto, tls: true, servername: tw2.smartelectro.eu.org}
+  - {name: 新加坡-4, server: 50019.20250808iplcin.top, port: 50019, type: vmess, uuid: d086274c-9628-4dc2-80e2-1284f4baaa12, alterId: 0, cipher: auto, tls: false}
+  - {name: 新加坡-5, server: 50009.20250808iplcin.top, port: 50009, type: vmess, uuid: d086274c-9628-4dc2-80e2-1284f4baaa12, alterId: 0, cipher: auto, tls: false}
+  - {name: 法国-2, server: denver.ns.cloudflare.com, port: 443, type: trojan, password: f69dae9e-371b-4571-b64b-2e7c9abdbafb, sni: g2.ikun.us.kg, skip-cert-verify: true, network: ws, ws-opts: {path: "/trojan-argo?ed=2560", headers: {Host: g2.ikun.us.kg}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
-      - 🇭🇰 香港节点
-      - 🇺🇲 美国节点
-      - 🇯🇵 日本节点
-      - 🚀 手动切换
       - DIRECT
-  - name: 🚀 手动切换
-    type: select
-    proxies:
-      - TGDS跨境网络丨TG频道：t.me/tgds100
-      - 🇺🇸 美国-0丨家庭宽带IP
-      - 🇭🇰 美国-1丨谷歌定位在香港
-      - 🇺🇸 美国-2丨纽约ipv6
-      - 🇺🇸 美国-3丨加州-洛杉矶
-      - 🇭🇰 香港 1
-      - 🇭🇰 香港 2
-      - 🇭🇰 香港 3
-      - 🇯🇵 日本-1
-      - 🇯🇵 日本-2丨ipv6
-      - 🇨🇳 中国台湾-桃园
-      - 🇨🇳 中国台湾丨每日限定流量
-      - 🇸🇬 新加坡-1丨ipv4
-      - 🇸🇬 新加坡-2丨ipv6
-      - 🇰🇷 韩国
-      - 🇮🇩 印度尼西亚
-      - 🇵🇭 菲律宾
-      - 🇲🇾 马来西亚
-      - 🇮🇳 印度
-      - 🇬🇧 英国-1
-      - 🇬🇧 英国-2
-      - 🇬🇧 英国-3
+      - 免费流量丨TG频道：t.me/tgds100
+      - 美国-1
+      - 美国-2
+      - 美国-3
+      - 美国-4
+      - 美国-5
+      - 日本-1
+      - 日本-2
+      - 日本-3
+      - 日本-4
+      - 日本-5
+      - 日本-6
+      - 中国台湾-2
+      - 中国台湾-3
+      - 中国台湾-4
+      - 新加坡-4
+      - 新加坡-5
+      - 法国-2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - TGDS跨境网络丨TG频道：t.me/tgds100
-      - 🇺🇸 美国-0丨家庭宽带IP
-      - 🇭🇰 美国-1丨谷歌定位在香港
-      - 🇺🇸 美国-2丨纽约ipv6
-      - 🇺🇸 美国-3丨加州-洛杉矶
-      - 🇭🇰 香港 1
-      - 🇭🇰 香港 2
-      - 🇭🇰 香港 3
-      - 🇯🇵 日本-1
-      - 🇯🇵 日本-2丨ipv6
-      - 🇨🇳 中国台湾-桃园
-      - 🇨🇳 中国台湾丨每日限定流量
-      - 🇸🇬 新加坡-1丨ipv4
-      - 🇸🇬 新加坡-2丨ipv6
-      - 🇰🇷 韩国
-      - 🇮🇩 印度尼西亚
-      - 🇵🇭 菲律宾
-      - 🇲🇾 马来西亚
-      - 🇮🇳 印度
-      - 🇬🇧 英国-1
-      - 🇬🇧 英国-2
-      - 🇬🇧 英国-3
+      - 免费流量丨TG频道：t.me/tgds100
+      - 美国-1
+      - 美国-2
+      - 美国-3
+      - 美国-4
+      - 美国-5
+      - 日本-1
+      - 日本-2
+      - 日本-3
+      - 日本-4
+      - 日本-5
+      - 日本-6
+      - 中国台湾-2
+      - 中国台湾-3
+      - 中国台湾-4
+      - 新加坡-4
+      - 新加坡-5
+      - 法国-2
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - TGDS跨境网络丨TG频道：t.me/tgds100
-      - 🇺🇸 美国-0丨家庭宽带IP
-      - 🇭🇰 美国-1丨谷歌定位在香港
-      - 🇺🇸 美国-2丨纽约ipv6
-      - 🇺🇸 美国-3丨加州-洛杉矶
-      - 🇭🇰 香港 1
-      - 🇭🇰 香港 2
-      - 🇭🇰 香港 3
-      - 🇯🇵 日本-1
-      - 🇯🇵 日本-2丨ipv6
-      - 🇨🇳 中国台湾-桃园
-      - 🇨🇳 中国台湾丨每日限定流量
-      - 🇸🇬 新加坡-1丨ipv4
-      - 🇸🇬 新加坡-2丨ipv6
-      - 🇰🇷 韩国
-      - 🇮🇩 印度尼西亚
-      - 🇵🇭 菲律宾
-      - 🇲🇾 马来西亚
-      - 🇮🇳 印度
-      - 🇬🇧 英国-1
-      - 🇬🇧 英国-2
-      - 🇬🇧 英国-3
+      - 免费流量丨TG频道：t.me/tgds100
+      - 美国-1
+      - 美国-2
+      - 美国-3
+      - 美国-4
+      - 美国-5
+      - 日本-1
+      - 日本-2
+      - 日本-3
+      - 日本-4
+      - 日本-5
+      - 日本-6
+      - 中国台湾-2
+      - 中国台湾-3
+      - 中国台湾-4
+      - 新加坡-4
+      - 新加坡-5
+      - 法国-2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - TGDS跨境网络丨TG频道：t.me/tgds100
-      - 🇺🇸 美国-0丨家庭宽带IP
-      - 🇭🇰 美国-1丨谷歌定位在香港
-      - 🇺🇸 美国-2丨纽约ipv6
-      - 🇺🇸 美国-3丨加州-洛杉矶
-      - 🇭🇰 香港 1
-      - 🇭🇰 香港 2
-      - 🇭🇰 香港 3
-      - 🇯🇵 日本-1
-      - 🇯🇵 日本-2丨ipv6
-      - 🇨🇳 中国台湾-桃园
-      - 🇨🇳 中国台湾丨每日限定流量
-      - 🇸🇬 新加坡-1丨ipv4
-      - 🇸🇬 新加坡-2丨ipv6
-      - 🇰🇷 韩国
-      - 🇮🇩 印度尼西亚
-      - 🇵🇭 菲律宾
-      - 🇲🇾 马来西亚
-      - 🇮🇳 印度
-      - 🇬🇧 英国-1
-      - 🇬🇧 英国-2
-      - 🇬🇧 英国-3
+      - 免费流量丨TG频道：t.me/tgds100
+      - 美国-1
+      - 美国-2
+      - 美国-3
+      - 美国-4
+      - 美国-5
+      - 日本-1
+      - 日本-2
+      - 日本-3
+      - 日本-4
+      - 日本-5
+      - 日本-6
+      - 中国台湾-2
+      - 中国台湾-3
+      - 中国台湾-4
+      - 新加坡-4
+      - 新加坡-5
+      - 法国-2
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - TGDS跨境网络丨TG频道：t.me/tgds100
-      - 🇺🇸 美国-0丨家庭宽带IP
-      - 🇭🇰 美国-1丨谷歌定位在香港
-      - 🇺🇸 美国-2丨纽约ipv6
-      - 🇺🇸 美国-3丨加州-洛杉矶
-      - 🇭🇰 香港 1
-      - 🇭🇰 香港 2
-      - 🇭🇰 香港 3
-      - 🇯🇵 日本-1
-      - 🇯🇵 日本-2丨ipv6
-      - 🇨🇳 中国台湾-桃园
-      - 🇨🇳 中国台湾丨每日限定流量
-      - 🇸🇬 新加坡-1丨ipv4
-      - 🇸🇬 新加坡-2丨ipv6
-      - 🇰🇷 韩国
-      - 🇮🇩 印度尼西亚
-      - 🇵🇭 菲律宾
-      - 🇲🇾 马来西亚
-      - 🇮🇳 印度
-      - 🇬🇧 英国-1
-      - 🇬🇧 英国-2
-      - 🇬🇧 英国-3
+      - 免费流量丨TG频道：t.me/tgds100
+      - 美国-1
+      - 美国-2
+      - 美国-3
+      - 美国-4
+      - 美国-5
+      - 日本-1
+      - 日本-2
+      - 日本-3
+      - 日本-4
+      - 日本-5
+      - 日本-6
+      - 中国台湾-2
+      - 中国台湾-3
+      - 中国台湾-4
+      - 新加坡-4
+      - 新加坡-5
+      - 法国-2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - TGDS跨境网络丨TG频道：t.me/tgds100
-      - 🇺🇸 美国-0丨家庭宽带IP
-      - 🇭🇰 美国-1丨谷歌定位在香港
-      - 🇺🇸 美国-2丨纽约ipv6
-      - 🇺🇸 美国-3丨加州-洛杉矶
-      - 🇭🇰 香港 1
-      - 🇭🇰 香港 2
-      - 🇭🇰 香港 3
-      - 🇯🇵 日本-1
-      - 🇯🇵 日本-2丨ipv6
-      - 🇨🇳 中国台湾-桃园
-      - 🇨🇳 中国台湾丨每日限定流量
-      - 🇸🇬 新加坡-1丨ipv4
-      - 🇸🇬 新加坡-2丨ipv6
-      - 🇰🇷 韩国
-      - 🇮🇩 印度尼西亚
-      - 🇵🇭 菲律宾
-      - 🇲🇾 马来西亚
-      - 🇮🇳 印度
-      - 🇬🇧 英国-1
-      - 🇬🇧 英国-2
-      - 🇬🇧 英国-3
+      - 免费流量丨TG频道：t.me/tgds100
+      - 美国-1
+      - 美国-2
+      - 美国-3
+      - 美国-4
+      - 美国-5
+      - 日本-1
+      - 日本-2
+      - 日本-3
+      - 日本-4
+      - 日本-5
+      - 日本-6
+      - 中国台湾-2
+      - 中国台湾-3
+      - 中国台湾-4
+      - 新加坡-4
+      - 新加坡-5
+      - 法国-2
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - TGDS跨境网络丨TG频道：t.me/tgds100
-      - 🇺🇸 美国-0丨家庭宽带IP
-      - 🇭🇰 美国-1丨谷歌定位在香港
-      - 🇺🇸 美国-2丨纽约ipv6
-      - 🇺🇸 美国-3丨加州-洛杉矶
-      - 🇭🇰 香港 1
-      - 🇭🇰 香港 2
-      - 🇭🇰 香港 3
-      - 🇯🇵 日本-1
-      - 🇯🇵 日本-2丨ipv6
-      - 🇨🇳 中国台湾-桃园
-      - 🇨🇳 中国台湾丨每日限定流量
-      - 🇸🇬 新加坡-1丨ipv4
-      - 🇸🇬 新加坡-2丨ipv6
-      - 🇰🇷 韩国
-      - 🇮🇩 印度尼西亚
-      - 🇵🇭 菲律宾
-      - 🇲🇾 马来西亚
-      - 🇮🇳 印度
-      - 🇬🇧 英国-1
-      - 🇬🇧 英国-2
-      - 🇬🇧 英国-3
+      - 免费流量丨TG频道：t.me/tgds100
+      - 美国-1
+      - 美国-2
+      - 美国-3
+      - 美国-4
+      - 美国-5
+      - 日本-1
+      - 日本-2
+      - 日本-3
+      - 日本-4
+      - 日本-5
+      - 日本-6
+      - 中国台湾-2
+      - 中国台湾-3
+      - 中国台湾-4
+      - 新加坡-4
+      - 新加坡-5
+      - 法国-2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -249,56 +210,24 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - TGDS跨境网络丨TG频道：t.me/tgds100
-      - 🇺🇸 美国-0丨家庭宽带IP
-      - 🇭🇰 美国-1丨谷歌定位在香港
-      - 🇺🇸 美国-2丨纽约ipv6
-      - 🇺🇸 美国-3丨加州-洛杉矶
-      - 🇭🇰 香港 1
-      - 🇭🇰 香港 2
-      - 🇭🇰 香港 3
-      - 🇯🇵 日本-1
-      - 🇯🇵 日本-2丨ipv6
-      - 🇨🇳 中国台湾-桃园
-      - 🇨🇳 中国台湾丨每日限定流量
-      - 🇸🇬 新加坡-1丨ipv4
-      - 🇸🇬 新加坡-2丨ipv6
-      - 🇰🇷 韩国
-      - 🇮🇩 印度尼西亚
-      - 🇵🇭 菲律宾
-      - 🇲🇾 马来西亚
-      - 🇮🇳 印度
-      - 🇬🇧 英国-1
-      - 🇬🇧 英国-2
-      - 🇬🇧 英国-3
-  - name: 🇭🇰 香港节点
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 600
-    tolerance: 50
-    proxies:
-      - 🇭🇰 美国-1丨谷歌定位在香港
-      - 🇭🇰 香港 1
-      - 🇭🇰 香港 2
-      - 🇭🇰 香港 3
-  - name: 🇯🇵 日本节点
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
-    proxies:
-      - 🇯🇵 日本-1
-      - 🇯🇵 日本-2丨ipv6
-  - name: 🇺🇲 美国节点
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 150
-    proxies:
-      - 🇺🇸 美国-0丨家庭宽带IP
-      - 🇭🇰 美国-1丨谷歌定位在香港
-      - 🇺🇸 美国-2丨纽约ipv6
-      - 🇺🇸 美国-3丨加州-洛杉矶
+      - 免费流量丨TG频道：t.me/tgds100
+      - 美国-1
+      - 美国-2
+      - 美国-3
+      - 美国-4
+      - 美国-5
+      - 日本-1
+      - 日本-2
+      - 日本-3
+      - 日本-4
+      - 日本-5
+      - 日本-6
+      - 中国台湾-2
+      - 中国台湾-3
+      - 中国台湾-4
+      - 新加坡-4
+      - 新加坡-5
+      - 法国-2
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
@@ -353,6 +282,19 @@ rules:
   - DOMAIN,rewards.hypixel.net,🎯 全球直连
   - DOMAIN-SUFFIX,koodomobile.com,🎯 全球直连
   - DOMAIN-SUFFIX,koodomobile.ca,🎯 全球直连
+  - DOMAIN-SUFFIX,synology.me,🎯 全球直连
+  - DOMAIN-SUFFIX,DiskStation.me,🎯 全球直连
+  - DOMAIN-SUFFIX,i234.me,🎯 全球直连
+  - DOMAIN-SUFFIX,myDS.me,🎯 全球直连
+  - DOMAIN-SUFFIX,DSCloud.biz,🎯 全球直连
+  - DOMAIN-SUFFIX,DSCloud.me,🎯 全球直连
+  - DOMAIN-SUFFIX,DSCloud.mobi,🎯 全球直连
+  - DOMAIN-SUFFIX,DSmyNAS.com,🎯 全球直连
+  - DOMAIN-SUFFIX,DSmyNAS.net,🎯 全球直连
+  - DOMAIN-SUFFIX,DSmyNAS.org,🎯 全球直连
+  - DOMAIN-SUFFIX,FamilyDS.com,🎯 全球直连
+  - DOMAIN-SUFFIX,FamilyDS.net,🎯 全球直连
+  - DOMAIN-SUFFIX,FamilyDS.org,🎯 全球直连
   - DOMAIN-KEYWORD,admarvel,🛑 全球拦截
   - DOMAIN-KEYWORD,admaster,🛑 全球拦截
   - DOMAIN-KEYWORD,adsage,🛑 全球拦截
@@ -1462,7 +1404,6 @@ rules:
   - DOMAIN-SUFFIX,shenghuo.xiaomi.com,🍃 应用净化
   - DOMAIN-SUFFIX,stat.pandora.xiaomi.com,🍃 应用净化
   - DOMAIN-SUFFIX,union.mi.com,🍃 应用净化
-  - DOMAIN-SUFFIX,wtradv.market.xiaomi.com,🍃 应用净化
   - DOMAIN-SUFFIX,ad.api.moji.com,🍃 应用净化
   - DOMAIN-SUFFIX,app.moji001.com,🍃 应用净化
   - DOMAIN-SUFFIX,cdn.moji002.com,🍃 应用净化
@@ -2172,6 +2113,7 @@ rules:
   - DOMAIN-KEYWORD,claude,🌍 国外媒体
   - DOMAIN-KEYWORD,openai,🌍 国外媒体
   - DOMAIN,ai.google.dev,🌍 国外媒体
+  - DOMAIN,aistudio.google.com,🌍 国外媒体
   - DOMAIN,api.githubcopilot.com,🌍 国外媒体
   - DOMAIN,api.groq.com,🌍 国外媒体
   - DOMAIN,api.together.xyz,🌍 国外媒体
@@ -2187,9 +2129,12 @@ rules:
   - DOMAIN-SUFFIX,bard.google.com,🌍 国外媒体
   - DOMAIN-SUFFIX,chatgpt.com,🌍 国外媒体
   - DOMAIN-SUFFIX,claude.ai,🌍 国外媒体
+  - DOMAIN-SUFFIX,claudeusercontent.com,🌍 国外媒体
   - DOMAIN-SUFFIX,client-api.arkoselabs.com,🌍 国外媒体
   - DOMAIN-SUFFIX,copilot.cloud.microsoft,🌍 国外媒体
   - DOMAIN-SUFFIX,copilot.microsoft.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,cursor.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,cursor.sh,🌍 国外媒体
   - DOMAIN-SUFFIX,events.statsigapi.net,🌍 国外媒体
   - DOMAIN-SUFFIX,featuregates.org,🌍 国外媒体
   - DOMAIN-SUFFIX,gemini.google.com,🌍 国外媒体
@@ -3044,6 +2989,7 @@ rules:
   - DOMAIN-SUFFIX,xiami.net,🎯 全球直连
   - DOMAIN-SUFFIX,ykimg.com,🎯 全球直连
   - DOMAIN-SUFFIX,youku.com,🎯 全球直连
+  - DOMAIN-SUFFIX,qwen.ai,🎯 全球直连
   - DOMAIN-SUFFIX,baidu.com,🎯 全球直连
   - DOMAIN-SUFFIX,baidubcr.com,🎯 全球直连
   - DOMAIN-SUFFIX,baidupcs.com,🎯 全球直连
