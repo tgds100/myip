@@ -1,9 +1,50 @@
-port: 7890
-socks-port: 7891
-allow-lan: true
-mode: Rule
+mixed-port: 7890
+allow-lan: false
+mode: rule
+ipv6: true
 log-level: info
-external-controller: 127.0.0.1:9090
+external-controller: 0.0.0.0:9090
+dns:
+  enable: true
+  listen: 0.0.0.0:53
+  ipv6: true
+  default-nameserver:
+    - 223.5.5.5
+    - 114.114.114.114
+  nameserver:
+    - 223.5.5.5
+    - 114.114.114.114
+    - 119.29.29.29
+    - 180.76.76.76
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - "*.lan"
+    - "*.localdomain"
+    - "*.example"
+    - "*.invalid"
+    - "*.localhost"
+    - "*.test"
+    - "*.local"
+    - "*.home.arpa"
+    - router.asus.com
+    - localhost.sec.qq.com
+    - localhost.ptlogin2.qq.com
+    - +.msftconnecttest.com
+    
+tun:
+  enable: true
+  stack: system
+  auto-route: true
+  auto-detect-interface: true
+  dns-hijack:
+    - 119.29.29.29
+    - 223.5.5.5
+    - 8.8.8.8
+    - 8.8.4.4
+    - 114.114.114.114
+    - 180.76.76.76
+
 proxies:
   - {name: 🏳️‍🌈 TG频道：t.me/tgds100丨【免费流量】, server: zgo.tazhi.de, port: 17265, type: vmess, uuid: cc1ec9ad-e11f-410a-a9f7-bc7e5b42000e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: zgo.tazhi.de, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: zgo.tazhi.de}}}
   - {name: 🇯🇵 日本丨隐私指数89%, server: 2400:8902::f03c:95ff:fe9c:bd31, port: 26377, type: vless, uuid: dd4dc6e8-e5da-4612-86be-3905df10ac89, tls: true, tfo: false, skip-cert-verify: false, reality-opts: {public-key: U3VdQnvD5cQ8d2k3UwKOVtQfhUnXR39Rb4Q4yDsbc10, short-id: "297d5bc1" }, servername: yahoo.com, client-fingerprint: firefox, network: tcp}
@@ -35,6 +76,7 @@ proxies:
   - {name: 🇩🇪 德国, server: web.xhamster.biz.id, port: 443, type: vless, uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1, tls: true, tfo: false, skip-cert-verify: false, servername: web.xhamster.biz.id, client-fingerprint: chrome, network: ws, ws-opts: {path: /Free-CF-Proxy-AT4, headers: {Host: web.xhamster.biz.id}}}
   - {name: 🇮🇹 意大利, server: 45.118.133.29, port: 2087, type: vless, uuid: 638b9b3d-8f68-4ccc-a34d-53b590d125cc, tls: true, tfo: false, skip-cert-verify: false, network: h2, h2-opts: {path: 0d2dbbf7, host: [69it.ovo2024.dpdns.org]}}
   - {name: 🇺🇦 乌克兰, server: 2.56.245.9, port: 20357, type: vless, uuid: 1036ed52-d1fe-410e-a961-0db84299dd5e, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}}
+
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -178,6 +220,111 @@ proxy-groups:
       - 🇩🇪 德国
       - 🇮🇹 意大利
       - 🇺🇦 乌克兰
+  - name: 📺 YouTube
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+      - 🏳️‍🌈 TG频道：t.me/tgds100丨【免费流量】
+      - 🇯🇵 日本丨隐私指数89%
+      - 🇭🇰 中國香港丨Cloudflare Warp
+      - 🇺🇸 美国-1丨Google中国
+      - 🇺🇸 美国-2丨Google中国
+      - 🇺🇸 美国-3丨Google中国
+      - 🇺🇸 美国-4丨纽约
+      - 🇺🇸 美国-5丨纽约
+      - 🇯🇵 日本-1
+      - 🇯🇵 日本-2
+      - 🇭🇰 香港-1
+      - 🇭🇰 香港-2
+      - 🇭🇰 香港-3
+      - 🇰🇷 韩国-1
+      - 🇰🇷 韩国-2
+      - 🇰🇷 韩国-3
+      - 🇰🇷 韩国-4
+      - 🇨🇳 中国台湾-1
+      - 🇨🇳 中国台湾-2
+      - 🇨🇳 中国台湾-3丨每日限量
+      - 🇨🇳 中国台湾-5
+      - 🇨🇳 中国台湾-6
+      - 🇸🇬 新加坡-1
+      - 🇸🇬 新加坡-2
+      - 🇸🇬 新加坡-3丨ipv6
+      - 🇫🇷 法国-1
+      - 🇫🇷 法国-2
+      - 🇩🇪 德国
+      - 🇮🇹 意大利
+      - 🇺🇦 乌克兰
+  - name: 🎵 TikTok
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+      - 🏳️‍🌈 TG频道：t.me/tgds100丨【免费流量】
+      - 🇯🇵 日本丨隐私指数89%
+      - 🇭🇰 中國香港丨Cloudflare Warp
+      - 🇺🇸 美国-1丨Google中国
+      - 🇺🇸 美国-2丨Google中国
+      - 🇺🇸 美国-3丨Google中国
+      - 🇺🇸 美国-4丨纽约
+      - 🇺🇸 美国-5丨纽约
+      - 🇯🇵 日本-1
+      - 🇯🇵 日本-2
+      - 🇭🇰 香港-1
+      - 🇭🇰 香港-2
+      - 🇭🇰 香港-3
+      - 🇰🇷 韩国-1
+      - 🇰🇷 韩国-2
+      - 🇰🇷 韩国-3
+      - 🇰🇷 韩国-4
+      - 🇨🇳 中国台湾-1
+      - 🇨🇳 中国台湾-2
+      - 🇨🇳 中国台湾-3丨每日限量
+      - 🇨🇳 中国台湾-5
+      - 🇨🇳 中国台湾-6
+      - 🇸🇬 新加坡-1
+      - 🇸🇬 新加坡-2
+      - 🇸🇬 新加坡-3丨ipv6
+      - 🇫🇷 法国-1
+      - 🇫🇷 法国-2
+      - 🇩🇪 德国
+      - 🇮🇹 意大利
+      - 🇺🇦 乌克兰
+  - name: 🤖 OpenAI
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+      - 🏳️‍🌈 TG频道：t.me/tgds100丨【免费流量】
+      - 🇯🇵 日本丨隐私指数89%
+      - 🇭🇰 中國香港丨Cloudflare Warp
+      - 🇺🇸 美国-1丨Google中国
+      - 🇺🇸 美国-2丨Google中国
+      - 🇺🇸 美国-3丨Google中国
+      - 🇺🇸 美国-4丨纽约
+      - 🇺🇸 美国-5丨纽约
+      - 🇯🇵 日本-1
+      - 🇯🇵 日本-2
+      - 🇭🇰 香港-1
+      - 🇭🇰 香港-2
+      - 🇭🇰 香港-3
+      - 🇰🇷 韩国-1
+      - 🇰🇷 韩国-2
+      - 🇰🇷 韩国-3
+      - 🇰🇷 韩国-4
+      - 🇨🇳 中国台湾-1
+      - 🇨🇳 中国台湾-2
+      - 🇨🇳 中国台湾-3丨每日限量
+      - 🇨🇳 中国台湾-5
+      - 🇨🇳 中国台湾-6
+      - 🇸🇬 新加坡-1
+      - 🇸🇬 新加坡-2
+      - 🇸🇬 新加坡-3丨ipv6
+      - 🇫🇷 法国-1
+      - 🇫🇷 法国-2
+      - 🇩🇪 德国
+      - 🇮🇹 意大利
+      - 🇺🇦 乌克兰
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -248,6 +395,42 @@ proxy-groups:
       - 🇩🇪 德国
       - 🇮🇹 意大利
       - 🇺🇦 乌克兰
+  - name: 📡 谷歌服务
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+      - ♻️ 自动选择
+      - 🏳️‍🌈 TG频道：t.me/tgds100丨【免费流量】
+      - 🇯🇵 日本丨隐私指数89%
+      - 🇭🇰 中國香港丨Cloudflare Warp
+      - 🇺🇸 美国-1丨Google中国
+      - 🇺🇸 美国-2丨Google中国
+      - 🇺🇸 美国-3丨Google中国
+      - 🇺🇸 美国-4丨纽约
+      - 🇺🇸 美国-5丨纽约
+      - 🇯🇵 日本-1
+      - 🇯🇵 日本-2
+      - 🇭🇰 香港-1
+      - 🇭🇰 香港-2
+      - 🇭🇰 香港-3
+      - 🇰🇷 韩国-1
+      - 🇰🇷 韩国-2
+      - 🇰🇷 韩国-3
+      - 🇰🇷 韩国-4
+      - 🇨🇳 中国台湾-1
+      - 🇨🇳 中国台湾-2
+      - 🇨🇳 中国台湾-3丨每日限量
+      - 🇨🇳 中国台湾-5
+      - 🇨🇳 中国台湾-6
+      - 🇸🇬 新加坡-1
+      - 🇸🇬 新加坡-2
+      - 🇸🇬 新加坡-3丨ipv6
+      - 🇫🇷 法国-1
+      - 🇫🇷 法国-2
+      - 🇩🇪 德国
+      - 🇮🇹 意大利
+      - 🇺🇦 乌克兰  
   - name: 📢 谷歌FCM
     type: select
     proxies:
@@ -300,7 +483,7 @@ proxy-groups:
     proxies:
       - REJECT
       - DIRECT
-  - name: 🐟 漏网之鱼
+  - name: 🦄 兜底策略
     type: select
     proxies:
       - 🚀 节点选择
@@ -336,6 +519,7 @@ proxy-groups:
       - 🇩🇪 德国
       - 🇮🇹 意大利
       - 🇺🇦 乌克兰
+
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
@@ -2014,6 +2198,7 @@ rules:
   - DOMAIN-SUFFIX,tralog.ganji.com,🍃 应用净化
   - DOMAIN-SUFFIX,up.qingdaonews.com,🍃 应用净化
   - DOMAIN-SUFFIX,vaserviece.10jqka.com.cn,🍃 应用净化
+  - DOMAIN,voice.telephony.goog,📡 谷歌服务
   - DOMAIN,alt1-mtalk.google.com,📢 谷歌FCM
   - DOMAIN,alt2-mtalk.google.com,📢 谷歌FCM
   - DOMAIN,alt3-mtalk.google.com,📢 谷歌FCM
@@ -2023,6 +2208,701 @@ rules:
   - DOMAIN,alt7-mtalk.google.com,📢 谷歌FCM
   - DOMAIN,alt8-mtalk.google.com,📢 谷歌FCM
   - DOMAIN,mtalk.google.com,📢 谷歌FCM
+  - DOMAIN-SUFFIX,0emm.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,1e100.net,📡 谷歌服务
+  - DOMAIN-SUFFIX,1ucrs.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,265.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,2mdn-cn.net,📡 谷歌服务
+  - DOMAIN-SUFFIX,2mdn.net,📡 谷歌服务
+  - DOMAIN-SUFFIX,466453.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,abc.xyz,📡 谷歌服务
+  - DOMAIN-SUFFIX,adgoogle.net,📡 谷歌服务
+  - DOMAIN-SUFFIX,admeld.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,admob-cn.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,admob.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,adsense.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,adsensecustomsearchads.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,adsenseformobileapps.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,advertisercommunity.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,advertiserscommunity.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,adwords-community.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,adwords.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,adwordsexpress.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,amp.dev,📡 谷歌服务
+  - DOMAIN-SUFFIX,ampproject.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,ampproject.net,📡 谷歌服务
+  - DOMAIN-SUFFIX,ampproject.org,📡 谷歌服务
+  - DOMAIN-SUFFIX,android.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,androidify.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,androidtv.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,angulardart.org,📡 谷歌服务
+  - DOMAIN-SUFFIX,api.ai,📡 谷歌服务
+  - DOMAIN-SUFFIX,apigee.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,app-analytics-services.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,app-measurement-cn.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,app-measurement.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,app-measurement.net,📡 谷歌服务
+  - DOMAIN-SUFFIX,appbridge.ca,📡 谷歌服务
+  - DOMAIN-SUFFIX,appbridge.io,📡 谷歌服务
+  - DOMAIN-SUFFIX,appbridge.it,📡 谷歌服务
+  - DOMAIN-SUFFIX,apps5.oingo.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,appspot.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,apture.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,area120.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,asp-cc.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,autodraw.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,avail.googleflights.net,📡 谷歌服务
+  - DOMAIN-SUFFIX,bandpage.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,baselinestudy.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,baselinestudy.org,📡 谷歌服务
+  - DOMAIN-SUFFIX,bazel.build,📡 谷歌服务
+  - DOMAIN-SUFFIX,bdn.dev,📡 谷歌服务
+  - DOMAIN-SUFFIX,beacons.gvt2.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,beacons2.gvt2.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,beacons3.gvt2.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,beatthatquote.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,blink.org,📡 谷歌服务
+  - DOMAIN-SUFFIX,blog.google,📡 谷歌服务
+  - DOMAIN-SUFFIX,blogblog.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,blogger.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,blogspot.ae,📡 谷歌服务
+  - DOMAIN-SUFFIX,blogspot.al,📡 谷歌服务
+  - DOMAIN-SUFFIX,blogspot.am,📡 谷歌服务
+  - DOMAIN-SUFFIX,blogspot.ba,📡 谷歌服务
+  - DOMAIN-SUFFIX,blogspot.be,📡 谷歌服务
+  - DOMAIN-SUFFIX,blogspot.bg,📡 谷歌服务
+  - DOMAIN-SUFFIX,blogspot.bj,📡 谷歌服务
+  - DOMAIN-SUFFIX,blogspot.ca,📡 谷歌服务
+  - DOMAIN-SUFFIX,blogspot.cf,📡 谷歌服务
+  - DOMAIN-SUFFIX,blogspot.ch,📡 谷歌服务
+  - DOMAIN-SUFFIX,blogspot.cl,📡 谷歌服务
+  - DOMAIN-SUFFIX,blogspot.co.at,📡 谷歌服务
+  - DOMAIN-SUFFIX,blogspot.co.id,📡 谷歌服务
+  - DOMAIN-SUFFIX,blogspot.co.il,📡 谷歌服务
+  - DOMAIN-SUFFIX,blogspot.co.ke,📡 谷歌服务
+  - DOMAIN-SUFFIX,blogspot.co.nz,📡 谷歌服务
+  - DOMAIN-SUFFIX,blogspot.co.uk,📡 谷歌服务
+  - DOMAIN-SUFFIX,blogspot.co.za,📡 谷歌服务
+  - DOMAIN-SUFFIX,blogspot.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,blogspot.com.ar,📡 谷歌服务
+  - DOMAIN-SUFFIX,blogspot.com.au,📡 谷歌服务
+  - DOMAIN-SUFFIX,blogspot.com.br,📡 谷歌服务
+  - DOMAIN-SUFFIX,blogspot.com.by,📡 谷歌服务
+  - DOMAIN-SUFFIX,blogspot.com.co,📡 谷歌服务
+  - DOMAIN-SUFFIX,blogspot.com.cy,📡 谷歌服务
+  - DOMAIN-SUFFIX,blogspot.com.ee,📡 谷歌服务
+  - DOMAIN-SUFFIX,blogspot.com.eg,📡 谷歌服务
+  - DOMAIN-SUFFIX,blogspot.com.es,📡 谷歌服务
+  - DOMAIN-SUFFIX,blogspot.com.mt,📡 谷歌服务
+  - DOMAIN-SUFFIX,blogspot.com.ng,📡 谷歌服务
+  - DOMAIN-SUFFIX,blogspot.com.tr,📡 谷歌服务
+  - DOMAIN-SUFFIX,blogspot.com.uy,📡 谷歌服务
+  - DOMAIN-SUFFIX,blogspot.cv,📡 谷歌服务
+  - DOMAIN-SUFFIX,blogspot.cz,📡 谷歌服务
+  - DOMAIN-SUFFIX,blogspot.de,📡 谷歌服务
+  - DOMAIN-SUFFIX,blogspot.dk,📡 谷歌服务
+  - DOMAIN-SUFFIX,blogspot.fi,📡 谷歌服务
+  - DOMAIN-SUFFIX,blogspot.fr,📡 谷歌服务
+  - DOMAIN-SUFFIX,blogspot.gr,📡 谷歌服务
+  - DOMAIN-SUFFIX,blogspot.hk,📡 谷歌服务
+  - DOMAIN-SUFFIX,blogspot.hr,📡 谷歌服务
+  - DOMAIN-SUFFIX,blogspot.hu,📡 谷歌服务
+  - DOMAIN-SUFFIX,blogspot.ie,📡 谷歌服务
+  - DOMAIN-SUFFIX,blogspot.in,📡 谷歌服务
+  - DOMAIN-SUFFIX,blogspot.is,📡 谷歌服务
+  - DOMAIN-SUFFIX,blogspot.it,📡 谷歌服务
+  - DOMAIN-SUFFIX,blogspot.jp,📡 谷歌服务
+  - DOMAIN-SUFFIX,blogspot.kr,📡 谷歌服务
+  - DOMAIN-SUFFIX,blogspot.li,📡 谷歌服务
+  - DOMAIN-SUFFIX,blogspot.lt,📡 谷歌服务
+  - DOMAIN-SUFFIX,blogspot.lu,📡 谷歌服务
+  - DOMAIN-SUFFIX,blogspot.md,📡 谷歌服务
+  - DOMAIN-SUFFIX,blogspot.mk,📡 谷歌服务
+  - DOMAIN-SUFFIX,blogspot.mx,📡 谷歌服务
+  - DOMAIN-SUFFIX,blogspot.my,📡 谷歌服务
+  - DOMAIN-SUFFIX,blogspot.nl,📡 谷歌服务
+  - DOMAIN-SUFFIX,blogspot.no,📡 谷歌服务
+  - DOMAIN-SUFFIX,blogspot.pe,📡 谷歌服务
+  - DOMAIN-SUFFIX,blogspot.pt,📡 谷歌服务
+  - DOMAIN-SUFFIX,blogspot.qa,📡 谷歌服务
+  - DOMAIN-SUFFIX,blogspot.re,📡 谷歌服务
+  - DOMAIN-SUFFIX,blogspot.ro,📡 谷歌服务
+  - DOMAIN-SUFFIX,blogspot.rs,📡 谷歌服务
+  - DOMAIN-SUFFIX,blogspot.ru,📡 谷歌服务
+  - DOMAIN-SUFFIX,blogspot.se,📡 谷歌服务
+  - DOMAIN-SUFFIX,blogspot.sg,📡 谷歌服务
+  - DOMAIN-SUFFIX,blogspot.si,📡 谷歌服务
+  - DOMAIN-SUFFIX,blogspot.sk,📡 谷歌服务
+  - DOMAIN-SUFFIX,blogspot.sn,📡 谷歌服务
+  - DOMAIN-SUFFIX,blogspot.td,📡 谷歌服务
+  - DOMAIN-SUFFIX,blogspot.tw,📡 谷歌服务
+  - DOMAIN-SUFFIX,blogspot.ug,📡 谷歌服务
+  - DOMAIN-SUFFIX,blogspot.vn,📡 谷歌服务
+  - DOMAIN-SUFFIX,brocaproject.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,brotli.org,📡 谷歌服务
+  - DOMAIN-SUFFIX,bumpshare.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,bumptop.ca,📡 谷歌服务
+  - DOMAIN-SUFFIX,bumptop.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,bumptop.net,📡 谷歌服务
+  - DOMAIN-SUFFIX,bumptop.org,📡 谷歌服务
+  - DOMAIN-SUFFIX,bumptunes.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,campuslondon.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,capitalg.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,certificate-transparency.dev,📡 谷歌服务
+  - DOMAIN-SUFFIX,certificate-transparency.org,📡 谷歌服务
+  - DOMAIN-SUFFIX,charlestonroadregistry.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,chat.gle,📡 谷歌服务
+  - DOMAIN-SUFFIX,chrome.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,chromebook.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,chromecast.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,chromeexperiments.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,chromeos.dev,📡 谷歌服务
+  - DOMAIN-SUFFIX,chromercise.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,chromestatus.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,chromium.org,📡 谷歌服务
+  - DOMAIN-SUFFIX,chronicle.security,📡 谷歌服务
+  - DOMAIN-SUFFIX,chroniclesec.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,clickserve.cc-dt.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,clickserver.googleads.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,cloudburstresearch.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,cloudfunctions.net,📡 谷歌服务
+  - DOMAIN-SUFFIX,cloudproxy.app,📡 谷歌服务
+  - DOMAIN-SUFFIX,cloudrobotics.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,cobrasearch.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,codespot.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,conscrypt.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,conscrypt.org,📡 谷歌服务
+  - DOMAIN-SUFFIX,cookiechoices.org,📡 谷歌服务
+  - DOMAIN-SUFFIX,coova.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,coova.net,📡 谷歌服务
+  - DOMAIN-SUFFIX,coova.org,📡 谷歌服务
+  - DOMAIN-SUFFIX,crashlytics.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,crbug.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,creativelab5.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,crossmediapanel.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,crr.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,crrev.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,cs4hs.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,dart.dev,📡 谷歌服务
+  - DOMAIN-SUFFIX,dartlang.org,📡 谷歌服务
+  - DOMAIN-SUFFIX,dartpad.dev,📡 谷歌服务
+  - DOMAIN-SUFFIX,dartsearch-cn.net,📡 谷歌服务
+  - DOMAIN-SUFFIX,dartsearch.net,📡 谷歌服务
+  - DOMAIN-SUFFIX,data-vocabulary.org,📡 谷歌服务
+  - DOMAIN-SUFFIX,dataliberation.org,📡 谷歌服务
+  - DOMAIN-SUFFIX,debug.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,debugproject.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,deepmind.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,deja.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,deps.dev,📡 谷歌服务
+  - DOMAIN-SUFFIX,deps.info,📡 谷歌服务
+  - DOMAIN-SUFFIX,devsitetest.how,📡 谷歌服务
+  - DOMAIN-SUFFIX,dialogflow.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,digisfera.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,digitalassetlinks.org,📡 谷歌服务
+  - DOMAIN-SUFFIX,digitalattackmap.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,doubleclick-cn.net,📡 谷歌服务
+  - DOMAIN-SUFFIX,doubleclick.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,doubleclick.net,📡 谷歌服务
+  - DOMAIN-SUFFIX,download.qatp1.net,📡 谷歌服务
+  - DOMAIN-SUFFIX,episodic.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,fastlane.ci,📡 谷歌服务
+  - DOMAIN-SUFFIX,fastlane.tools,📡 谷歌服务
+  - DOMAIN-SUFFIX,feedburner.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,fflick.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,financeleadsonline.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,firebaseapp.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,firebaseio.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,flutter.dev,📡 谷歌服务
+  - DOMAIN-SUFFIX,flutterapp.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,foofle.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,froogle.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,fuchsia.dev,📡 谷歌服务
+  - DOMAIN-SUFFIX,g-tun.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,g.cn,📡 谷歌服务
+  - DOMAIN-SUFFIX,g.co,📡 谷歌服务
+  - DOMAIN-SUFFIX,g.dev,📡 谷歌服务
+  - DOMAIN-SUFFIX,g.page,📡 谷歌服务
+  - DOMAIN-SUFFIX,gateway.dev,📡 谷歌服务
+  - DOMAIN-SUFFIX,gcp.gvt2.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,gcr.io,📡 谷歌服务
+  - DOMAIN-SUFFIX,gerritcodereview.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,get.app,📡 谷歌服务
+  - DOMAIN-SUFFIX,get.dev,📡 谷歌服务
+  - DOMAIN-SUFFIX,get.how,📡 谷歌服务
+  - DOMAIN-SUFFIX,get.page,📡 谷歌服务
+  - DOMAIN-SUFFIX,getbumptop.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,getmdl.io,📡 谷歌服务
+  - DOMAIN-SUFFIX,getoutline.org,📡 谷歌服务
+  - DOMAIN-SUFFIX,ggoogle.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,gipscorp.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,gkecnapps.cn,📡 谷歌服务
+  - DOMAIN-SUFFIX,globaledu.org,📡 谷歌服务
+  - DOMAIN-SUFFIX,gmail.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,gmodules.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,go-lang.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,go-lang.net,📡 谷歌服务
+  - DOMAIN-SUFFIX,go-lang.org,📡 谷歌服务
+  - DOMAIN-SUFFIX,go.dev,📡 谷歌服务
+  - DOMAIN-SUFFIX,godoc.org,📡 谷歌服务
+  - DOMAIN-SUFFIX,gogle.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,gogole.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,golang.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,golang.net,📡 谷歌服务
+  - DOMAIN-SUFFIX,golang.org,📡 谷歌服务
+  - DOMAIN-SUFFIX,gonglchuangl.net,📡 谷歌服务
+  - DOMAIN-SUFFIX,gongyichuangyi.net,📡 谷歌服务
+  - DOMAIN-SUFFIX,goo.gl,📡 谷歌服务
+  - DOMAIN-SUFFIX,googel.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,googil.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,googl.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,google-analytics-cn.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,google-analytics.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,google-syndication.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.ad,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.ae,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.al,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.am,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.as,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.at,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.az,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.ba,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.be,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.berlin,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.bf,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.bg,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.bi,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.bj,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.bs,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.bt,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.by,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.ca,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.cat,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.cd,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.cf,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.cg,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.ch,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.ci,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.cl,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.cm,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.cn,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.co.ao,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.co.bw,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.co.ck,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.co.cr,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.co.id,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.co.il,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.co.in,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.co.jp,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.co.ke,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.co.kr,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.co.ls,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.co.ma,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.co.mz,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.co.nz,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.co.th,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.co.tz,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.co.ug,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.co.uk,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.co.uz,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.co.ve,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.co.vi,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.co.za,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.co.zm,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.co.zw,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.com.af,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.com.ag,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.com.ai,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.com.ar,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.com.au,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.com.bd,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.com.bh,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.com.bn,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.com.bo,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.com.br,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.com.bz,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.com.co,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.com.cu,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.com.cy,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.com.do,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.com.ec,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.com.eg,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.com.et,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.com.fj,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.com.gh,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.com.gi,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.com.gt,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.com.hk,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.com.jm,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.com.kh,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.com.kw,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.com.lb,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.com.ly,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.com.mm,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.com.mt,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.com.mx,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.com.my,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.com.na,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.com.ng,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.com.ni,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.com.np,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.com.om,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.com.pa,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.com.pe,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.com.pg,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.com.ph,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.com.pk,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.com.pr,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.com.py,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.com.qa,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.com.sa,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.com.sb,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.com.sg,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.com.sl,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.com.sv,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.com.tj,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.com.tr,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.com.tw,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.com.ua,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.com.uy,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.com.vc,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.com.vn,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.cv,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.cz,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.de,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.dev,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.dj,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.dk,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.dm,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.dz,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.ee,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.es,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.fi,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.fm,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.fr,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.ga,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.ge,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.gg,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.gl,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.gm,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.gr,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.gy,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.hn,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.hr,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.ht,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.hu,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.ie,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.im,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.iq,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.is,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.it,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.je,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.jo,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.kg,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.ki,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.kz,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.la,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.li,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.lk,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.lt,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.lu,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.lv,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.md,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.me,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.mg,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.mk,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.ml,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.mn,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.ms,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.mu,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.mv,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.mw,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.ne,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.net,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.nl,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.no,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.nr,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.nu,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.org,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.pl,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.pn,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.ps,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.pt,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.ro,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.rs,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.ru,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.rw,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.sc,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.se,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.sh,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.si,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.sk,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.sm,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.sn,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.so,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.sr,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.st,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.td,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.tg,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.tl,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.tm,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.tn,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.to,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.tt,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.ventures,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.vg,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.vu,📡 谷歌服务
+  - DOMAIN-SUFFIX,google.ws,📡 谷歌服务
+  - DOMAIN-SUFFIX,googleacquisitionmigration.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,googleadapis.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,googleadservices-cn.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,googleadservices.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,googleanalytics.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,googleapis-cn.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,googleapis.cn,📡 谷歌服务
+  - DOMAIN-SUFFIX,googleapis.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,googleapps-cn.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,googleapps.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,googlearth.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,googleblog.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,googlebot.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,googlecapital.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,googlecert.net,📡 谷歌服务
+  - DOMAIN-SUFFIX,googlecnapps.cn,📡 谷歌服务
+  - DOMAIN-SUFFIX,googlecode.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,googlecommerce.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,googlecompare.co.uk,📡 谷歌服务
+  - DOMAIN-SUFFIX,googledanmark.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,googledomains.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,googlee.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,googleearth.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,googlefiber.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,googlefiber.net,📡 谷歌服务
+  - DOMAIN-SUFFIX,googlefinland.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,googleflights-cn.net,📡 谷歌服务
+  - DOMAIN-SUFFIX,googlemail.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,googlemaps.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,googlemashups.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,googleoptimize-cn.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,googleoptimize.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,googlepagecreator.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,googlephotos.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,googleplay.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,googleplus.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,googlescholar.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,googlesource.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,googlestore.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,googlesverige.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,googlesyndication-cn.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,googlesyndication.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,googletagmanager-cn.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,googletagmanager.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,googletagservices-cn.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,googletagservices.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,googletraveladservices-cn.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,googletraveladservices.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,googlevads-cn.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,googleventures.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,googlr.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,goolge.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,gooogle.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,gridaware.app,📡 谷歌服务
+  - DOMAIN-SUFFIX,gsrc.io,📡 谷歌服务
+  - DOMAIN-SUFFIX,gstatic-cn.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,gstatic.cn,📡 谷歌服务
+  - DOMAIN-SUFFIX,gstatic.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,gstaticcnapps.cn,📡 谷歌服务
+  - DOMAIN-SUFFIX,gsuite.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,gv.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,gvt0.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,gvt1-cn.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,gvt2-cn.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,gvt3.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,gvt5.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,gvt6.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,gvt7.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,gvt9.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,gwtproject.org,📡 谷歌服务
+  - DOMAIN-SUFFIX,hdrplusdata.org,📡 谷歌服务
+  - DOMAIN-SUFFIX,hey.gle,📡 谷歌服务
+  - DOMAIN-SUFFIX,hindiweb.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,howtogetmo.co.uk,📡 谷歌服务
+  - DOMAIN-SUFFIX,html5rocks.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,hwgo.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,iam.soy,📡 谷歌服务
+  - DOMAIN-SUFFIX,iamremarkable.org,📡 谷歌服务
+  - DOMAIN-SUFFIX,igoogle.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,impermium.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,itasoftware.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,j2objc.org,📡 谷歌服务
+  - DOMAIN-SUFFIX,jibemobile.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,kaggle.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,kaggle.io,📡 谷歌服务
+  - DOMAIN-SUFFIX,keyhole.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,keytransparency.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,keytransparency.foo,📡 谷歌服务
+  - DOMAIN-SUFFIX,keytransparency.org,📡 谷歌服务
+  - DOMAIN-SUFFIX,lanternal.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,like.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,madewithcode.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,material.io,📡 谷歌服务
+  - DOMAIN-SUFFIX,mdialog.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,meet.new,📡 谷歌服务
+  - DOMAIN-SUFFIX,mfg-inspector.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,mobileview.page,📡 谷歌服务
+  - DOMAIN-SUFFIX,monitoring.qpdp1.net,📡 谷歌服务
+  - DOMAIN-SUFFIX,moodstocks.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,near.by,📡 谷歌服务
+  - DOMAIN-SUFFIX,nest.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,neverware.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,nomulus.foo,📡 谷歌服务
+  - DOMAIN-SUFFIX,oasisfeng.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,oauthz.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,ok.gle,📡 谷歌服务
+  - DOMAIN-SUFFIX,on.here,📡 谷歌服务
+  - DOMAIN-SUFFIX,on2.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,onefifteen.net,📡 谷歌服务
+  - DOMAIN-SUFFIX,onefifteen.org,📡 谷歌服务
+  - DOMAIN-SUFFIX,oneworldmanystories.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,opensourceinsight.dev,📡 谷歌服务
+  - DOMAIN-SUFFIX,opensourceinsights.dev,📡 谷歌服务
+  - DOMAIN-SUFFIX,openthread.io,📡 谷歌服务
+  - DOMAIN-SUFFIX,openweave.io,📡 谷歌服务
+  - DOMAIN-SUFFIX,orbitera.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,page.link,📡 谷歌服务
+  - DOMAIN-SUFFIX,pagespeedmobilizer.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,pageview.mobi,📡 谷歌服务
+  - DOMAIN-SUFFIX,panoramio.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,partylikeits1986.org,📡 谷歌服务
+  - DOMAIN-SUFFIX,paxlicense.org,📡 谷歌服务
+  - DOMAIN-SUFFIX,picasa.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,picasaweb.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,picasaweb.net,📡 谷歌服务
+  - DOMAIN-SUFFIX,picasaweb.org,📡 谷歌服务
+  - DOMAIN-SUFFIX,picnik.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,pittpatt.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,pixate.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,pki.goog,📡 谷歌服务
+  - DOMAIN-SUFFIX,plus.codes,📡 谷歌服务
+  - DOMAIN-SUFFIX,polymer-project.org,📡 谷歌服务
+  - DOMAIN-SUFFIX,polymerproject.org,📡 谷歌服务
+  - DOMAIN-SUFFIX,postini.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,privacysandbox.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,prod-controlbe.floonet.goog,📡 谷歌服务
+  - DOMAIN-SUFFIX,prod-databe.floonet.goog,📡 谷歌服务
+  - DOMAIN-SUFFIX,prod.databe.floonet.goog,📡 谷歌服务
+  - DOMAIN-SUFFIX,projectara.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,projectbaseline.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,publishproxy.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,qagpublic.qatp1.net,📡 谷歌服务
+  - DOMAIN-SUFFIX,qgadmin.qcpp1.net,📡 谷歌服务
+  - DOMAIN-SUFFIX,qiao-cn.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,qpx.googleflights.net,📡 谷歌服务
+  - DOMAIN-SUFFIX,qualysapi.qatp1.net,📡 谷歌服务
+  - DOMAIN-SUFFIX,qualysguard.qpdp1.net,📡 谷歌服务
+  - DOMAIN-SUFFIX,questvisual.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,quickoffice.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,quiksee.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,recaptcha-cn.net,📡 谷歌服务
+  - DOMAIN-SUFFIX,recaptcha.net,📡 谷歌服务
+  - DOMAIN-SUFFIX,redhotlabs.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,redirector.gcpcdn.gvt1.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,redirector.gvt1.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,redirector.offline-maps.gvt1.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,redirector.snap.gvt1.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,registry.google,📡 谷歌服务
+  - DOMAIN-SUFFIX,revolv.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,ridepenguin.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,run.app,📡 谷歌服务
+  - DOMAIN-SUFFIX,savethedate.foo,📡 谷歌服务
+  - DOMAIN-SUFFIX,saynow.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,scanservice1.qcpp1.net,📡 谷歌服务
+  - DOMAIN-SUFFIX,schema.org,📡 谷歌服务
+  - DOMAIN-SUFFIX,schemer.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,screenwisetrends.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,screenwisetrendspanel.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,shattered.io,📡 谷歌服务
+  - DOMAIN-SUFFIX,snapseed.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,solveforx.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,stadia.dev,📡 谷歌服务
+  - DOMAIN-SUFFIX,staging-controlbe.floonet.goog,📡 谷歌服务
+  - DOMAIN-SUFFIX,staging-databe.floonet.goog,📡 谷歌服务
+  - DOMAIN-SUFFIX,staging.databe.floonet.goog,📡 谷歌服务
+  - DOMAIN-SUFFIX,stcroixmosquito.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,stcroixmosquitoproject.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,studywatchbyverily.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,studywatchbyverily.org,📡 谷歌服务
+  - DOMAIN-SUFFIX,stxmosquito.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,stxmosquitoproject.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,stxmosquitoproject.net,📡 谷歌服务
+  - DOMAIN-SUFFIX,stxmosquitoproject.org,📡 谷歌服务
+  - DOMAIN-SUFFIX,synergyse.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,teachparentstech.org,📡 谷歌服务
+  - DOMAIN-SUFFIX,tensorflow.org,📡 谷歌服务
+  - DOMAIN-SUFFIX,tfhub.dev,📡 谷歌服务
+  - DOMAIN-SUFFIX,thecleversense.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,thegooglestore.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,thinkquarterly.co.uk,📡 谷歌服务
+  - DOMAIN-SUFFIX,thinkquarterly.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,thinkwithgoogle.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,tiltbrush.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,txcloud.net,📡 谷歌服务
+  - DOMAIN-SUFFIX,txvia.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,unfiltered.news,📡 谷歌服务
+  - DOMAIN-SUFFIX,urchin.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,useplannr.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,usvimosquito.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,usvimosquitoproject.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,v8.dev,📡 谷歌服务
+  - DOMAIN-SUFFIX,v8project.org,📡 谷歌服务
+  - DOMAIN-SUFFIX,velostrata.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,verily.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,verilylifesciences.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,verilystudyhub.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,verilystudywatch.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,verilystudywatch.org,📡 谷歌服务
+  - DOMAIN-SUFFIX,wallet.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,waveprotocol.org,📡 谷歌服务
+  - DOMAIN-SUFFIX,waymo.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,waze.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,web.app,📡 谷歌服务
+  - DOMAIN-SUFFIX,web.dev,📡 谷歌服务
+  - DOMAIN-SUFFIX,webappfieldguide.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,webmproject.org,📡 谷歌服务
+  - DOMAIN-SUFFIX,webpkgcache.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,webrtc.org,📡 谷歌服务
+  - DOMAIN-SUFFIX,weltweitwachsen.de,📡 谷歌服务
+  - DOMAIN-SUFFIX,whatbrowser.org,📡 谷歌服务
+  - DOMAIN-SUFFIX,widevine.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,withgoogle.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,womenwill.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,womenwill.com.br,📡 谷歌服务
+  - DOMAIN-SUFFIX,womenwill.id,📡 谷歌服务
+  - DOMAIN-SUFFIX,womenwill.in,📡 谷歌服务
+  - DOMAIN-SUFFIX,womenwill.mx,📡 谷歌服务
+  - DOMAIN-SUFFIX,www.destinationurl.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,www.pxcc.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,x.company,📡 谷歌服务
+  - DOMAIN-SUFFIX,x.team,📡 谷歌服务
+  - DOMAIN-SUFFIX,xn--9kr7l.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,xn--9trs65b.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,xn--flw351e.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,xn--ggle-55da.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,xn--gogl-0nd52e.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,xn--gogl-1nd42e.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,xn--p8j9a0d9c9a.xn--q9jyb4c,📡 谷歌服务
+  - DOMAIN-SUFFIX,xplr.co,📡 谷歌服务
+  - DOMAIN-SUFFIX,zukunftswerkstatt.de,📡 谷歌服务
+  - DOMAIN-SUFFIX,zynamics.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,googledrive.com,📡 谷歌服务
+  - DOMAIN-SUFFIX,googleusercontent.com,📡 谷歌服务
+  - DOMAIN-KEYWORD,appspot,📡 谷歌服务
+  - DOMAIN-KEYWORD,blogspot,📡 谷歌服务
+  - DOMAIN-KEYWORD,gmail,📡 谷歌服务
+  - DOMAIN-KEYWORD,google,📡 谷歌服务
+  - DOMAIN-KEYWORD,recaptcha,📡 谷歌服务
   - IP-CIDR,64.233.177.188/32,📢 谷歌FCM,no-resolve
   - IP-CIDR,64.233.186.188/32,📢 谷歌FCM,no-resolve
   - IP-CIDR,64.233.187.188/32,📢 谷歌FCM,no-resolve
@@ -2041,14 +2921,24 @@ rules:
   - IP-CIDR,142.250.10.188/32,📢 谷歌FCM,no-resolve
   - IP-CIDR,142.250.31.188/32,📢 谷歌FCM,no-resolve
   - IP-CIDR,142.250.96.188/32,📢 谷歌FCM,no-resolve
+  - IP-CIDR,172.110.32.0/21,📡 谷歌服务,no-resolve
   - IP-CIDR,172.217.194.188/32,📢 谷歌FCM,no-resolve
   - IP-CIDR,172.217.218.188/32,📢 谷歌FCM,no-resolve
   - IP-CIDR,172.217.219.188/32,📢 谷歌FCM,no-resolve
   - IP-CIDR,172.253.63.188/32,📢 谷歌FCM,no-resolve
   - IP-CIDR,172.253.122.188/32,📢 谷歌FCM,no-resolve
-  - IP-CIDR,173.194.175.188/32,📢 谷歌FCM,no-resolve
+  - IP-CIDR,173.194.0.0/16,📡 谷歌服务,no-resolve
   - IP-CIDR,173.194.218.188/32,📢 谷歌FCM,no-resolve
   - IP-CIDR,209.85.233.188/32,📢 谷歌FCM,no-resolve
+  - IP-CIDR,216.73.80.0/20,📡 谷歌服务,no-resolve
+  - IP-CIDR,74.125.0.0/16,📡 谷歌服务,no-resolve
+  - IP-CIDR6,2620:120:e000::/40,📡 谷歌服务,no-resolve
+  - PROCESS-NAME,GoogleDriveFS.exe,📡 谷歌服务
+  - PROCESS-NAME,com.android.vending,📡 谷歌服务
+  - PROCESS-NAME,com.google.android.gms,📡 谷歌服务
+  - PROCESS-NAME,com.google.android.gsf,📡 谷歌服务
+  - PROCESS-NAME,com.google.android.play.games,📡 谷歌服务
+  - PROCESS-NAME,BackupandSync,📡 谷歌服务
   - DOMAIN-SUFFIX,265.com,🎯 全球直连
   - DOMAIN-SUFFIX,2mdn.net,🎯 全球直连
   - DOMAIN-SUFFIX,alt1-mtalk.google.com,🎯 全球直连
@@ -2202,19 +3092,302 @@ rules:
   - IP-CIDR,192.35.50.0/24,🍎 苹果服务,no-resolve
   - IP-CIDR,198.183.17.0/24,🍎 苹果服务,no-resolve
   - IP-CIDR,205.180.175.0/24,🍎 苹果服务,no-resolve
+  - DOMAIN,api.imem.app,📲 电报信息
+  - DOMAIN,api.swiftgram.app,📲 电报信息
+  - DOMAIN-SUFFIX,cdn-telegram.org,📲 电报信息
+  - DOMAIN-SUFFIX,comments.app,📲 电报信息
+  - DOMAIN-SUFFIX,contest.com,📲 电报信息
+  - DOMAIN-SUFFIX,graph.org,📲 电报信息
+  - DOMAIN-SUFFIX,legra.ph,📲 电报信息
+  - DOMAIN-SUFFIX,mbrx.app,📲 电报信息
+  - DOMAIN-SUFFIX,quiz.directory,📲 电报信息
+  - DOMAIN-SUFFIX,stel.com,📲 电报信息
   - DOMAIN-SUFFIX,t.me,📲 电报信息
   - DOMAIN-SUFFIX,tdesktop.com,📲 电报信息
+  - DOMAIN-SUFFIX,telega.one,📲 电报信息
   - DOMAIN-SUFFIX,telegra.ph,📲 电报信息
+  - DOMAIN-SUFFIX,telegram-cdn.org,📲 电报信息
+  - DOMAIN-SUFFIX,telegram.dog,📲 电报信息
   - DOMAIN-SUFFIX,telegram.me,📲 电报信息
   - DOMAIN-SUFFIX,telegram.org,📲 电报信息
+  - DOMAIN-SUFFIX,telegram.space,📲 电报信息
+  - DOMAIN-SUFFIX,telegramdownload.com,📲 电报信息
   - DOMAIN-SUFFIX,telesco.pe,📲 电报信息
+  - DOMAIN-SUFFIX,tg.dev,📲 电报信息
+  - DOMAIN-SUFFIX,tx.me,📲 电报信息
+  - DOMAIN-SUFFIX,usercontent.dev,📲 电报信息
+  - DOMAIN-KEYWORD,nicegram,📲 电报信息
+  - IP-CIDR,5.28.192.0/18,📲 电报信息,no-resolve
   - IP-CIDR,91.108.0.0/16,📲 电报信息,no-resolve
   - IP-CIDR,95.161.64.0/20,📲 电报信息,no-resolve
   - IP-CIDR,109.239.140.0/24,📲 电报信息,no-resolve
   - IP-CIDR,149.154.160.0/20,📲 电报信息,no-resolve
   - IP-CIDR6,2001:67c:4e8::/48,📲 电报信息,no-resolve
+  - IP-CIDR6,2001:b28:f23c::/47,📲 电报信息,no-resolve
   - IP-CIDR6,2001:b28:f23d::/48,📲 电报信息,no-resolve
   - IP-CIDR6,2001:b28:f23f::/48,📲 电报信息,no-resolve
+  - IP-CIDR6,2a0a:f280::/29,📲 电报信息,no-resolve
+  - PROCESS-NAME,Telegram.exe,📲 电报信息
+  - PROCESS-NAME,nekox.messenger,📲 电报信息
+  - PROCESS-NAME,org.telegram.messenger,📲 电报信息
+  - PROCESS-NAME,telegram-desktop,📲 电报信息
+  - PROCESS-NAME,tw.nekomimi.nekogram,📲 电报信息
+  - PROCESS-NAME,xyz.nextalone.nagram,📲 电报信息
+  - IP-ASN,211157,📲 电报信息,no-resolve
+  - IP-ASN,44907,📲 电报信息,no-resolve
+  - IP-ASN,59930,📲 电报信息,no-resolve
+  - IP-ASN,62014,📲 电报信息,no-resolve
+  - IP-ASN,62041,📲 电报信息,no-resolve
+  - DOMAIN-SUFFIX,ggpht.cn,📺 YouTube
+  - DOMAIN-SUFFIX,ggpht.com,📺 YouTube
+  - DOMAIN-SUFFIX,googlevideo.com,📺 YouTube
+  - DOMAIN-SUFFIX,gvt1.com,📺 YouTube
+  - DOMAIN-SUFFIX,gvt2.com,📺 YouTube
+  - DOMAIN-SUFFIX,video.google.com,📺 YouTube
+  - DOMAIN-SUFFIX,wide-youtube.l.google.com,📺 YouTube
+  - DOMAIN-SUFFIX,withyoutube.com,📺 YouTube
+  - DOMAIN-SUFFIX,youtu.be,📺 YouTube
+  - DOMAIN-SUFFIX,youtube,📺 YouTube
+  - DOMAIN-SUFFIX,youtube-nocookie.com,📺 YouTube
+  - DOMAIN-SUFFIX,youtube-ui.l.google.com,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.ae,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.al,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.am,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.at,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.az,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.ba,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.be,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.bg,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.bh,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.bo,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.by,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.ca,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.cat,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.ch,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.cl,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.co,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.co.ae,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.co.at,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.co.cr,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.co.hu,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.co.id,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.co.il,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.co.in,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.co.jp,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.co.ke,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.co.kr,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.co.ma,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.co.nz,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.co.th,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.co.tz,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.co.ug,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.co.uk,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.co.ve,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.co.za,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.co.zw,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.com,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.com.ar,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.com.au,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.com.az,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.com.bd,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.com.bh,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.com.bo,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.com.br,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.com.by,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.com.co,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.com.do,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.com.ec,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.com.ee,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.com.eg,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.com.es,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.com.gh,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.com.gr,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.com.gt,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.com.hk,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.com.hn,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.com.hr,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.com.jm,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.com.jo,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.com.kw,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.com.lb,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.com.lv,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.com.ly,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.com.mk,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.com.mt,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.com.mx,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.com.my,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.com.ng,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.com.ni,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.com.om,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.com.pa,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.com.pe,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.com.ph,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.com.pk,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.com.pt,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.com.py,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.com.qa,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.com.ro,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.com.sa,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.com.sg,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.com.sv,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.com.tn,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.com.tr,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.com.tw,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.com.ua,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.com.uy,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.com.ve,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.cr,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.cz,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.de,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.dk,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.ee,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.es,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.fi,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.fr,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.ge,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.googleapis.com,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.gr,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.gt,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.hk,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.hr,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.hu,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.ie,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.in,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.iq,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.is,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.it,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.jo,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.jp,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.kr,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.kz,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.la,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.lk,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.lt,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.lu,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.lv,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.ly,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.ma,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.md,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.me,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.mk,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.mn,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.mx,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.my,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.ng,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.ni,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.nl,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.no,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.pa,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.pe,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.ph,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.pk,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.pl,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.pr,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.pt,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.qa,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.ro,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.rs,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.ru,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.sa,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.se,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.sg,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.si,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.sk,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.sn,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.soy,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.sv,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.tn,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.tv,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.ua,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.ug,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.uy,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.vn,📺 YouTube
+  - DOMAIN-SUFFIX,youtubeeducation.com,📺 YouTube
+  - DOMAIN-SUFFIX,youtubeembeddedplayer.googleapis.com,📺 YouTube
+  - DOMAIN-SUFFIX,youtubefanfest.com,📺 YouTube
+  - DOMAIN-SUFFIX,youtubegaming.com,📺 YouTube
+  - DOMAIN-SUFFIX,youtubego.co.id,📺 YouTube
+  - DOMAIN-SUFFIX,youtubego.co.in,📺 YouTube
+  - DOMAIN-SUFFIX,youtubego.com,📺 YouTube
+  - DOMAIN-SUFFIX,youtubego.com.br,📺 YouTube
+  - DOMAIN-SUFFIX,youtubego.id,📺 YouTube
+  - DOMAIN-SUFFIX,youtubego.in,📺 YouTube
+  - DOMAIN-SUFFIX,youtubei.googleapis.com,📺 YouTube
+  - DOMAIN-SUFFIX,youtubekids.com,📺 YouTube
+  - DOMAIN-SUFFIX,youtubemobilesupport.com,📺 YouTube
+  - DOMAIN-SUFFIX,yt.be,📺 YouTube
+  - DOMAIN-SUFFIX,ytimg.com,📺 YouTube
+  - DOMAIN-KEYWORD,youtube,📺 YouTube
+  - IP-CIDR,172.110.32.0/21,📺 YouTube,no-resolve
+  - IP-CIDR,216.73.80.0/20,📺 YouTube,no-resolve
+  - IP-CIDR6,2620:120:e000::/40,📺 YouTube,no-resolve  
+  - DOMAIN,lf16-effectcdn.byteeffecttos-g.com,🎵 TikTok
+  - DOMAIN,lf16-pkgcdn.pitaya-clientai.com,🎵 TikTok
+  - DOMAIN,p16-tiktokcdn-com.akamaized.net,🎵 TikTok
+  - DOMAIN,trae-api-sg.mchost.guru,🎵 TikTok
+  - DOMAIN-SUFFIX,bytedapm.com,🎵 TikTok
+  - DOMAIN-SUFFIX,bytegecko-i18n.com,🎵 TikTok
+  - DOMAIN-SUFFIX,byteintlapi.com,🎵 TikTok
+  - DOMAIN-SUFFIX,byteoversea.com,🎵 TikTok
+  - DOMAIN-SUFFIX,capcut.com,🎵 TikTok
+  - DOMAIN-SUFFIX,ibytedtos.com,🎵 TikTok
+  - DOMAIN-SUFFIX,ibyteimg.com,🎵 TikTok
+  - DOMAIN-SUFFIX,ipstatp.com,🎵 TikTok
+  - DOMAIN-SUFFIX,isnssdk.com,🎵 TikTok
+  - DOMAIN-SUFFIX,marscode.com,🎵 TikTok
+  - DOMAIN-SUFFIX,muscdn.com,🎵 TikTok
+  - DOMAIN-SUFFIX,musical.ly,🎵 TikTok
+  - DOMAIN-SUFFIX,sgpstatp.com,🎵 TikTok
+  - DOMAIN-SUFFIX,snssdk.com,🎵 TikTok
+  - DOMAIN-SUFFIX,tik-tokapi.com,🎵 TikTok
+  - DOMAIN-SUFFIX,tiktok.com,🎵 TikTok
+  - DOMAIN-SUFFIX,tiktokcdn-us.com,🎵 TikTok
+  - DOMAIN-SUFFIX,tiktokcdn.com,🎵 TikTok
+  - DOMAIN-SUFFIX,tiktokd.net,🎵 TikTok
+  - DOMAIN-SUFFIX,tiktokd.org,🎵 TikTok
+  - DOMAIN-SUFFIX,tiktokmusic.app,🎵 TikTok
+  - DOMAIN-SUFFIX,tiktokv.com,🎵 TikTok
+  - DOMAIN-SUFFIX,tiktokv.us,🎵 TikTok
+  - DOMAIN-SUFFIX,trae.ai,🎵 TikTok
+  - DOMAIN-SUFFIX,ttwebview.com,🎵 TikTok
+  - DOMAIN-KEYWORD,musical.ly,🎵 TikTok
+  - DOMAIN-KEYWORD,tiktok,🎵 TikTok
+  - PROCESS-NAME,com.zhiliaoapp.musically,🎵 TikTok
+  - DOMAIN,browser-intake-datadoghq.com,🤖 OpenAI
+  - DOMAIN,chat.openai.com.cdn.cloudflare.net,🤖 OpenAI
+  - DOMAIN,openai-api.arkoselabs.com,🤖 OpenAI
+  - DOMAIN,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net,🤖 OpenAI
+  - DOMAIN,openaicomproductionae4b.blob.core.windows.net,🤖 OpenAI
+  - DOMAIN,production-openaicom-storage.azureedge.net,🤖 OpenAI
+  - DOMAIN,static.cloudflareinsights.com,🤖 OpenAI
+  - DOMAIN-SUFFIX,ai.com,🤖 OpenAI
+  - DOMAIN-SUFFIX,algolia.net,🤖 OpenAI
+  - DOMAIN-SUFFIX,api.statsig.com,🤖 OpenAI
+  - DOMAIN-SUFFIX,auth0.com,🤖 OpenAI
+  - DOMAIN-SUFFIX,chatgpt.com,🤖 OpenAI
+  - DOMAIN-SUFFIX,chatgpt.livekit.cloud,🤖 OpenAI
+  - DOMAIN-SUFFIX,client-api.arkoselabs.com,🤖 OpenAI
+  - DOMAIN-SUFFIX,events.statsigapi.net,🤖 OpenAI
+  - DOMAIN-SUFFIX,featuregates.org,🤖 OpenAI
+  - DOMAIN-SUFFIX,host.livekit.cloud,🤖 OpenAI
+  - DOMAIN-SUFFIX,identrust.com,🤖 OpenAI
+  - DOMAIN-SUFFIX,intercom.io,🤖 OpenAI
+  - DOMAIN-SUFFIX,intercomcdn.com,🤖 OpenAI
+  - DOMAIN-SUFFIX,launchdarkly.com,🤖 OpenAI
+  - DOMAIN-SUFFIX,oaistatic.com,🤖 OpenAI
+  - DOMAIN-SUFFIX,oaiusercontent.com,🤖 OpenAI
+  - DOMAIN-SUFFIX,observeit.net,🤖 OpenAI
+  - DOMAIN-SUFFIX,openai.com,🤖 OpenAI
+  - DOMAIN-SUFFIX,openaiapi-site.azureedge.net,🤖 OpenAI
+  - DOMAIN-SUFFIX,openaicom.imgix.net,🤖 OpenAI
+  - DOMAIN-SUFFIX,segment.io,🤖 OpenAI
+  - DOMAIN-SUFFIX,sentry.io,🤖 OpenAI
+  - DOMAIN-SUFFIX,stripe.com,🤖 OpenAI
+  - DOMAIN-SUFFIX,turn.livekit.cloud,🤖 OpenAI
+  - DOMAIN-KEYWORD,openai,🤖 OpenAI
+  - IP-CIDR,24.199.123.28/32,🤖 OpenAI,no-resolve
+  - IP-CIDR,64.23.132.171/32,🤖 OpenAI,no-resolve
+  - IP-ASN,20473,🤖 OpenAI,no-resolve  
   - DOMAIN-SUFFIX,edgedatg.com,🌍 国外媒体
   - DOMAIN-SUFFIX,go.com,🌍 国外媒体
   - DOMAIN-KEYWORD,anthropic,🌍 国外媒体
@@ -3850,5 +5023,5 @@ rules:
   - IP-CIDR,101.198.208.0/20,🎯 全球直连,no-resolve
   - IP-CIDR,101.199.196.0/22,🎯 全球直连,no-resolve
   - GEOIP,CN,🎯 全球直连
-  - MATCH,🐟 漏网之鱼
+  - MATCH,🦄 兜底策略
 
