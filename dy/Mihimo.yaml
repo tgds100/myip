@@ -31,7 +31,6 @@ dns:
     - localhost.sec.qq.com
     - localhost.ptlogin2.qq.com
     - +.msftconnecttest.com
-    
 tun:
   enable: true
   stack: system
@@ -44,7 +43,6 @@ tun:
     - 8.8.4.4
     - 114.114.114.114
     - 180.76.76.76
-
 proxies:
   - {"name":"TG频道：t.me/tgds100丨【免费流量】","type":"vmess","server":"zgo.tazhi.de","port":17265,"cipher":"auto","uuid":"cc1ec9ad-e11f-410a-a9f7-bc7e5b42000e","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"zgo.tazhi.de","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"zgo.tazhi.de"}}}
   - {"name":"定期维护丨🚀 剩余流量：1024GB","type":"vmess","server":"47.83.16.29","port":30298,"cipher":"auto","uuid":"602272c0-1916-41fe-9b53-f1efd149f9bf","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/"}}
