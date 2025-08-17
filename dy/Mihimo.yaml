@@ -156,7 +156,6 @@ proxy-groups:
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
-      - 🎯 全球直连
       - TG频道：t.me/tgds100
       - 🇯🇵 日本丨隐私指数89%
       - 🇭🇰 中國香港丨Cloudflare Warp
@@ -194,7 +193,6 @@ proxy-groups:
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
-      - 🎯 全球直连
       - TG频道：t.me/tgds100
       - 🇯🇵 日本丨隐私指数89%
       - 🇭🇰 中國香港丨Cloudflare Warp
@@ -230,9 +228,8 @@ proxy-groups:
   - name: 📺 YouTube
     type: select
     proxies:
-      - 🔰 节点选择
+      - 🔰 节点选择 
       - ♻️ 自动选择
-      - 🎯 全球直连
       - TG频道：t.me/tgds100
       - 🇯🇵 日本丨隐私指数89%
       - 🇭🇰 中國香港丨Cloudflare Warp
@@ -270,7 +267,6 @@ proxy-groups:
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
-      - 🎯 全球直连
       - TG频道：t.me/tgds100
       - 🇯🇵 日本丨隐私指数89%
       - 🇭🇰 中國香港丨Cloudflare Warp
@@ -306,9 +302,8 @@ proxy-groups:
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
-      - 🔰 节点选择
+      - 🔰 节点选择 
       - ♻️ 自动选择
-      - 🎯 全球直连
       - TG频道：t.me/tgds100
       - 🇯🇵 日本丨隐私指数89%
       - 🇭🇰 中國香港丨Cloudflare Warp
@@ -344,9 +339,8 @@ proxy-groups:
   - name: 🍎 苹果服务
     type: select
     proxies:
-      - 🔰 节点选择
+      - 🔰 节点选择 
       - ♻️ 自动选择
-      - 🎯 全球直连
       - TG频道：t.me/tgds100
       - 🇯🇵 日本丨隐私指数89%
       - 🇭🇰 中國香港丨Cloudflare Warp
@@ -382,9 +376,8 @@ proxy-groups:
   - name: 📡 谷歌服务
     type: select
     proxies:
-      - 🔰 节点选择
+      - 🔰 节点选择 
       - ♻️ 自动选择
-      - 🎯 全球直连
       - TG频道：t.me/tgds100
       - 🇯🇵 日本丨隐私指数89%
       - 🇭🇰 中國香港丨Cloudflare Warp
@@ -420,9 +413,8 @@ proxy-groups:
   - name: 📢 谷歌FCM
     type: select
     proxies:
-      - 🔰 节点选择
+      - 🔰 节点选择 
       - ♻️ 自动选择
-      - 🎯 全球直连
       - TG频道：t.me/tgds100
       - 🇯🇵 日本丨隐私指数89%
       - 🇭🇰 中國香港丨Cloudflare Warp
@@ -463,9 +455,8 @@ proxy-groups:
   - name: 🦄 兜底策略
     type: select
     proxies:
-      - 🔰 节点选择
+      - 🔰 节点选择 
       - ♻️ 自动选择
-      - 🎯 全球直连
       - TG频道：t.me/tgds100
       - 🇯🇵 日本丨隐私指数89%
       - 🇭🇰 中國香港丨Cloudflare Warp
