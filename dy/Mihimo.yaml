@@ -116,8 +116,8 @@ proxy-groups:
   - name: ♻️ 自动选择
     type: url-test
     url: https://www.apple.com/library/test/success.html
-    interval: 300
-    tolerance: 50
+    interval: 1000
+    tolerance: 3
     proxies:
       - 🏳️‍🌈 TG频道：t.me/tgds100丨【免费流量】
       - 🇯🇵 日本丨隐私指数89%
