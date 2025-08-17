@@ -117,7 +117,7 @@ proxy-groups:
   - name: ♻️ 自动选择
     type: url-test
     url: https://www.apple.com/library/test/success.html
-    interval: 1000
+    interval: 500
     proxies:
       - TG频道：t.me/tgds100
       - 🇯🇵 日本丨隐私指数89%
@@ -151,17 +151,6 @@ proxy-groups:
       - 🇫🇷 法国-1
       - 🇫🇷 法国-2
       - 🇩🇪 德国
-  - name: 🛑 全球拦截
-    type: select
-    proxies:
-      - REJECT
-      - DIRECT
-  - name: 🎯 全球直连
-    type: select
-    proxies:
-      - DIRECT
-      - 🚀 节点选择
-      - ♻️ 自动选择
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -504,8 +493,17 @@ proxy-groups:
       - 🇫🇷 法国-1
       - 🇫🇷 法国-2
       - 🇩🇪 德国
-
-
+  - name: 🛑 全球拦截
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+  - name: 🎯 全球直连
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 节点选择
+      - ♻️ 自动选择
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
