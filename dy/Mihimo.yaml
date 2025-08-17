@@ -455,6 +455,11 @@ proxy-groups:
       - 🇫🇷 法国-1
       - 🇫🇷 法国-2
       - 🇩🇪 德国
+  - name: 🛑 全球拦截
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
   - name: 🦄 兜底策略
     type: select
     proxies:
@@ -493,15 +498,7 @@ proxy-groups:
       - 🇫🇷 法国-1
       - 🇫🇷 法国-2
       - 🇩🇪 德国
-  - name: 🛑 全球拦截
-    type: select
-    proxies:
-      - REJECT
-      - DIRECT
-  - name: 🎯 全球直连
-    type: select
-    proxies:
-      - DIRECT
+
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
