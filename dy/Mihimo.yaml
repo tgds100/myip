@@ -53,7 +53,7 @@ proxies:
   - {name: 🇺🇸 美国-2丨Google中国, server: m.cnmjin.net, port: 16648, type: vmess, uuid: ec252ba1-4da5-4d8a-83fd-0dd90fe1c71f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: e5f3f0d48113a061f7828bd0e80a2784.mobgslb.tbcache.com}}}
   - {name: 🇺🇸 美国-3丨Google中国, server: t.cnmjcn.cyou, port: 16648, type: vmess, uuid: ec252ba1-4da5-4d8a-83fd-0dd90fe1c71f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: e5f3f0d48113a061f7828bd0e80a2784.mobgslb.tbcache.com}}}
   - {name: 🇺🇸 美国-4丨纽约, server: xc124-1.meiziba5566.com, port: 443, type: vmess, uuid: 12cd1ec1-c3ea-4cd5-dd57-eea3e049bc17, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /12cd1ec1, headers: {Host: xc124-1.meiziba5566.com}}}
-  - {name: 🇺🇸 美国-5丨纽约, server: xc152.meiziba5566.com, port: 443, type: vmess, uuid: 2083a62e-7cb4-4f6b-ee25-9687c31d6a8a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /2083a62e, headers: {Host: xc152.meiziba5566.com}}}
+  - {name: 🇺🇸 美国-5丨华盛顿/加州, server: 104.17.255.165, port: 443, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false,  servername: y6d0kj.xh0y5j4bh.9sui1iu8a.j5t01.dm088cegwl5.brn29uu2r.ey1.5trr.xu5jnfj1pefy.33qlz.cplori.pn0arphdq.zjseoy6.lip1j3.srq3186jw1.4plnc5qg6.qytu9i7dx.w5k0fb2dec.ltbo.x6v6cy.h66fa6975drhstnzyuxljuou9gyd1lodi24pd4.nudt.edu.kg, network: ws, ws-opts: {path: /snippets/?ip=72.13.122.137:443, headers: {Host: y6d0kj.xh0y5j4bh.9sui1iu8a.j5t01.dm088cegwl5.brn29uu2r.ey1.5trr.xu5jnfj1pefy.33qlz.cplori.pn0arphdq.zjseoy6.lip1j3.srq3186jw1.4plnc5qg6.qytu9i7dx.w5k0fb2dec.ltbo.x6v6cy.h66fa6975drhstnzyuxljuou9gyd1lodi24pd4.nudt.edu.kg}}}
   - {name: 🇯🇵 日本-1, server: 43.133.10.236, port: 33405, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, tfo: false, skip-cert-verify: false, servername: d61kid.y76aptsup85f.16s.p40bin.soqz8deh0.uc7bwd.0i8tzhv.00wa03p8074d.vckvvrgd9y3k.2sagz7z1ksot.aq5knjrzqh.x6szqh4.5avw6r5p.4b5ka674kspi.axilfawoz6zc.neun0y.bbaqsnew.tbs.7vuu1v2ljuc.2qzm6u2gia.3tcecuxi05h77wy.nudt.edu.kg, network: ws, ws-opts: {path: "/snippets/?ip=43.133.10.236:33405", headers: {Host: d61kid.y76aptsup85f.16s.p40bin.soqz8deh0.uc7bwd.0i8tzhv.00wa03p8074d.vckvvrgd9y3k.2sagz7z1ksot.aq5knjrzqh.x6szqh4.5avw6r5p.4b5ka674kspi.axilfawoz6zc.neun0y.bbaqsnew.tbs.7vuu1v2ljuc.2qzm6u2gia.3tcecuxi05h77wy.nudt.edu.kg}}}
   - {name: 🇯🇵 日本-2, server: 13.230.34.30, port: 443, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, tfo: false, skip-cert-verify: false, servername: 3c8rn7.jx6fc1cj4cz.d4s9i9x9.ffk.uleq1mm.nhys9y5gh3c.x7nkqjd.7tiha0a.n2kivga.cfns6wpb5hhb.p6zk.31phkskaz.baw52r6.w4j.0abynmtzdb6.ccvkew765.6he.0963fdi934.llxrvri.rey0fn.ld9bgtphry37oku3z7u8ilmnez8mt2s9og5vzma.nudt.edu.kg, network: ws, ws-opts: {path: "/snippets/?ip=13.230.34.30:443", headers: {Host: 3c8rn7.jx6fc1cj4cz.d4s9i9x9.ffk.uleq1mm.nhys9y5gh3c.x7nkqjd.7tiha0a.n2kivga.cfns6wpb5hhb.p6zk.31phkskaz.baw52r6.w4j.0abynmtzdb6.ccvkew765.6he.0963fdi934.llxrvri.rey0fn.ld9bgtphry37oku3z7u8ilmnez8mt2s9og5vzma.nudt.edu.kg}}}
   - {name: 🇭🇰 香港-1, server: 154.37.216.213, port: 48164, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, tfo: false, skip-cert-verify: false, servername: j9r5p5.p8x.gqer5.63zk1me67m1.s3bgd.pac38zu78.tn5a3.gx1rvdw1.mqeskmh.fxj.e5z9qbfryh4.ft2qyks.dka.msj397cooy69.ex5o5sg17rxz.zeno.hh6w6b9sm6.g43sg2gy.vbtt.w6tpm94rixl3.uxm02wkfojdya7xmuu4gp3xjela8wrdr4fpti33lao.nudt.edu.kg, network: ws, ws-opts: {path: "/snippets?ip=154.37.216.213:48164", headers: {Host: j9r5p5.p8x.gqer5.63zk1me67m1.s3bgd.pac38zu78.tn5a3.gx1rvdw1.mqeskmh.fxj.e5z9qbfryh4.ft2qyks.dka.msj397cooy69.ex5o5sg17rxz.zeno.hh6w6b9sm6.g43sg2gy.vbtt.w6tpm94rixl3.uxm02wkfojdya7xmuu4gp3xjela8wrdr4fpti33lao.nudt.edu.kg}}}
@@ -90,7 +90,7 @@ proxy-groups:
       - 🇺🇸 美国-2丨Google中国
       - 🇺🇸 美国-3丨Google中国
       - 🇺🇸 美国-4丨纽约
-      - 🇺🇸 美国-5丨纽约
+      - 🇺🇸 美国-5丨华盛顿/加州
       - 🇯🇵 日本-1
       - 🇯🇵 日本-2
       - 🇭🇰 香港-1
@@ -126,7 +126,7 @@ proxy-groups:
       - 🇺🇸 美国-2丨Google中国
       - 🇺🇸 美国-3丨Google中国
       - 🇺🇸 美国-4丨纽约
-      - 🇺🇸 美国-5丨纽约
+      - 🇺🇸 美国-5丨华盛顿/加州
       - 🇯🇵 日本-1
       - 🇯🇵 日本-2
       - 🇭🇰 香港-1
@@ -162,7 +162,7 @@ proxy-groups:
       - 🇺🇸 美国-2丨Google中国
       - 🇺🇸 美国-3丨Google中国
       - 🇺🇸 美国-4丨纽约
-      - 🇺🇸 美国-5丨纽约
+      - 🇺🇸 美国-5丨华盛顿/加州
       - 🇯🇵 日本-1
       - 🇯🇵 日本-2
       - 🇭🇰 香港-1
@@ -197,7 +197,7 @@ proxy-groups:
       - 🇺🇸 美国-2丨Google中国
       - 🇺🇸 美国-3丨Google中国
       - 🇺🇸 美国-4丨纽约
-      - 🇺🇸 美国-5丨纽约
+      - 🇺🇸 美国-5丨华盛顿/加州
       - 🇯🇵 日本-1
       - 🇯🇵 日本-2
       - 🇭🇰 香港-1
@@ -232,7 +232,7 @@ proxy-groups:
       - 🇺🇸 美国-2丨Google中国
       - 🇺🇸 美国-3丨Google中国
       - 🇺🇸 美国-4丨纽约
-      - 🇺🇸 美国-5丨纽约
+      - 🇺🇸 美国-5丨华盛顿/加州
       - 🇯🇵 日本-1
       - 🇯🇵 日本-2
       - 🇭🇰 香港-1
@@ -267,7 +267,7 @@ proxy-groups:
       - 🇺🇸 美国-2丨Google中国
       - 🇺🇸 美国-3丨Google中国
       - 🇺🇸 美国-4丨纽约
-      - 🇺🇸 美国-5丨纽约
+      - 🇺🇸 美国-5丨华盛顿/加州
       - 🇯🇵 日本-1
       - 🇯🇵 日本-2
       - 🇭🇰 香港-1
@@ -302,7 +302,7 @@ proxy-groups:
       - 🇺🇸 美国-2丨Google中国
       - 🇺🇸 美国-3丨Google中国
       - 🇺🇸 美国-4丨纽约
-      - 🇺🇸 美国-5丨纽约
+      - 🇺🇸 美国-5丨华盛顿/加州
       - 🇯🇵 日本-1
       - 🇯🇵 日本-2
       - 🇭🇰 香港-1
@@ -337,7 +337,7 @@ proxy-groups:
       - 🇺🇸 美国-2丨Google中国
       - 🇺🇸 美国-3丨Google中国
       - 🇺🇸 美国-4丨纽约
-      - 🇺🇸 美国-5丨纽约
+      - 🇺🇸 美国-5丨华盛顿/加州
       - 🇯🇵 日本-1
       - 🇯🇵 日本-2
       - 🇭🇰 香港-1
@@ -372,7 +372,7 @@ proxy-groups:
       - 🇺🇸 美国-2丨Google中国
       - 🇺🇸 美国-3丨Google中国
       - 🇺🇸 美国-4丨纽约
-      - 🇺🇸 美国-5丨纽约
+      - 🇺🇸 美国-5丨华盛顿/加州
       - 🇯🇵 日本-1
       - 🇯🇵 日本-2
       - 🇭🇰 香港-1
@@ -408,7 +408,7 @@ proxy-groups:
       - 🇺🇸 美国-2丨Google中国
       - 🇺🇸 美国-3丨Google中国
       - 🇺🇸 美国-4丨纽约
-      - 🇺🇸 美国-5丨纽约
+      - 🇺🇸 美国-5丨华盛顿/加州
       - 🇯🇵 日本-1
       - 🇯🇵 日本-2
       - 🇭🇰 香港-1
@@ -444,7 +444,7 @@ proxy-groups:
       - 🇺🇸 美国-2丨Google中国
       - 🇺🇸 美国-3丨Google中国
       - 🇺🇸 美国-4丨纽约
-      - 🇺🇸 美国-5丨纽约
+      - 🇺🇸 美国-5丨华盛顿/加州
       - 🇯🇵 日本-1
       - 🇯🇵 日本-2
       - 🇭🇰 香港-1
@@ -496,7 +496,7 @@ proxy-groups:
       - 🇺🇸 美国-2丨Google中国
       - 🇺🇸 美国-3丨Google中国
       - 🇺🇸 美国-4丨纽约
-      - 🇺🇸 美国-5丨纽约
+      - 🇺🇸 美国-5丨华盛顿/加州
       - 🇯🇵 日本-1
       - 🇯🇵 日本-2
       - 🇭🇰 香港-1
