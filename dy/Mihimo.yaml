@@ -72,6 +72,7 @@ proxies:
   - {name: 🇸🇬 新加坡-1, server: 13.229.57.45, port: 13002, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, tfo: false, skip-cert-verify: false, servername: n6j3yp.duk0165l.p1bbt1.44w6mpr06m.tjxlxynbo.lnawqx5wfo.f1tbcbl.4tbilrtya.aah8g7.qpw2.lwpari2kg8ll.jnishj.6bd.vlidviky.jzl.f9mmkph.ogug6wb6ob7.wfa4158o.rgqfc.4juekq.rb466m22eficdpx90knpfyed67cg1i87nqrlk3quam1.nudt.edu.kg, network: ws, ws-opts: {path: "/snippets/?ip=13.229.57.45:13002", headers: {Host: n6j3yp.duk0165l.p1bbt1.44w6mpr06m.tjxlxynbo.lnawqx5wfo.f1tbcbl.4tbilrtya.aah8g7.qpw2.lwpari2kg8ll.jnishj.6bd.vlidviky.jzl.f9mmkph.ogug6wb6ob7.wfa4158o.rgqfc.4juekq.rb466m22eficdpx90knpfyed67cg1i87nqrlk3quam1.nudt.edu.kg}}}
   - {name: 🇸🇬 新加坡-2, server: 18.143.93.7, port: 13242, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, tfo: false, skip-cert-verify: false, servername: ejhad4.h7fqhw4.13eexhyv.8fnxgjocehq.6i3h.870wh.se038h63ozi.q9e9n7ad5yww.ittb2dyr.k1i.4rjmrlk0s614.oz52.9p6vrogyi.3phmw.ylt1.xl1o0ymy.4md2u90.h5a.gykwo3156sk.b7xyz.opd53k394vkg7cx9kusgz4hryuw7rsoj84b40y8kmfdx.nudt.edu.kg, network: ws, ws-opts: {path: "/snippets/?ip=18.143.93.7:13242", headers: {Host: ejhad4.h7fqhw4.13eexhyv.8fnxgjocehq.6i3h.870wh.se038h63ozi.q9e9n7ad5yww.ittb2dyr.k1i.4rjmrlk0s614.oz52.9p6vrogyi.3phmw.ylt1.xl1o0ymy.4md2u90.h5a.gykwo3156sk.b7xyz.opd53k394vkg7cx9kusgz4hryuw7rsoj84b40y8kmfdx.nudt.edu.kg}}}
   - {name: 🇸🇬 新加坡-3丨ipv6, server: 2a05:dfc1:8b85:6061:be24:11ff:fe87:63c5, port: 443, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, tfo: false, skip-cert-verify: false, servername: 1ael5o.r5c4.7r38ql.fenhvpb.n2z0d.1gm0ypotunp8.r5pr.rog5syaqbs.ng96lan6jkeu.jmqj18pnb0m.il2d9nocidzs.54s5v57r9wo.w08zfj5.lyo8x34.9hbsx27rki.ksh51ws.vf15.bzyr2.6q3cwqm60fg.ljvcdcu0udx.yq7tb4m2zmoykrq32h5itwuii.nudt.edu.kg, network: ws, ws-opts: {path: "/snippets/?ip=[2a05:dfc1:8b85:6061:be24:11ff:fe87:63c5]:443", headers: {Host: 1ael5o.r5c4.7r38ql.fenhvpb.n2z0d.1gm0ypotunp8.r5pr.rog5syaqbs.ng96lan6jkeu.jmqj18pnb0m.il2d9nocidzs.54s5v57r9wo.w08zfj5.lyo8x34.9hbsx27rki.ksh51ws.vf15.bzyr2.6q3cwqm60fg.ljvcdcu0udx.yq7tb4m2zmoykrq32h5itwuii.nudt.edu.kg}}}
+  - {name: 🇸🇬 新加坡-4,"type":"vless","server":"119.161.102.91","port":443,"udp":true,"uuid":"0c24b03d-b9a4-4613-c39b-70093dc9c7a6","tls":true,"servername":"intel.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"MnYWz6QNTmz7FlRbOsdz6AcBzysQHEH66pVplUxLTUQ"},"client-fingerprint":"safari"}
   - {name: 🇫🇷 法国-1, server: 103.56.60.156, port: 6008, type: vless, uuid: fb17858d-cd6b-4f69-aa82-a478ee8c9284, tls: true, tfo: false, skip-cert-verify: false, network: h2, h2-opts: {path: 69e3b5a7, host: [rmyfr.ovo2024.dpdns.org]}}
   - {name: 🇫🇷 法国-2, server: 2a05:dfc1:8b85:6061:be24:11ff:fe87:63c5, port: 443, type: trojan, password: f69dae9e-371b-4571-b64b-2e7c9abdbafb, sni: g2.ikun.us.kg, skip-cert-verify: false, network: ws, ws-opts: {path: "/trojan-argo?ed=2560", headers: {Host: g2.ikun.us.kg}}}
   - {name: 🇩🇪 德国, server: web.xhamster.biz.id, port: 443, type: vless, uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1, tls: true, tfo: false, skip-cert-verify: false, servername: web.xhamster.biz.id, client-fingerprint: chrome, network: ws, ws-opts: {path: /Free-CF-Proxy-AT4, headers: {Host: web.xhamster.biz.id}}}
@@ -110,6 +111,7 @@ proxy-groups:
       - 🇸🇬 新加坡-1
       - 🇸🇬 新加坡-2
       - 🇸🇬 新加坡-3丨ipv6
+      - 🇸🇬 新加坡-4
       - 🇫🇷 法国-1
       - 🇫🇷 法国-2
       - 🇩🇪 德国
@@ -147,6 +149,7 @@ proxy-groups:
       - 🇸🇬 新加坡-1
       - 🇸🇬 新加坡-2
       - 🇸🇬 新加坡-3丨ipv6
+      - 🇸🇬 新加坡-4
       - 🇫🇷 法国-1
       - 🇫🇷 法国-2
       - 🇩🇪 德国
@@ -184,6 +187,7 @@ proxy-groups:
       - 🇸🇬 新加坡-1
       - 🇸🇬 新加坡-2
       - 🇸🇬 新加坡-3丨ipv6
+      - 🇸🇬 新加坡-4
       - 🇫🇷 法国-1
       - 🇫🇷 法国-2
       - 🇩🇪 德国
@@ -220,6 +224,7 @@ proxy-groups:
       - 🇸🇬 新加坡-1
       - 🇸🇬 新加坡-2
       - 🇸🇬 新加坡-3丨ipv6
+      - 🇸🇬 新加坡-4
       - 🇫🇷 法国-1
       - 🇫🇷 法国-2
       - 🇩🇪 德国
@@ -256,6 +261,7 @@ proxy-groups:
       - 🇸🇬 新加坡-1
       - 🇸🇬 新加坡-2
       - 🇸🇬 新加坡-3丨ipv6
+      - 🇸🇬 新加坡-4
       - 🇫🇷 法国-1
       - 🇫🇷 法国-2
       - 🇩🇪 德国
@@ -292,6 +298,7 @@ proxy-groups:
       - 🇸🇬 新加坡-1
       - 🇸🇬 新加坡-2
       - 🇸🇬 新加坡-3丨ipv6
+      - 🇸🇬 新加坡-4
       - 🇫🇷 法国-1
       - 🇫🇷 法国-2
       - 🇩🇪 德国
@@ -328,6 +335,7 @@ proxy-groups:
       - 🇸🇬 新加坡-1
       - 🇸🇬 新加坡-2
       - 🇸🇬 新加坡-3丨ipv6
+      - 🇸🇬 新加坡-4
       - 🇫🇷 法国-1
       - 🇫🇷 法国-2
       - 🇩🇪 德国
@@ -364,6 +372,7 @@ proxy-groups:
       - 🇸🇬 新加坡-1
       - 🇸🇬 新加坡-2
       - 🇸🇬 新加坡-3丨ipv6
+      - 🇸🇬 新加坡-4
       - 🇫🇷 法国-1
       - 🇫🇷 法国-2
       - 🇩🇪 德国
@@ -400,6 +409,7 @@ proxy-groups:
       - 🇸🇬 新加坡-1
       - 🇸🇬 新加坡-2
       - 🇸🇬 新加坡-3丨ipv6
+      - 🇸🇬 新加坡-4
       - 🇫🇷 法国-1
       - 🇫🇷 法国-2
       - 🇩🇪 德国
@@ -437,6 +447,7 @@ proxy-groups:
       - 🇸🇬 新加坡-1
       - 🇸🇬 新加坡-2
       - 🇸🇬 新加坡-3丨ipv6
+      - 🇸🇬 新加坡-4
       - 🇫🇷 法国-1
       - 🇫🇷 法国-2
       - 🇩🇪 德国
@@ -474,6 +485,7 @@ proxy-groups:
       - 🇸🇬 新加坡-1
       - 🇸🇬 新加坡-2
       - 🇸🇬 新加坡-3丨ipv6
+      - 🇸🇬 新加坡-4
       - 🇫🇷 法国-1
       - 🇫🇷 法国-2
       - 🇩🇪 德国
@@ -527,6 +539,7 @@ proxy-groups:
       - 🇸🇬 新加坡-1
       - 🇸🇬 新加坡-2
       - 🇸🇬 新加坡-3丨ipv6
+      - 🇸🇬 新加坡-4
       - 🇫🇷 法国-1
       - 🇫🇷 法国-2
       - 🇩🇪 德国
