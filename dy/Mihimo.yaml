@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2025-08-20 10:39:49
+# 创建时间：2025-08-20 10:49:55
 # 使用模版：V2RaySE 默认模版
-# 节点数量：36
+# 节点数量：35
 ####################################
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
@@ -115,7 +115,6 @@ proxies:
   - {"name":"🇸🇬 新加坡-4","type":"vless","server":"2a05:dfc1:8b85:6061:be24:11ff:fe87:63c5","port":443,"uuid":"9ed0f660-2fd6-4016-a6df-95df20598658","tls":true,"servername":"quiz.int.vidio.com.my-vpnvip.my.id","network":"ws","ws-opts":{"path":"/8.222.192.60-30021","headers":{"host":"quiz.int.vidio.com.my-vpnvip.my.id"}},"client-fingerprint":"chrome"}
   - {"name":"🇸🇬 新加坡-5","type":"vless","server":"18.143.93.7","port":13242,"uuid":"3b40219d-541c-4a8e-aa19-377bd68f1f62","tls":true,"servername":"cache.netflix.com.unlimited.spauu.web.id","network":"ws","ws-opts":{"path":"/vl=13.229.57.45=13002","headers":{"host":"cache.netflix.com.unlimited.spauu.web.id"}},"client-fingerprint":"chrome"}
   - {"name":"🇸🇬 新加坡-6","type":"trojan","server":"36.156.102.125","port":406,"udp":true,"password":"253bc477d4e43c209f2d427272968280","sni":"www.baidu.com","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇧🇶 北欧","type":"vless","server":"web.xhamster.biz.id","port":443,"uuid":"aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1","tls":true,"servername":"web.xhamster.biz.id","network":"ws","ws-opts":{"path":"/Free-CF-Proxy-AT4","headers":{"host":"web.xhamster.biz.id"}},"client-fingerprint":"chrome"}
   - {"name":"🇩🇪 德国","type":"vless","server":"2.56.245.9","port":20357,"uuid":"1036ed52-d1fe-410e-a961-0db84299dd5e","tls":false,"network":"ws","ws-opts":{"path":"/"}}
   - {"name":"🇫🇷 法国-1","type":"trojan","server":"[2a05","port":null,"udp":true,"password":"f69dae9e-371b-4571-b64b-2e7c9abdbafb","sni":"g2.ikun.us.kg","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/trojan-argo","headers":{"host":"g2.ikun.us.kg"}},"alpn":["h3","h2","http/1.1"]}
   - {"name":"🇫🇷  法国-2丨巴黎","type":"vless","server":"fr.pixvpn.app","port":8443,"udp":true,"uuid":"f6fa8cbd-6f5a-4a2c-8a28-9a1e6f48bdd6","tls":true,"servername":"jd.com","flow":"xtls-rprx-vision","network":"grpc","grpc-opts":{"grpc-service-name":"grpc-jd"},"reality-opts":{"public-key":"SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc","short-id":"41a4cee2c50c4fc3"},"client-fingerprint":"chrome"}
@@ -157,7 +156,6 @@ proxy-groups:
       - 🇸🇬 新加坡-4
       - 🇸🇬 新加坡-5
       - 🇸🇬 新加坡-6
-      - 🇧🇶 北欧
       - 🇩🇪 德国
       - 🇫🇷 法国-1
       - 🇫🇷  法国-2丨巴黎
@@ -199,7 +197,6 @@ proxy-groups:
       - 🇸🇬 新加坡-4
       - 🇸🇬 新加坡-5
       - 🇸🇬 新加坡-6
-      - 🇧🇶 北欧
       - 🇩🇪 德国
       - 🇫🇷 法国-1
       - 🇫🇷  法国-2丨巴黎
@@ -241,7 +238,6 @@ proxy-groups:
       - 🇸🇬 新加坡-4
       - 🇸🇬 新加坡-5
       - 🇸🇬 新加坡-6
-      - 🇧🇶 北欧
       - 🇩🇪 德国
       - 🇫🇷 法国-1
       - 🇫🇷  法国-2丨巴黎
@@ -282,7 +278,6 @@ proxy-groups:
       - 🇸🇬 新加坡-4
       - 🇸🇬 新加坡-5
       - 🇸🇬 新加坡-6
-      - 🇧🇶 北欧
       - 🇩🇪 德国
       - 🇫🇷 法国-1
       - 🇫🇷  法国-2丨巴黎
@@ -323,7 +318,6 @@ proxy-groups:
       - 🇸🇬 新加坡-4
       - 🇸🇬 新加坡-5
       - 🇸🇬 新加坡-6
-      - 🇧🇶 北欧
       - 🇩🇪 德国
       - 🇫🇷 法国-1
       - 🇫🇷  法国-2丨巴黎
@@ -364,7 +358,6 @@ proxy-groups:
       - 🇸🇬 新加坡-4
       - 🇸🇬 新加坡-5
       - 🇸🇬 新加坡-6
-      - 🇧🇶 北欧
       - 🇩🇪 德国
       - 🇫🇷 法国-1
       - 🇫🇷  法国-2丨巴黎
@@ -422,7 +415,6 @@ proxy-groups:
       - 🇸🇬 新加坡-4
       - 🇸🇬 新加坡-5
       - 🇸🇬 新加坡-6
-      - 🇧🇶 北欧
       - 🇩🇪 德国
       - 🇫🇷 法国-1
       - 🇫🇷  法国-2丨巴黎
