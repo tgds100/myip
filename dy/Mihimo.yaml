@@ -46,7 +46,7 @@ tun:
     - 180.76.76.76
 
 proxies:
-  - {name: 🏳️‍🌈 TG频道：t.me/tgds100丨【免费流量】, server: zgo.tazhi.de, port: 17265, type: vmess, uuid: cc1ec9ad-e11f-410a-a9f7-bc7e5b42000e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: zgo.tazhi.de, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: zgo.tazhi.de}}}
+  - {name: TG频道t.me/tgds100, server: zgo.tazhi.de, port: 17265, type: vmess, uuid: cc1ec9ad-e11f-410a-a9f7-bc7e5b42000e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: zgo.tazhi.de, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: zgo.tazhi.de}}}
   - {name: 🇯🇵 日本丨隐私指数89%, server: 2400:8902::f03c:95ff:fe9c:bd31, port: 26377, type: vless, uuid: dd4dc6e8-e5da-4612-86be-3905df10ac89, tls: true, tfo: false, skip-cert-verify: false, reality-opts: {public-key: U3VdQnvD5cQ8d2k3UwKOVtQfhUnXR39Rb4Q4yDsbc10, short-id: "297d5bc1" }, servername: yahoo.com, client-fingerprint: firefox, network: tcp}
   - {name: 🇭🇰 中國香港丨Cloudflare Warp, server: 103.3.26.26, port: 443, type: vless, uuid: 892ed740-7a04-4983-a7d7-70b9dac44f7f, tls: true, alpn: [h3%2Ch2%2Chttp%2F1.1], tfo: false, skip-cert-verify: false, servername: waphk.ovo2024.dpdns.org, client-fingerprint: chrome, network: h2, h2-opts: {path: 248cbff8, host: [waphk.ovo2024.dpdns.org]}}
   - {name: 🇺🇸 美国-1丨Google中国, server: planb.mojcn.com, port: 16648, type: vmess, uuid: ec252ba1-4da5-4d8a-83fd-0dd90fe1c71f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: e5f3f0d48113a061f7828bd0e80a2784.mobgslb.tbcache.com}}}
@@ -89,7 +89,7 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🏳️‍🌈 TG频道：t.me/tgds100丨【免费流量】
+      - TG频道t.me/tgds100
       - 🇯🇵 日本丨隐私指数89%
       - 🇭🇰 中國香港丨Cloudflare Warp
       - 🇺🇸 美国-1丨Google中国
@@ -129,7 +129,7 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - 🏳️‍🌈 TG频道：t.me/tgds100丨【免费流量】
+      - TG频道t.me/tgds100
       - 🇯🇵 日本丨隐私指数89%
       - 🇭🇰 中國香港丨Cloudflare Warp
       - 🇺🇸 美国-1丨Google中国
@@ -169,7 +169,7 @@ proxy-groups:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🏳️‍🌈 TG频道：t.me/tgds100丨【免费流量】
+      - TG频道t.me/tgds100
       - 🇯🇵 日本丨隐私指数89%
       - 🇭🇰 中國香港丨Cloudflare Warp
       - 🇺🇸 美国-1丨Google中国
@@ -210,7 +210,7 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🏳️‍🌈 TG频道：t.me/tgds100丨【免费流量】
+      - TG频道t.me/tgds100
       - 🇯🇵 日本丨隐私指数89%
       - 🇭🇰 中國香港丨Cloudflare Warp
       - 🇺🇸 美国-1丨Google中国
@@ -249,7 +249,7 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🏳️‍🌈 TG频道：t.me/tgds100丨【免费流量】
+      - TG频道t.me/tgds100
       - 🇯🇵 日本丨隐私指数89%
       - 🇭🇰 中國香港丨Cloudflare Warp
       - 🇺🇸 美国-1丨Google中国
@@ -288,7 +288,7 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🏳️‍🌈 TG频道：t.me/tgds100丨【免费流量】
+      - TG频道t.me/tgds100
       - 🇯🇵 日本丨隐私指数89%
       - 🇭🇰 中國香港丨Cloudflare Warp
       - 🇺🇸 美国-1丨Google中国
@@ -327,7 +327,7 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🏳️‍🌈 TG频道：t.me/tgds100丨【免费流量】
+      - TG频道t.me/tgds100
       - 🇯🇵 日本丨隐私指数89%
       - 🇭🇰 中國香港丨Cloudflare Warp
       - 🇺🇸 美国-1丨Google中国
@@ -366,7 +366,7 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🏳️‍🌈 TG频道：t.me/tgds100丨【免费流量】
+      - TG频道t.me/tgds100
       - 🇯🇵 日本丨隐私指数89%
       - 🇭🇰 中國香港丨Cloudflare Warp
       - 🇺🇸 美国-1丨Google中国
@@ -407,7 +407,7 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🏳️‍🌈 TG频道：t.me/tgds100丨【免费流量】
+      - TG频道t.me/tgds100
       - 🇯🇵 日本丨隐私指数89%
       - 🇭🇰 中國香港丨Cloudflare Warp
       - 🇺🇸 美国-1丨Google中国
@@ -449,7 +449,7 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🏳️‍🌈 TG频道：t.me/tgds100丨【免费流量】
+      - TG频道t.me/tgds100
       - 🇯🇵 日本丨隐私指数89%
       - 🇭🇰 中國香港丨Cloudflare Warp
       - 🇺🇸 美国-1丨Google中国
@@ -489,7 +489,7 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🏳️‍🌈 TG频道：t.me/tgds100丨【免费流量】
+      - TG频道t.me/tgds100
       - 🇯🇵 日本丨隐私指数89%
       - 🇭🇰 中國香港丨Cloudflare Warp
       - 🇺🇸 美国-1丨Google中国
@@ -547,7 +547,7 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🏳️‍🌈 TG频道：t.me/tgds100丨【免费流量】
+      - TG频道t.me/tgds100
       - 🇯🇵 日本丨隐私指数89%
       - 🇭🇰 中國香港丨Cloudflare Warp
       - 🇺🇸 美国-1丨Google中国
