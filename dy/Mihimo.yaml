@@ -534,7 +534,8 @@ proxy-groups:
     proxies:
       - DIRECT
       - ♻️ 自动选择
-      - 🦄 兜底策略
+      - 🇨🇳 湖南长沙丨回国ip
+      - 🇨🇳 贵州省贵阳丨回国ip
   - name: 🛑 全球拦截
     type: select
     proxies:
