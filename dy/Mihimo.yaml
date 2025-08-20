@@ -533,8 +533,8 @@ proxy-groups:
     type: select
     proxies:
       - DIRECT
-      - 🔰 节点选择
       - ♻️ 自动选择
+      - 🦄 兜底策略
   - name: 🛑 全球拦截
     type: select
     proxies:
