@@ -46,42 +46,492 @@ tun:
     - 180.76.76.76
 
 proxies:
-  - {name: 🏳️‍🌈 TG频道：t.me/tgds100丨【免费流量】, server: zgo.tazhi.de, port: 17265, type: vmess, uuid: cc1ec9ad-e11f-410a-a9f7-bc7e5b42000e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: zgo.tazhi.de, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: zgo.tazhi.de}}}
-  - {name: 🇯🇵 日本丨隐私指数89%, server: 2400:8902::f03c:95ff:fe9c:bd31, port: 26377, type: vless, uuid: dd4dc6e8-e5da-4612-86be-3905df10ac89, tls: true, tfo: false, skip-cert-verify: false, reality-opts: {public-key: U3VdQnvD5cQ8d2k3UwKOVtQfhUnXR39Rb4Q4yDsbc10, short-id: "297d5bc1" }, servername: yahoo.com, client-fingerprint: firefox, network: tcp}
-  - {name: 🇭🇰 中國香港丨Cloudflare Warp, server: 103.3.26.26, port: 443, type: vless, uuid: 892ed740-7a04-4983-a7d7-70b9dac44f7f, tls: true, alpn: [h3%2Ch2%2Chttp%2F1.1], tfo: false, skip-cert-verify: false, servername: waphk.ovo2024.dpdns.org, client-fingerprint: chrome, network: h2, h2-opts: {path: 248cbff8, host: [waphk.ovo2024.dpdns.org]}}
-  - {name: 🇺🇸 美国-1丨Google中国, server: planb.mojcn.com, port: 16648, type: vmess, uuid: ec252ba1-4da5-4d8a-83fd-0dd90fe1c71f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: e5f3f0d48113a061f7828bd0e80a2784.mobgslb.tbcache.com}}}
-  - {name: 🇺🇸 美国-2丨Google中国, server: m.cnmjin.net, port: 16648, type: vmess, uuid: ec252ba1-4da5-4d8a-83fd-0dd90fe1c71f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: e5f3f0d48113a061f7828bd0e80a2784.mobgslb.tbcache.com}}}
-  - {name: 🇺🇸 美国-3丨Google中国, server: t.cnmjcn.cyou, port: 16648, type: vmess, uuid: ec252ba1-4da5-4d8a-83fd-0dd90fe1c71f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: e5f3f0d48113a061f7828bd0e80a2784.mobgslb.tbcache.com}}}
-  - {name: 🇺🇸 美国-4丨纽约, server: xc124-1.meiziba5566.com, port: 443, type: vmess, uuid: 12cd1ec1-c3ea-4cd5-dd57-eea3e049bc17, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /12cd1ec1, headers: {Host: xc124-1.meiziba5566.com}}}
-  - {name: 🇺🇸 美国-5丨华盛顿/加州, server: 104.17.255.165, port: 443, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false,  servername: y6d0kj.xh0y5j4bh.9sui1iu8a.j5t01.dm088cegwl5.brn29uu2r.ey1.5trr.xu5jnfj1pefy.33qlz.cplori.pn0arphdq.zjseoy6.lip1j3.srq3186jw1.4plnc5qg6.qytu9i7dx.w5k0fb2dec.ltbo.x6v6cy.h66fa6975drhstnzyuxljuou9gyd1lodi24pd4.nudt.edu.kg, network: ws, ws-opts: {path: "/snippets/?ip=72.13.122.137:443", headers: {Host: y6d0kj.xh0y5j4bh.9sui1iu8a.j5t01.dm088cegwl5.brn29uu2r.ey1.5trr.xu5jnfj1pefy.33qlz.cplori.pn0arphdq.zjseoy6.lip1j3.srq3186jw1.4plnc5qg6.qytu9i7dx.w5k0fb2dec.ltbo.x6v6cy.h66fa6975drhstnzyuxljuou9gyd1lodi24pd4.nudt.edu.kg}}}
-  - {name: 🇯🇵 日本-1, server: 43.133.10.236, port: 33405, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, tfo: false, skip-cert-verify: false, servername: d61kid.y76aptsup85f.16s.p40bin.soqz8deh0.uc7bwd.0i8tzhv.00wa03p8074d.vckvvrgd9y3k.2sagz7z1ksot.aq5knjrzqh.x6szqh4.5avw6r5p.4b5ka674kspi.axilfawoz6zc.neun0y.bbaqsnew.tbs.7vuu1v2ljuc.2qzm6u2gia.3tcecuxi05h77wy.nudt.edu.kg, network: ws, ws-opts: {path: "/snippets/?ip=43.133.10.236:33405", headers: {Host: d61kid.y76aptsup85f.16s.p40bin.soqz8deh0.uc7bwd.0i8tzhv.00wa03p8074d.vckvvrgd9y3k.2sagz7z1ksot.aq5knjrzqh.x6szqh4.5avw6r5p.4b5ka674kspi.axilfawoz6zc.neun0y.bbaqsnew.tbs.7vuu1v2ljuc.2qzm6u2gia.3tcecuxi05h77wy.nudt.edu.kg}}}
-  - {name: 🇯🇵 日本-2, server: 13.230.34.30, port: 443, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, tfo: false, skip-cert-verify: false, servername: 3c8rn7.jx6fc1cj4cz.d4s9i9x9.ffk.uleq1mm.nhys9y5gh3c.x7nkqjd.7tiha0a.n2kivga.cfns6wpb5hhb.p6zk.31phkskaz.baw52r6.w4j.0abynmtzdb6.ccvkew765.6he.0963fdi934.llxrvri.rey0fn.ld9bgtphry37oku3z7u8ilmnez8mt2s9og5vzma.nudt.edu.kg, network: ws, ws-opts: {path: "/snippets/?ip=13.230.34.30:443", headers: {Host: 3c8rn7.jx6fc1cj4cz.d4s9i9x9.ffk.uleq1mm.nhys9y5gh3c.x7nkqjd.7tiha0a.n2kivga.cfns6wpb5hhb.p6zk.31phkskaz.baw52r6.w4j.0abynmtzdb6.ccvkew765.6he.0963fdi934.llxrvri.rey0fn.ld9bgtphry37oku3z7u8ilmnez8mt2s9og5vzma.nudt.edu.kg}}}
-  - {name: 🇭🇰 香港-1, server: 47.243.250.229, port: 25058, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, tfo: false, skip-cert-verify: false, servername: j9r5p5.p8x.gqer5.63zk1me67m1.s3bgd.pac38zu78.tn5a3.gx1rvdw1.mqeskmh.fxj.e5z9qbfryh4.ft2qyks.dka.msj397cooy69.ex5o5sg17rxz.zeno.hh6w6b9sm6.g43sg2gy.vbtt.w6tpm94rixl3.uxm02wkfojdya7xmuu4gp3xjela8wrdr4fpti33lao.nudt.edu.kg, network: ws, ws-opts: {path: "/snippets?ip=154.37.216.213:48164", headers: {Host: j9r5p5.p8x.gqer5.63zk1me67m1.s3bgd.pac38zu78.tn5a3.gx1rvdw1.mqeskmh.fxj.e5z9qbfryh4.ft2qyks.dka.msj397cooy69.ex5o5sg17rxz.zeno.hh6w6b9sm6.g43sg2gy.vbtt.w6tpm94rixl3.uxm02wkfojdya7xmuu4gp3xjela8wrdr4fpti33lao.nudt.edu.kg}}}
-  - {name: 🇭🇰 香港-2, server: 47.243.121.105, port: 8443, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, tfo: false, skip-cert-verify: false, servername: vro765.twonyu3dfz.edul6r6m.niawm1.a3yw5.y5sfw5bo.keepk2igj.fi0.1hp0a38ao.e3dif.6jcaenrfu.r0eylvyaexc.nzf9w0.itix9u.di4u.hgmsy8cwlrl.hg6nd6z44ex.18n3q0unhy.knv7z1qyols.txorqyaiimp.edgoczpl3tppiqrib2xffh99u7j7.nudt.edu.kg, network: ws, ws-opts: {path: "/snippets/?ip=5.253.16.162:4430", headers: {Host: vro765.twonyu3dfz.edul6r6m.niawm1.a3yw5.y5sfw5bo.keepk2igj.fi0.1hp0a38ao.e3dif.6jcaenrfu.r0eylvyaexc.nzf9w0.itix9u.di4u.hgmsy8cwlrl.hg6nd6z44ex.18n3q0unhy.knv7z1qyols.txorqyaiimp.edgoczpl3tppiqrib2xffh99u7j7.nudt.edu.kg}}}
-  - {name: 🇭🇰 香港-3, server: 47.243.47.167, port: 1274, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, tfo: false, skip-cert-verify: false, servername: j7a9n6.1qy8.af030wz.z4uwf0y1ad.p7jzjnqz.bi4lqwv25em.thla77n6av.s8ehdq1tk.k5mjfj2.6v4zdoxy0.alu2m9.lftnw48w9cs2.38ycc14b63.7ljhj2v8r1.8glyh7nu.zwft.d9llecb.8idc6rtvl.6d8.o12ugztsip9.oidc9jutxteimrp59av259b3qt.nudt.edu.kg, network: ws, ws-opts: {path: "/snippets/?ip=5.253.16.162:4430", headers: {Host: j7a9n6.1qy8.af030wz.z4uwf0y1ad.p7jzjnqz.bi4lqwv25em.thla77n6av.s8ehdq1tk.k5mjfj2.6v4zdoxy0.alu2m9.lftnw48w9cs2.38ycc14b63.7ljhj2v8r1.8glyh7nu.zwft.d9llecb.8idc6rtvl.6d8.o12ugztsip9.oidc9jutxteimrp59av259b3qt.nudt.edu.kg}}}
-  - {name: 🇰🇷 韩国-1, server: 61.111.250.34, port: 443, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, tfo: false, skip-cert-verify: false, servername: j9r5p5.p8x.gqer5.63zk1me67m1.s3bgd.pac38zu78.tn5a3.gx1rvdw1.mqeskmh.fxj.e5z9qbfryh4.ft2qyks.dka.msj397cooy69.ex5o5sg17rxz.zeno.hh6w6b9sm6.g43sg2gy.vbtt.w6tpm94rixl3.uxm02wkfojdya7xmuu4gp3xjela8wrdr4fpti33lao.nudt.edu.kg, network: ws, ws-opts: {path: "/snippets/?ip=180.64.64.201:50000", headers: {Host: j9r5p5.p8x.gqer5.63zk1me67m1.s3bgd.pac38zu78.tn5a3.gx1rvdw1.mqeskmh.fxj.e5z9qbfryh4.ft2qyks.dka.msj397cooy69.ex5o5sg17rxz.zeno.hh6w6b9sm6.g43sg2gy.vbtt.w6tpm94rixl3.uxm02wkfojdya7xmuu4gp3xjela8wrdr4fpti33lao.nudt.edu.kg}}}
-  - {name: 🇰🇷 韩国-2, server: 1.233.162.148, port: 50000, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, tfo: false, skip-cert-verify: false, servername: 34u2ev.jdropax1xzp.5yqow4.p9rgw0u2d.xabhsbmv56.ly4o2p.3e9hxj5sp.2yka1xin.9onkn.qvndzxc3hki.6dxe.csqd.qt26xpp6uwgb.i4dl6esv.vgr.zb7o0fq0a43.w9u.ofgdsnxsbs8.ylu.p0d.e035yzgcijq2aqigccv3ddbujq96lftpr7qxf8dj72pt.nudt.edu.kg, network: ws, ws-opts: {path: "/snippets/?ip=61.36.16.131:50001", headers: {Host: 34u2ev.jdropax1xzp.5yqow4.p9rgw0u2d.xabhsbmv56.ly4o2p.3e9hxj5sp.2yka1xin.9onkn.qvndzxc3hki.6dxe.csqd.qt26xpp6uwgb.i4dl6esv.vgr.zb7o0fq0a43.w9u.ofgdsnxsbs8.ylu.p0d.e035yzgcijq2aqigccv3ddbujq96lftpr7qxf8dj72pt.nudt.edu.kg}}}
-  - {name: 🇰🇷 韩国-3, server: 134.185.105.47, port: 443, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, tfo: false, skip-cert-verify: false, servername: vro765.twonyu3dfz.edul6r6m.niawm1.a3yw5.y5sfw5bo.keepk2igj.fi0.1hp0a38ao.e3dif.6jcaenrfu.r0eylvyaexc.nzf9w0.itix9u.di4u.hgmsy8cwlrl.hg6nd6z44ex.18n3q0unhy.knv7z1qyols.txorqyaiimp.edgoczpl3tppiqrib2xffh99u7j7.nudt.edu.kg, network: ws, ws-opts: {path: "/snippets/?ip=180.64.64.201:50000", headers: {Host: vro765.twonyu3dfz.edul6r6m.niawm1.a3yw5.y5sfw5bo.keepk2igj.fi0.1hp0a38ao.e3dif.6jcaenrfu.r0eylvyaexc.nzf9w0.itix9u.di4u.hgmsy8cwlrl.hg6nd6z44ex.18n3q0unhy.knv7z1qyols.txorqyaiimp.edgoczpl3tppiqrib2xffh99u7j7.nudt.edu.kg}}}
-  - {name: 🇰🇷 韩国-4, server: 211.195.83.140, port: 50003, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, tfo: false, skip-cert-verify: false, servername: ix6rmq.9wmo8qf.1awcpuqnx.aatjneqav3ru.zzjoa.dd9kyi.x7z6feh74i.qch.4pfhujwk5cp.wwoaus4m.3p4gx1dkel5u.v8nmn0.v473fvsvs.ity9jji2vta.k16pz37p.fn26blag1.lb6.diu02h0q8.0gul.8mfno5w.qt7pmbw02z1i8qu67t7kvm6j7kcy202r.nudt.edu.kg, network: ws, ws-opts: {path: "/snippets/?ip=112.172.17.71:12528", headers: {Host: ix6rmq.9wmo8qf.1awcpuqnx.aatjneqav3ru.zzjoa.dd9kyi.x7z6feh74i.qch.4pfhujwk5cp.wwoaus4m.3p4gx1dkel5u.v8nmn0.v473fvsvs.ity9jji2vta.k16pz37p.fn26blag1.lb6.diu02h0q8.0gul.8mfno5w.qt7pmbw02z1i8qu67t7kvm6j7kcy202r.nudt.edu.kg}}}
-  - {name: 🇨🇳 中国台湾-1, server: 103.3.26.26, port: 443, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, tfo: false, skip-cert-verify: false, servername: 2p23o1.769.a6v1qxi.pqcbwzsa3.kfmar.9gndg21fpuy0.u5h0kbsdf6.jrmarhd.reqklz917bf2.gkl3l.ndqt.tjprd.aas.1zp60qpwswe.3yxnu0.9thh.6py.od0n1uyb9v.c8jypf.iez0g.9stu1xf9t4l8866snwixvzqbon88ramoj51ctyuqltvgm1jdigc5ez.nudt.edu.kg, network: ws, ws-opts: {path: "/snippets/?ip=103.106.230.186:81", headers: {Host: 2p23o1.769.a6v1qxi.pqcbwzsa3.kfmar.9gndg21fpuy0.u5h0kbsdf6.jrmarhd.reqklz917bf2.gkl3l.ndqt.tjprd.aas.1zp60qpwswe.3yxnu0.9thh.6py.od0n1uyb9v.c8jypf.iez0g.9stu1xf9t4l8866snwixvzqbon88ramoj51ctyuqltvgm1jdigc5ez.nudt.edu.kg}}}
-  - {name: 🇨🇳 中国台湾-2, server: 220.135.202.250, port: 81, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, tfo: false, skip-cert-verify: false, servername: kscu2c.y4s1b.qb8xf.to5fw.iwre5s.rvjjccr.721imkqwy.xi2.ttc.xxa92izz766n.m2cd8c6vhf.p3vr.a1qmd77.bypd2n94lm.bm5y.91r.gnbbhehk.bca4c.hhamgwkt6zm.tgik.5g7iasqyedwr7uhxozaplodpmjpzq1qrqsfxnattlnv0l49e7te08rlgh9qb.nudt.edu.kg, network: ws, ws-opts: {path: "/snippets/?ip=118.163.37.32:81", headers: {Host: kscu2c.y4s1b.qb8xf.to5fw.iwre5s.rvjjccr.721imkqwy.xi2.ttc.xxa92izz766n.m2cd8c6vhf.p3vr.a1qmd77.bypd2n94lm.bm5y.91r.gnbbhehk.bca4c.hhamgwkt6zm.tgik.5g7iasqyedwr7uhxozaplodpmjpzq1qrqsfxnattlnv0l49e7te08rlgh9qb.nudt.edu.kg}}}
-  - {name: 🇨🇳 中国台湾-3,"type":"vless","server":"114.34.202.224","port":10004,"uuid":"d342d11e-d424-4583-b36e-524ab1f0afa4","tls":true,"servername":"kscu2c.y4s1b.qb8xf.to5fw.iwre5s.rvjjccr.721imkqwy.xi2.ttc.xxa92izz766n.m2cd8c6vhf.p3vr.a1qmd77.bypd2n94lm.bm5y.91r.gnbbhehk.bca4c.hhamgwkt6zm.tgik.5g7iasqyedwr7uhxozaplodpmjpzq1qrqsfxnattlnv0l49e7te08rlgh9qb.nudt.edu.kg","network":"ws","ws-opts":{"path":"/snippets/?ip=122.117.174.80:443","headers":{"host":"kscu2c.y4s1b.qb8xf.to5fw.iwre5s.rvjjccr.721imkqwy.xi2.ttc.xxa92izz766n.m2cd8c6vhf.p3vr.a1qmd77.bypd2n94lm.bm5y.91r.gnbbhehk.bca4c.hhamgwkt6zm.tgik.5g7iasqyedwr7uhxozaplodpmjpzq1qrqsfxnattlnv0l49e7te08rlgh9qb.nudt.edu.kg"}}}
-  - {name: 🇨🇳 中国台湾-4丨每日限量, server: 188.253.6.53, port: 25884, type: trojan, password: ttfang, sni: ttfang.fange.me, skip-cert-verify: false, network: ws, ws-opts: {path: /socks5://MTox@103.123.133.240:20000, headers: {Host: ttfang.fange.me}}}
-  - {name: 🇨🇳 中国台湾-5,"type":"trojan","server":"ss.hkglink.xyz","port":12105,"udp":true,"password":"b1adf390-cd04-4e30-b030-78038e16557b","sni":"110.yuanul.com","skip-cert-verify":true,"network":"tcp"}
-  - {name: 🇨🇳 中国台湾-6,"type":"trojan","server":"ss.hkglink.xyz","port":12106,"udp":true,"password":"b1adf390-cd04-4e30-b030-78038e16557b","sni":"110.yuanul.com","skip-cert-verify":true,"network":"tcp"}
-  - {name: 🇸🇬 新加坡-1, server: 13.229.57.45, port: 13002, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, tfo: false, skip-cert-verify: false, servername: n6j3yp.duk0165l.p1bbt1.44w6mpr06m.tjxlxynbo.lnawqx5wfo.f1tbcbl.4tbilrtya.aah8g7.qpw2.lwpari2kg8ll.jnishj.6bd.vlidviky.jzl.f9mmkph.ogug6wb6ob7.wfa4158o.rgqfc.4juekq.rb466m22eficdpx90knpfyed67cg1i87nqrlk3quam1.nudt.edu.kg, network: ws, ws-opts: {path: "/snippets/?ip=13.229.57.45:13002", headers: {Host: n6j3yp.duk0165l.p1bbt1.44w6mpr06m.tjxlxynbo.lnawqx5wfo.f1tbcbl.4tbilrtya.aah8g7.qpw2.lwpari2kg8ll.jnishj.6bd.vlidviky.jzl.f9mmkph.ogug6wb6ob7.wfa4158o.rgqfc.4juekq.rb466m22eficdpx90knpfyed67cg1i87nqrlk3quam1.nudt.edu.kg}}}
-  - {name: 🇸🇬 新加坡-2, server: 18.143.93.7, port: 13242, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, tfo: false, skip-cert-verify: false, servername: ejhad4.h7fqhw4.13eexhyv.8fnxgjocehq.6i3h.870wh.se038h63ozi.q9e9n7ad5yww.ittb2dyr.k1i.4rjmrlk0s614.oz52.9p6vrogyi.3phmw.ylt1.xl1o0ymy.4md2u90.h5a.gykwo3156sk.b7xyz.opd53k394vkg7cx9kusgz4hryuw7rsoj84b40y8kmfdx.nudt.edu.kg, network: ws, ws-opts: {path: "/snippets/?ip=18.143.93.7:13242", headers: {Host: ejhad4.h7fqhw4.13eexhyv.8fnxgjocehq.6i3h.870wh.se038h63ozi.q9e9n7ad5yww.ittb2dyr.k1i.4rjmrlk0s614.oz52.9p6vrogyi.3phmw.ylt1.xl1o0ymy.4md2u90.h5a.gykwo3156sk.b7xyz.opd53k394vkg7cx9kusgz4hryuw7rsoj84b40y8kmfdx.nudt.edu.kg}}}
-  - {name: 🇸🇬 新加坡-3丨ipv6, server: 2a05:dfc1:8b85:6061:be24:11ff:fe87:63c5, port: 443, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, tfo: false, skip-cert-verify: false, servername: 1ael5o.r5c4.7r38ql.fenhvpb.n2z0d.1gm0ypotunp8.r5pr.rog5syaqbs.ng96lan6jkeu.jmqj18pnb0m.il2d9nocidzs.54s5v57r9wo.w08zfj5.lyo8x34.9hbsx27rki.ksh51ws.vf15.bzyr2.6q3cwqm60fg.ljvcdcu0udx.yq7tb4m2zmoykrq32h5itwuii.nudt.edu.kg, network: ws, ws-opts: {path: "/snippets/?ip=47.236.185.184:7000", headers: {Host: 1ael5o.r5c4.7r38ql.fenhvpb.n2z0d.1gm0ypotunp8.r5pr.rog5syaqbs.ng96lan6jkeu.jmqj18pnb0m.il2d9nocidzs.54s5v57r9wo.w08zfj5.lyo8x34.9hbsx27rki.ksh51ws.vf15.bzyr2.6q3cwqm60fg.ljvcdcu0udx.yq7tb4m2zmoykrq32h5itwuii.nudt.edu.kg}}}
-  - {name: 🇸🇬 新加坡-4,"type":"vless","server":"2a05:dfc1:8b85:6061:be24:11ff:fe87:63c5","port":443,"uuid":"9ed0f660-2fd6-4016-a6df-95df20598658","tls":true,"servername":"quiz.int.vidio.com.my-vpnvip.my.id","network":"ws","ws-opts":{"path":"/8.222.192.60-30021","headers":{"host":"quiz.int.vidio.com.my-vpnvip.my.id"}},"client-fingerprint":"chrome"}
-  - {name: 🇸🇬 新加坡-5,"type":"vless","server":"18.143.93.7","port":13242,"uuid":"3b40219d-541c-4a8e-aa19-377bd68f1f62","tls":true,"servername":"cache.netflix.com.unlimited.spauu.web.id","network":"ws","ws-opts":{"path":"/vl=13.229.57.45=13002","headers":{"host":"cache.netflix.com.unlimited.spauu.web.id"}},"client-fingerprint":"chrome"}
-  - {name: 🇸🇬 新加坡-6,"type":"trojan","server":"36.156.102.125","port":406,"udp":true,"password":"253bc477d4e43c209f2d427272968280","sni":"www.baidu.com","skip-cert-verify":true,"network":"tcp"}
-  - {name: 🇧🇶 北欧,"type":"vless","server":"web.xhamster.biz.id","port":443,"uuid":"aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1","tls":true,"servername":"web.xhamster.biz.id","network":"ws","ws-opts":{"path":"/Free-CF-Proxy-AT4","headers":{"host":"web.xhamster.biz.id"}},"client-fingerprint":"chrome"}
-  - {name: 🇩🇪 德国,"type":"vless","server":"2.56.245.9","port":20357,"uuid":"1036ed52-d1fe-410e-a961-0db84299dd5e","tls":false,"network":"ws","ws-opts":{"path":"/"}}
-  - {name: 🇫🇷 法国-1,"type":"trojan","server":"[2a05","port":null,"udp":true,"password":"f69dae9e-371b-4571-b64b-2e7c9abdbafb","sni":"g2.ikun.us.kg","skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/trojan-argo","headers":{"host":"g2.ikun.us.kg"}},"alpn":["h3","h2","http/1.1"]}
-  - {name: 🇫🇷 法国-2丨巴黎,"type":"vless","server":"fr.pixvpn.app","port":8443,"udp":true,"uuid":"f6fa8cbd-6f5a-4a2c-8a28-9a1e6f48bdd6","tls":true,"servername":"jd.com","flow":"xtls-rprx-vision","network":"grpc","grpc-opts":{"grpc-service-name":"grpc-jd"},"reality-opts":{"public-key":"SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc","short-id":"41a4cee2c50c4fc3"},"client-fingerprint":"chrome"}
-  - {name: 🇫🇮 芬兰,"type":"vless","server":"axe.djjw8292n.ir","port":2053,"uuid":"679e9a1c-6f32-466f-8567-f9d4fa8359a4","tls":true,"servername":"mojito.djjw8292n.ir","network":"ws","ws-opts":{"path":"/homepage?ed=2560","headers":{"host":"mojito.djjw8292n.ir"}},"client-fingerprint":"chrome"}
-  - {name: 🇨🇳 湖南长沙丨[回国专线],"type":"vmess","server":"113.219.211.112","port":20521,"cipher":"auto","uuid":"fe16a2b2-bb92-4957-a654-1f2b8bca0d31","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/"}}
-  - {name: 🇨🇳 贵州省贵阳丨[回国专线],"type":"vmess","server":"140.246.235.210","port":20521,"cipher":"auto","uuid":"6d4c98fe-3d75-42c5-8f70-62e233ee98e7","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/"}}
+  - name: "🏳️‍🌈 TG频道：t.me/tgds100丨【免费流量】"
+    server: zgo.tazhi.de
+    port: 17265
+    type: vmess
+    uuid: cc1ec9ad-e11f-410a-a9f7-bc7e5b42000e
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: false
+    servername: zgo.tazhi.de
+    network: ws
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: zgo.tazhi.de
+  - name: "🇯🇵 日本丨隐私指数89%"
+    server: "2400:8902::f03c:95ff:fe9c:bd31"
+    port: 26377
+    type: vless
+    uuid: dd4dc6e8-e5da-4612-86be-3905df10ac89
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    reality-opts:
+      public-key: U3VdQnvD5cQ8d2k3UwKOVtQfhUnXR39Rb4Q4yDsbc10
+      short-id: "297d5bc1"
+    servername: yahoo.com
+    client-fingerprint: firefox
+    network: tcp
+  - name: "🇭🇰 中國香港丨Cloudflare Warp"
+    server: 103.3.26.26
+    port: 443
+    type: vless
+    uuid: 892ed740-7a04-4983-a7d7-70b9dac44f7f
+    tls: true
+    alpn:
+      - "h3"
+      - "h2"
+      - "http/1.1"
+    tfo: false
+    skip-cert-verify: false
+    servername: waphk.ovo2024.dpdns.org
+    client-fingerprint: chrome
+    network: h2
+    h2-opts:
+      path: "248cbff8"
+      host:
+        - waphk.ovo2024.dpdns.org
+  - name: "🇺🇸 美国-1丨Google中国"
+    server: planb.mojcn.com
+    port: 16648
+    type: vmess
+    uuid: ec252ba1-4da5-4d8a-83fd-0dd90fe1c71f
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: e5f3f0d48113a061f7828bd0e80a2784.mobgslb.tbcache.com
+  - name: "🇺🇸 美国-2丨Google中国"
+    server: m.cnmjin.net
+    port: 16648
+    type: vmess
+    uuid: ec252ba1-4da5-4d8a-83fd-0dd90fe1c71f
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: e5f3f0d48113a061f7828bd0e80a2784.mobgslb.tbcache.com
+  - name: "🇺🇸 美国-3丨Google中国"
+    server: t.cnmjcn.cyou
+    port: 16648
+    type: vmess
+    uuid: ec252ba1-4da5-4d8a-83fd-0dd90fe1c71f
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: e5f3f0d48113a061f7828bd0e80a2784.mobgslb.tbcache.com
+  - name: "🇺🇸 美国-4丨纽约"
+    server: xc124-1.meiziba5566.com
+    port: 443
+    type: vmess
+    uuid: 12cd1ec1-c3ea-4cd5-dd57-eea3e049bc17
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: "/12cd1ec1"
+      headers:
+        Host: xc124-1.meiziba5566.com
+  - name: "🇺🇸 美国-5丨华盛顿/加州"
+    server: 104.17.255.165
+    port: 443
+    type: vless
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: false
+    servername: y6d0kj.xh0y5j4bh.9sui1iu8a.j5t01.dm088cegwl5.brn29uu2r.ey1.5trr.xu5jnfj1pefy.33qlz.cplori.pn0arphdq.zjseoy6.lip1j3.srq3186jw1.4plnc5qg6.qytu9i7dx.w5k0fb2dec.ltbo.x6v6cy.h66fa6975drhstnzyuxljuou9gyd1lodi24pd4.nudt.edu.kg
+    network: ws
+    ws-opts:
+      path: "/snippets/?ip=72.13.122.137:443"
+      headers:
+        Host: y6d0kj.xh0y5j4bh.9sui1iu8a.j5t01.dm088cegwl5.brn29uu2r.ey1.5trr.xu5jnfj1pefy.33qlz.cplori.pn0arphdq.zjseoy6.lip1j3.srq3186jw1.4plnc5qg6.qytu9i7dx.w5k0fb2dec.ltbo.x6v6cy.h66fa6975drhstnzyuxljuou9gyd1lodi24pd4.nudt.edu.kg
+  - name: "🇯🇵 日本-1"
+    server: 43.133.10.236
+    port: 33405
+    type: vless
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    servername: d61kid.y76aptsup85f.16s.p40bin.soqz8deh0.uc7bwd.0i8tzhv.00wa03p8074d.vckvvrgd9y3k.2sagz7z1ksot.aq5knjrzqh.x6szqh4.5avw6r5p.4b5ka674kspi.axilfawoz6zc.neun0y.bbaqsnew.tbs.7vuu1v2ljuc.2qzm6u2gia.3tcecuxi05h77wy.nudt.edu.kg
+    network: ws
+    ws-opts:
+      path: "/snippets/?ip=43.133.10.236:33405"
+      headers:
+        Host: d61kid.y76aptsup85f.16s.p40bin.soqz8deh0.uc7bwd.0i8tzhv.00wa03p8074d.vckvvrgd9y3k.2sagz7z1ksot.aq5knjrzqh.x6szqh4.5avw6r5p.4b5ka674kspi.axilfawoz6zc.neun0y.bbaqsnew.tbs.7vuu1v2ljuc.2qzm6u2gia.3tcecuxi05h77wy.nudt.edu.kg
+  - name: "🇯🇵 日本-2"
+    server: 13.230.34.30
+    port: 443
+    type: vless
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    servername: 3c8rn7.jx6fc1cj4cz.d4s9i9x9.ffk.uleq1mm.nhys9y5gh3c.x7nkqjd.7tiha0a.n2kivga.cfns6wpb5hhb.p6zk.31phkskaz.baw52r6.w4j.0abynmtzdb6.ccvkew765.6he.0963fdi934.llxrvri.rey0fn.ld9bgtphry37oku3z7u8ilmnez8mt2s9og5vzma.nudt.edu.kg
+    network: ws
+    ws-opts:
+      path: "/snippets/?ip=13.230.34.30:443"
+      headers:
+        Host: 3c8rn7.jx6fc1cj4cz.d4s9i9x9.ffk.uleq1mm.nhys9y5gh3c.x7nkqjd.7tiha0a.n2kivga.cfns6wpb5hhb.p6zk.31phkskaz.baw52r6.w4j.0abynmtzdb6.ccvkew765.6he.0963fdi934.llxrvri.rey0fn.ld9bgtphry37oku3z7u8ilmnez8mt2s9og5vzma.nudt.edu.kg
+  - name: "🇭🇰 香港-1"
+    server: 47.243.250.229
+    port: 25058
+    type: vless
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    servername: j9r5p5.p8x.gqer5.63zk1me67m1.s3bgd.pac38zu78.tn5a3.gx1rvdw1.mqeskmh.fxj.e5z9qbfryh4.ft2qyks.dka.msj397cooy69.ex5o5sg17rxz.zeno.hh6w6b9sm6.g43sg2gy.vbtt.w6tpm94rixl3.uxm02wkfojdya7xmuu4gp3xjela8wrdr4fpti33lao.nudt.edu.kg
+    network: ws
+    ws-opts:
+      path: "/snippets?ip=154.37.216.213:48164"
+      headers:
+        Host: j9r5p5.p8x.gqer5.63zk1me67m1.s3bgd.pac38zu78.tn5a3.gx1rvdw1.mqeskmh.fxj.e5z9qbfryh4.ft2qyks.dka.msj397cooy69.ex5o5sg17rxz.zeno.hh6w6b9sm6.g43sg2gy.vbtt.w6tpm94rixl3.uxm02wkfojdya7xmuu4gp3xjela8wrdr4fpti33lao.nudt.edu.kg
+  - name: "🇭🇰 香港-2"
+    server: 47.243.121.105
+    port: 8443
+    type: vless
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    servername: vro765.twonyu3dfz.edul6r6m.niawm1.a3yw5.y5sfw5bo.keepk2igj.fi0.1hp0a38ao.e3dif.6jcaenrfu.r0eylvyaexc.nzf9w0.itix9u.di4u.hgmsy8cwlrl.hg6nd6z44ex.18n3q0unhy.knv7z1qyols.txorqyaiimp.edgoczpl3tppiqrib2xffh99u7j7.nudt.edu.kg
+    network: ws
+    ws-opts:
+      path: "/snippets/?ip=5.253.16.162:4430"
+      headers:
+        Host: vro765.twonyu3dfz.edul6r6m.niawm1.a3yw5.y5sfw5bo.keepk2igj.fi0.1hp0a38ao.e3dif.6jcaenrfu.r0eylvyaexc.nzf9w0.itix9u.di4u.hgmsy8cwlrl.hg6nd6z44ex.18n3q0unhy.knv7z1qyols.txorqyaiimp.edgoczpl3tppiqrib2xffh99u7j7.nudt.edu.kg
+  - name: "🇭🇰 香港-3"
+    server: 47.243.47.167
+    port: 1274
+    type: vless
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    servername: j7a9n6.1qy8.af030wz.z4uwf0y1ad.p7jzjnqz.bi4lqwv25em.thla77n6av.s8ehdq1tk.k5mjfj2.6v4zdoxy0.alu2m9.lftnw48w9cs2.38ycc14b63.7ljhj2v8r1.8glyh7nu.zwft.d9llecb.8idc6rtvl.6d8.o12ugztsip9.oidc9jutxteimrp59av259b3qt.nudt.edu.kg
+    network: ws
+    ws-opts:
+      path: "/snippets/?ip=5.253.16.162:4430"
+      headers:
+        Host: j7a9n6.1qy8.af030wz.z4uwf0y1ad.p7jzjnqz.bi4lqwv25em.thla77n6av.s8ehdq1tk.k5mjfj2.6v4zdoxy0.alu2m9.lftnw48w9cs2.38ycc14b63.7ljhj2v8r1.8glyh7nu.zwft.d9llecb.8idc6rtvl.6d8.o12ugztsip9.oidc9jutxteimrp59av259b3qt.nudt.edu.kg
+  - name: "🇰🇷 韩国-1"
+    server: 61.111.250.34
+    port: 443
+    type: vless
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    servername: j9r5p5.p8x.gqer5.63zk1me67m1.s3bgd.pac38zu78.tn5a3.gx1rvdw1.mqeskmh.fxj.e5z9qbfryh4.ft2qyks.dka.msj397cooy69.ex5o5sg17rxz.zeno.hh6w6b9sm6.g43sg2gy.vbtt.w6tpm94rixl3.uxm02wkfojdya7xmuu4gp3xjela8wrdr4fpti33lao.nudt.edu.kg
+    network: ws
+    ws-opts:
+      path: "/snippets/?ip=180.64.64.201:50000"
+      headers:
+        Host: j9r5p5.p8x.gqer5.63zk1me67m1.s3bgd.pac38zu78.tn5a3.gx1rvdw1.mqeskmh.fxj.e5z9qbfryh4.ft2qyks.dka.msj397cooy69.ex5o5sg17rxz.zeno.hh6w6b9sm6.g43sg2gy.vbtt.w6tpm94rixl3.uxm02wkfojdya7xmuu4gp3xjela8wrdr4fpti33lao.nudt.edu.kg
+  - name: "🇰🇷 韩国-2"
+    server: 1.233.162.148
+    port: 50000
+    type: vless
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    servername: 34u2ev.jdropax1xzp.5yqow4.p9rgw0u2d.xabhsbmv56.ly4o2p.3e9hxj5sp.2yka1xin.9onkn.qvndzxc3hki.6dxe.csqd.qt26xpp6uwgb.i4dl6esv.vgr.zb7o0fq0a43.w9u.ofgdsnxsbs8.ylu.p0d.e035yzgcijq2aqigccv3ddbujq96lftpr7qxf8dj72pt.nudt.edu.kg
+    network: ws
+    ws-opts:
+      path: "/snippets/?ip=61.36.16.131:50001"
+      headers:
+        Host: 34u2ev.jdropax1xzp.5yqow4.p9rgw0u2d.xabhsbmv56.ly4o2p.3e9hxj5sp.2yka1xin.9onkn.qvndzxc3hki.6dxe.csqd.qt26xpp6uwgb.i4dl6esv.vgr.zb7o0fq0a43.w9u.ofgdsnxsbs8.ylu.p0d.e035yzgcijq2aqigccv3ddbujq96lftpr7qxf8dj72pt.nudt.edu.kg
+  - name: "🇰🇷 韩国-3"
+    server: 134.185.105.47
+    port: 443
+    type: vless
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    servername: vro765.twonyu3dfz.edul6r6m.niawm1.a3yw5.y5sfw5bo.keepk2igj.fi0.1hp0a38ao.e3dif.6jcaenrfu.r0eylvyaexc.nzf9w0.itix9u.di4u.hgmsy8cwlrl.hg6nd6z44ex.18n3q0unhy.knv7z1qyols.txorqyaiimp.edgoczpl3tppiqrib2xffh99u7j7.nudt.edu.kg
+    network: ws
+    ws-opts:
+      path: "/snippets/?ip=180.64.64.201:50000"
+      headers:
+        Host: vro765.twonyu3dfz.edul6r6m.niawm1.a3yw5.y5sfw5bo.keepk2igj.fi0.1hp0a38ao.e3dif.6jcaenrfu.r0eylvyaexc.nzf9w0.itix9u.di4u.hgmsy8cwlrl.hg6nd6z44ex.18n3q0unhy.knv7z1qyols.txorqyaiimp.edgoczpl3tppiqrib2xffh99u7j7.nudt.edu.kg
+  - name: "🇰🇷 韩国-4"
+    server: 211.195.83.140
+    port: 50003
+    type: vless
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    servername: ix6rmq.9wmo8qf.1awcpuqnx.aatjneqav3ru.zzjoa.dd9kyi.x7z6feh74i.qch.4pfhujwk5cp.wwoaus4m.3p4gx1dkel5u.v8nmn0.v473fvsvs.ity9jji2vta.k16pz37p.fn26blag1.lb6.diu02h0q8.0gul.8mfno5w.qt7pmbw02z1i8qu67t7kvm6j7kcy202r.nudt.edu.kg
+    network: ws
+    ws-opts:
+      path: "/snippets/?ip=112.172.17.71:12528"
+      headers:
+        Host: ix6rmq.9wmo8qf.1awcpuqnx.aatjneqav3ru.zzjoa.dd9kyi.x7z6feh74i.qch.4pfhujwk5cp.wwoaus4m.3p4gx1dkel5u.v8nmn0.v473fvsvs.ity9jji2vta.k16pz37p.fn26blag1.lb6.diu02h0q8.0gul.8mfno5w.qt7pmbw02z1i8qu67t7kvm6j7kcy202r.nudt.edu.kg
+  - name: "🇨🇳 中国台湾-1"
+    server: 103.3.26.26
+    port: 443
+    type: vless
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    servername: 2p23o1.769.a6v1qxi.pqcbwzsa3.kfmar.9gndg21fpuy0.u5h0kbsdf6.jrmarhd.reqklz917bf2.gkl3l.ndqt.tjprd.aas.1zp60qpwswe.3yxnu0.9thh.6py.od0n1uyb9v.c8jypf.iez0g.9stu1xf9t4l8866snwixvzqbon88ramoj51ctyuqltvgm1jdigc5ez.nudt.edu.kg
+    network: ws
+    ws-opts:
+      path: "/snippets/?ip=103.106.230.186:81"
+      headers:
+        Host: 2p23o1.769.a6v1qxi.pqcbwzsa3.kfmar.9gndg21fpuy0.u5h0kbsdf6.jrmarhd.reqklz917bf2.gkl3l.ndqt.tjprd.aas.1zp60qpwswe.3yxnu0.9thh.6py.od0n1uyb9v.c8jypf.iez0g.9stu1xf9t4l8866snwixvzqbon88ramoj51ctyuqltvgm1jdigc5ez.nudt.edu.kg
+  - name: "🇨🇳 中国台湾-2"
+    server: 220.135.202.250
+    port: 81
+    type: vless
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    servername: kscu2c.y4s1b.qb8xf.to5fw.iwre5s.rvjjccr.721imkqwy.xi2.ttc.xxa92izz766n.m2cd8c6vhf.p3vr.a1qmd77.bypd2n94lm.bm5y.91r.gnbbhehk.bca4c.hhamgwkt6zm.tgik.5g7iasqyedwr7uhxozaplodpmjpzq1qrqsfxnattlnv0l49e7te08rlgh9qb.nudt.edu.kg
+    network: ws
+    ws-opts:
+      path: "/snippets/?ip=118.163.37.32:81"
+      headers:
+        Host: kscu2c.y4s1b.qb8xf.to5fw.iwre5s.rvjjccr.721imkqwy.xi2.ttc.xxa92izz766n.m2cd8c6vhf.p3vr.a1qmd77.bypd2n94lm.bm5y.91r.gnbbhehk.bca4c.hhamgwkt6zm.tgik.5g7iasqyedwr7uhxozaplodpmjpzq1qrqsfxnattlnv0l49e7te08rlgh9qb.nudt.edu.kg
+  - name: "🇨🇳 中国台湾-3"
+    type: vless
+    server: 114.34.202.224
+    port: 10004
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: true
+    servername: kscu2c.y4s1b.qb8xf.to5fw.iwre5s.rvjjccr.721imkqwy.xi2.ttc.xxa92izz766n.m2cd8c6vhf.p3vr.a1qmd77.bypd2n94lm.bm5y.91r.gnbbhehk.bca4c.hhamgwkt6zm.tgik.5g7iasqyedwr7uhxozaplodpmjpzq1qrqsfxnattlnv0l49e7te08rlgh9qb.nudt.edu.kg
+    network: ws
+    ws-opts:
+      path: "/snippets/?ip=122.117.174.80:443"
+      headers:
+        host: kscu2c.y4s1b.qb8xf.to5fw.iwre5s.rvjjccr.721imkqwy.xi2.ttc.xxa92izz766n.m2cd8c6vhf.p3vr.a1qmd77.bypd2n94lm.bm5y.91r.gnbbhehk.bca4c.hhamgwkt6zm.tgik.5g7iasqyedwr7uhxozaplodpmjpzq1qrqsfxnattlnv0l49e7te08rlgh9qb.nudt.edu.kg
+  - name: "🇨🇳 中国台湾-4丨每日限量"
+    server: 188.253.6.53
+    port: 25884
+    type: trojan
+    password: ttfang
+    sni: ttfang.fange.me
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: "/socks5://MTox@103.123.133.240:20000"
+      headers:
+        Host: ttfang.fange.me
+  - name: "🇨🇳 中国台湾-5"
+    type: trojan
+    server: ss.hkglink.xyz
+    port: 12105
+    udp: true
+    password: b1adf390-cd04-4e30-b030-78038e16557b
+    sni: 110.yuanul.com
+    skip-cert-verify: true
+    network: tcp
+  - name: "🇨🇳 中国台湾-6"
+    type: trojan
+    server: ss.hkglink.xyz
+    port: 12106
+    udp: true
+    password: b1adf390-cd04-4e30-b030-78038e16557b
+    sni: 110.yuanul.com
+    skip-cert-verify: true
+    network: tcp
+  - name: "🇸🇬 新加坡-1"
+    server: 13.229.57.45
+    port: 13002
+    type: vless
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    servername: n6j3yp.duk0165l.p1bbt1.44w6mpr06m.tjxlxynbo.lnawqx5wfo.f1tbcbl.4tbilrtya.aah8g7.qpw2.lwpari2kg8ll.jnishj.6bd.vlidviky.jzl.f9mmkph.ogug6wb6ob7.wfa4158o.rgqfc.4juekq.rb466m22eficdpx90knpfyed67cg1i87nqrlk3quam1.nudt.edu.kg
+    network: ws
+    ws-opts:
+      path: "/snippets/?ip=13.229.57.45:13002"
+      headers:
+        Host: n6j3yp.duk0165l.p1bbt1.44w6mpr06m.tjxlxynbo.lnawqx5wfo.f1tbcbl.4tbilrtya.aah8g7.qpw2.lwpari2kg8ll.jnishj.6bd.vlidviky.jzl.f9mmkph.ogug6wb6ob7.wfa4158o.rgqfc.4juekq.rb466m22eficdpx90knpfyed67cg1i87nqrlk3quam1.nudt.edu.kg
+  - name: "🇸🇬 新加坡-2"
+    server: 18.143.93.7
+    port: 13242
+    type: vless
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    servername: ejhad4.h7fqhw4.13eexhyv.8fnxgjocehq.6i3h.870wh.se038h63ozi.q9e9n7ad5yww.ittb2dyr.k1i.4rjmrlk0s614.oz52.9p6vrogyi.3phmw.ylt1.xl1o0ymy.4md2u90.h5a.gykwo3156sk.b7xyz.opd53k394vkg7cx9kusgz4hryuw7rsoj84b40y8kmfdx.nudt.edu.kg
+    network: ws
+    ws-opts:
+      path: "/snippets/?ip=18.143.93.7:13242"
+      headers:
+        Host: ejhad4.h7fqhw4.13eexhyv.8fnxgjocehq.6i3h.870wh.se038h63ozi.q9e9n7ad5yww.ittb2dyr.k1i.4rjmrlk0s614.oz52.9p6vrogyi.3phmw.ylt1.xl1o0ymy.4md2u90.h5a.gykwo3156sk.b7xyz.opd53k394vkg7cx9kusgz4hryuw7rsoj84b40y8kmfdx.nudt.edu.kg
+  - name: "🇸🇬 新加坡-3丨ipv6"
+    server: "2a05:dfc1:8b85:6061:be24:11ff:fe87:63c5"
+    port: 443
+    type: vless
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    servername: 1ael5o.r5c4.7r38ql.fenhvpb.n2z0d.1gm0ypotunp8.r5pr.rog5syaqbs.ng96lan6jkeu.jmqj18pnb0m.il2d9nocidzs.54s5v57r9wo.w08zfj5.lyo8x34.9hbsx27rki.ksh51ws.vf15.bzyr2.6q3cwqm60fg.ljvcdcu0udx.yq7tb4m2zmoykrq32h5itwuii.nudt.edu.kg
+    network: ws
+    ws-opts:
+      path: "/snippets/?ip=47.236.185.184:7000"
+      headers:
+        Host: 1ael5o.r5c4.7r38ql.fenhvpb.n2z0d.1gm0ypotunp8.r5pr.rog5syaqbs.ng96lan6jkeu.jmqj18pnb0m.il2d9nocidzs.54s5v57r9wo.w08zfj5.lyo8x34.9hbsx27rki.ksh51ws.vf15.bzyr2.6q3cwqm60fg.ljvcdcu0udx.yq7tb4m2zmoykrq32h5itwuii.nudt.edu.kg
+  - name: "🇸🇬 新加坡-4"
+    type: vless
+    server: "2a05:dfc1:8b85:6061:be24:11ff:fe87:63c5"
+    port: 443
+    uuid: 9ed0f660-2fd6-4016-a6df-95df20598658
+    tls: true
+    servername: quiz.int.vidio.com.my-vpnvip.my.id
+    network: ws
+    ws-opts:
+      path: "/8.222.192.60-30021"
+      headers:
+        host: quiz.int.vidio.com.my-vpnvip.my.id
+    client-fingerprint: chrome
+  - name: "🇸🇬 新加坡-5"
+    type: vless
+    server: 18.143.93.7
+    port: 13242
+    uuid: 3b40219d-541c-4a8e-aa19-377bd68f1f62
+    tls: true
+    servername: cache.netflix.com.unlimited.spauu.web.id
+    network: ws
+    ws-opts:
+      path: "/vl=13.229.57.45=13002"
+      headers:
+        host: cache.netflix.com.unlimited.spauu.web.id
+    client-fingerprint: chrome
+  - name: "🇸🇬 新加坡-6"
+    type: trojan
+    server: 36.156.102.125
+    port: 406
+    udp: true
+    password: 253bc477d4e43c209f2d427272968280
+    sni: www.baidu.com
+    skip-cert-verify: true
+    network: tcp
+  - name: "🇧🇶 北欧"
+    type: vless
+    server: web.xhamster.biz.id
+    port: 443
+    uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
+    tls: true
+    servername: web.xhamster.biz.id
+    network: ws
+    ws-opts:
+      path: "/Free-CF-Proxy-AT4"
+      headers:
+        host: web.xhamster.biz.id
+    client-fingerprint: chrome
+  - name: "🇩🇪 德国"
+    type: vless
+    server: 2.56.245.9
+    port: 20357
+    uuid: 1036ed52-d1fe-410e-a961-0db84299dd5e
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/"
+  - name: "🇫🇷 法国-1"
+    type: trojan
+    server: "[2a05"
+    port: null
+    udp: true
+    password: f69dae9e-371b-4571-b64b-2e7c9abdbafb
+    sni: g2.ikun.us.kg
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: "/trojan-argo"
+      headers:
+        host: g2.ikun.us.kg
+    alpn:
+      - "h3"
+      - "h2"
+      - "http/1.1"
+  - name: "🇫🇷 法国-2丨巴黎"
+    type: vless
+    server: fr.pixvpn.app
+    port: 8443
+    udp: true
+    uuid: f6fa8cbd-6f5a-4a2c-8a28-9a1e6f48bdd6
+    tls: true
+    servername: jd.com
+    flow: xtls-rprx-vision
+    network: grpc
+    grpc-opts:
+      grpc-service-name: grpc-jd
+    reality-opts:
+      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+      short-id: "41a4cee2c50c4fc3"
+    client-fingerprint: chrome
+  - name: "🇫🇮 芬兰"
+    type: vless
+    server: axe.djjw8292n.ir
+    port: 2053
+    uuid: 679e9a1c-6f32-466f-8567-f9d4fa8359a4
+    tls: true
+    servername: mojito.djjw8292n.ir
+    network: ws
+    ws-opts:
+      path: "/homepage?ed=2560"
+      headers:
+        host: mojito.djjw8292n.ir
+    client-fingerprint: chrome
+  - name: "🇨🇳 湖南长沙丨[回国专线]"
+    type: vmess
+    server: 113.219.211.112
+    port: 20521
+    cipher: auto
+    uuid: fe16a2b2-bb92-4957-a654-1f2b8bca0d31
+    alterId: 0
+    tls: false
+    skip-cert-verify: true
+    servername: ""
+    network: ws
+    ws-opts:
+      path: "/"
+  - name: "🇨🇳 贵州省贵阳丨[回国专线]"
+    type: vmess
+    server: 140.246.235.210
+    port: 20521
+    cipher: auto
+    uuid: 6d4c98fe-3d75-42c5-8f70-62e233ee98e7
+    alterId: 0
+    tls: false
+    skip-cert-verify: true
+    servername: ""
+    network: ws
+    ws-opts:
+      path: "/"
 
 proxy-groups:
   - name: 🚀 节点选择
