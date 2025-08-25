@@ -143,7 +143,7 @@ proxy-groups:
   - name: ♻️ 自动选择
     type: url-test
     url: https://www.apple.com/library/test/success.html
-    interval: 300
+    interval: 1800
     tolerance: 75
     proxies:
       - 🇯🇵 日本xTom
@@ -752,7 +752,7 @@ proxy-groups:
   - name: 🇺🇸 美国♻️自动
     type: url-test
     url: https://www.apple.com/library/test/success.html
-    interval: 300
+    interval: 1800
     tolerance: 75
     proxies:
       - 🇺🇸 美国-1丨Google中国
@@ -764,7 +764,7 @@ proxy-groups:
   - name: 🇭🇰 香港♻️自动
     type: url-test
     url: https://www.apple.com/library/test/success.html
-    interval: 300
+    interval: 1800
     tolerance: 75
     proxies:
       - 🇭🇰 香港-1
@@ -773,7 +773,7 @@ proxy-groups:
   - name: 🇰🇷 韩国♻️自动
     type: url-test
     url: https://www.apple.com/library/test/success.html
-    interval: 300
+    interval: 1800
     tolerance: 75
     proxies:
       - 🇰🇷 韩国-1
@@ -783,7 +783,7 @@ proxy-groups:
   - name: 🇨🇳 台湾♻️自动
     type: url-test
     url: https://www.apple.com/library/test/success.html
-    interval: 300
+    interval: 1800
     tolerance: 75
     proxies:
       - 🇨🇳 中国台湾-1
@@ -795,7 +795,7 @@ proxy-groups:
   - name: 🇸🇬 新加坡♻️自动
     type: url-test
     url: https://www.apple.com/library/test/success.html
-    interval: 300
+    interval: 1800
     tolerance: 75
     proxies:
       - 🇸🇬 新加坡-1
@@ -807,7 +807,7 @@ proxy-groups:
   - name: 🇯🇵 日本♻️自动
     type: url-test
     url: https://www.apple.com/library/test/success.html
-    interval: 300
+    interval: 1800
     tolerance: 75
     proxies:
       - 🇯🇵 日本xTom
