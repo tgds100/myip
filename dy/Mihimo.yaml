@@ -144,6 +144,7 @@ proxy-groups:
     type: url-test
     url: https://www.apple.com/library/test/success.html
     interval: 300
+    tolerance: 75
     proxies:
       - 🇯🇵 日本xTom
       - 🇭🇰 中国香港-Alibaba
@@ -752,6 +753,7 @@ proxy-groups:
     type: url-test
     url: https://www.apple.com/library/test/success.html
     interval: 300
+    tolerance: 75
     proxies:
       - 🇺🇸 美国-1丨Google中国
       - 🇺🇸 美国-2丨Google中国
@@ -763,6 +765,7 @@ proxy-groups:
     type: url-test
     url: https://www.apple.com/library/test/success.html
     interval: 300
+    tolerance: 75
     proxies:
       - 🇭🇰 香港-1
       - 🇭🇰 香港-2
@@ -771,6 +774,7 @@ proxy-groups:
     type: url-test
     url: https://www.apple.com/library/test/success.html
     interval: 300
+    tolerance: 75
     proxies:
       - 🇰🇷 韩国-1
       - 🇰🇷 韩国-2
@@ -780,6 +784,7 @@ proxy-groups:
     type: url-test
     url: https://www.apple.com/library/test/success.html
     interval: 300
+    tolerance: 75
     proxies:
       - 🇨🇳 中国台湾-1
       - 🇨🇳 中国台湾-2
@@ -791,6 +796,7 @@ proxy-groups:
     type: url-test
     url: https://www.apple.com/library/test/success.html
     interval: 300
+    tolerance: 75
     proxies:
       - 🇸🇬 新加坡-1
       - 🇸🇬 新加坡-2
@@ -802,6 +808,7 @@ proxy-groups:
     type: url-test
     url: https://www.apple.com/library/test/success.html
     interval: 300
+    tolerance: 75
     proxies:
       - 🇯🇵 日本xTom
       - 🇯🇵 日本丨隐私指数89%
