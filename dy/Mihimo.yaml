@@ -44,9 +44,10 @@ tun:
     - 114.114.114.114
     - 180.76.76.76
 proxies:
-  - {name: 🇯🇵 日本xTom, server: zgo.tazhi.de, port: 17265, type: vmess, uuid: cc1ec9ad-e11f-410a-a9f7-bc7e5b42000e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: zgo.tazhi.de, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: zgo.tazhi.de}}}
+  - {name: 🇯🇵 日本大阪, server: xray.zjykt.top, port: 11712, type: vless, uuid: 553a9271-4b09-4185-b126-0607691abe15, tls: true, alpn: [h3%2Ch2%2Chttp%2F1.1], tfo: false, skip-cert-verify: false, servername: xray.zjykt.top, client-fingerprint: android, network: tcp}
   - {name: 🇭🇰 中国香港-Alibaba, server: 47.239.122.61, port: 20521, type: vmess, uuid: 37b57279-244a-4d2d-805c-8db5245b3920, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}}
   - {name: 🇯🇵 日本丨隐私指数89%, server: 2400:8902::f03c:95ff:fe9c:bd31, port: 26377, type: vless, uuid: dd4dc6e8-e5da-4612-86be-3905df10ac89, tls: true, tfo: false, skip-cert-verify: false, reality-opts: {public-key: U3VdQnvD5cQ8d2k3UwKOVtQfhUnXR39Rb4Q4yDsbc10, short-id: "297d5bc1" }, servername: yahoo.com, client-fingerprint: firefox, network: tcp}
+  - {name: 🇺🇸 美国-0丨特朗普专线, server: 192.243.112.82, port: 443, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, tfo: false, skip-cert-verify: false, servername: cfxr.eu.org, client-fingerprint: chrome, network: ws, ws-opts: {path: "/snippets/?ip=38.97.250.33:34045", headers: {Host: cfxr.eu.org}}}
   - {name: 🇺🇸 美国-1丨Google中国, server: planb.mojcn.com, port: 16648, type: vmess, uuid: ec252ba1-4da5-4d8a-83fd-0dd90fe1c71f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: e5f3f0d48113a061f7828bd0e80a2784.mobgslb.tbcache.com}}}
   - {name: 🇺🇸 美国-2丨Google中国, server: m.cnmjin.net, port: 16648, type: vmess, uuid: ec252ba1-4da5-4d8a-83fd-0dd90fe1c71f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: e5f3f0d48113a061f7828bd0e80a2784.mobgslb.tbcache.com}}}
   - {name: 🇺🇸 美国-3丨Google中国, server: t.cnmjcn.cyou, port: 16648, type: vmess, uuid: ec252ba1-4da5-4d8a-83fd-0dd90fe1c71f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: e5f3f0d48113a061f7828bd0e80a2784.mobgslb.tbcache.com}}}
@@ -76,17 +77,13 @@ proxies:
   - {name: 🇸🇬 新加坡-5, server: 18.143.93.7, port: 13242, type: vless, uuid: 3b40219d-541c-4a8e-aa19-377bd68f1f62, tls: true, tfo: false, skip-cert-verify: false, servername: cache.netflix.com.unlimited.spauu.web.id, client-fingerprint: chrome, network: ws, ws-opts: {path: /vl=13.229.57.45=13002, headers: {Host: cache.netflix.com.unlimited.spauu.web.id}}}
   - {name: 🇸🇬 新加坡-6, server: 46.3.96.64, port: 443, type: vless, uuid: 3b40219d-541c-4a8e-aa19-377bd68f1f62, tls: true, tfo: false, skip-cert-verify: false, servername: cache.netflix.com.unlimited.spauu.web.id, client-fingerprint: chrome, network: ws, ws-opts: {path: /vl=166.108.239.108=3389, headers: {Host: cache.netflix.com.unlimited.spauu.web.id}}}
   - {name: 🇩🇪 德国丨柏林, server: 89.106.69.30, port: 20087, type: vless, uuid: 0311346b-b442-461e-a25b-29ceba94424f, tls: false, tfo: false, skip-cert-verify: false, network: tcp}
-  - {name: 🇫🇷 法国-1, server: 172.237.81.60, port: 2053, client-fingerprint: chrome, type: trojan, password: f69dae9e-371b-4571-b64b-2e7c9abdbafb, sni: g2.ikun.us.kg, alpn: [h3%2Ch2%2Chttp%2F1.1], skip-cert-verify: false, network: ws, ws-opts: {path: "/trojan-argo?ed=2560", headers: {Host: g2.ikun.us.kg}}}
+  - {name: 🇫🇷 法国-1, server: 163.5.246.24, port: 34045, type: vless, uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a, tls: true, tfo: false, skip-cert-verify: false, reality-opts: {public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA, short-id: "e8ab71d0" }, servername: visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me, client-fingerprint: firefox, network: tcp}
   - {name: 🇫🇷 法国-2, server: 172.233.240.85, port: 2321, client-fingerprint: chrome, type: vless, uuid: a3917ba5-e0a2-49c6-b1bc-a0c6249caaeb, tls: false, tfo: false, skip-cert-verify: false, network: tcp}
   - {name: 🇪🇸 西班牙, server: 172.233.98.6, port: 10001, reality-opts: {public-key: oyvVPbjUO20N4J6GdUQT2oCyeYQeL3kDhQhZ2MqorDg, short-id: "1a24af87" }, client-fingerprint: firefox, type: vless, uuid: 76396b3b-1f1b-42c8-9ea8-19e27291804b, tls: true, tfo: false, skip-cert-verify: false, servername: yahoo.com, network: tcp}
   - {name: 🇫🇮 芬兰, server: 65.109.238.79, port: 2080, client-fingerprint: chrome, type: vless, uuid: a6a61af5-828f-42af-fc48-a69e386d0f2c, tls: false, tfo: false, skip-cert-verify: false, network: tcp}
   - {name: 🇮🇩 印度尼西亚, server: 172.235.251.179, port: 10001, reality-opts: {public-key: MAtg7zG3WLMQQL4jlq8-II11fvSeR9OV8sOTkhD4nko, short-id: "1a24af87" }, client-fingerprint: firefox, type: vless, uuid: 71710eb3-0c93-45cd-845a-2158952f402b, tls: true, tfo: false, skip-cert-verify: false, servername: yahoo.com, network: tcp}
   - {name: 🇻🇳 越南-1, server: 59.153.218.122, port: 34045, reality-opts: {public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA, short-id: "e8ab71d0" }, client-fingerprint: firefox, type: vless, uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a, tls: true, tfo: false, skip-cert-verify: false, servername: visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me, network: tcp}
   - {name: 🇻🇳 越南-2, server: 59.153.216.38, port: 34045, reality-opts: {public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA, short-id: "e8ab71d0" }, client-fingerprint: firefox, type: vless, uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a, tls: true, tfo: false, skip-cert-verify: false, servername: visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me, network: tcp}
-  - {name: 🇨🇳 湖南长沙丨回国ip, server: 113.219.211.112, port: 20521, client-fingerprint: chrome, type: vmess, uuid: fe16a2b2-bb92-4957-a654-1f2b8bca0d31, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇨🇳 贵州贵阳丨回国ip, server: 140.246.235.210, port: 20521, client-fingerprint: chrome, type: vmess, uuid: 6d4c98fe-3d75-42c5-8f70-62e233ee98e7, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇨🇳 河南洛阳丨回国ip, server: 42.51.0.246, port: 34045, reality-opts: {public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA, short-id: "e8ab71d0" }, client-fingerprint: firefox, type: vless, uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a, tls: true, tfo: false, skip-cert-verify: false, servername: visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me, network: tcp}
-  - {name: 🇨🇳 湖北省襄阳丨回国ip, server: 111.170.175.59, port: 34045, reality-opts: {public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA, short-id: "e8ab71d0" }, client-fingerprint: chrome, type: vless, uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a, tls: true, tfo: false, skip-cert-verify: false, servername: visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me, network: tcp}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
@@ -99,9 +96,10 @@ proxy-groups:
       - 🇸🇬 新加坡♻️自动
       - 🇯🇵 日本♻️自动
       - 🎯 全球直连
-      - 🇯🇵 日本xTom
+      - 🇯🇵 日本大阪
       - 🇭🇰 中国香港-Alibaba
       - 🇯🇵 日本丨隐私指数89%
+      - 🇺🇸 美国-0丨特朗普专线
       - 🇺🇸 美国-1丨Google中国
       - 🇺🇸 美国-2丨Google中国
       - 🇺🇸 美国-3丨Google中国
@@ -138,19 +136,16 @@ proxy-groups:
       - 🇮🇩 印度尼西亚
       - 🇻🇳 越南-1
       - 🇻🇳 越南-2
-      - 🇨🇳 湖南长沙丨回国ip
-      - 🇨🇳 贵州贵阳丨回国ip
-      - 🇨🇳 河南洛阳丨回国ip
-      - 🇨🇳 湖北省襄阳丨回国ip
   - name: ♻️ 自动选择
     type: url-test
     url: https://www.apple.com/library/test/success.html
     interval: 1800
     tolerance: 75
     proxies:
-      - 🇯🇵 日本xTom
+      - 🇯🇵 日本大阪
       - 🇭🇰 中国香港-Alibaba
       - 🇯🇵 日本丨隐私指数89%
+      - 🇺🇸 美国-0丨特朗普专线
       - 🇺🇸 美国-1丨Google中国
       - 🇺🇸 美国-2丨Google中国
       - 🇺🇸 美国-3丨Google中国
@@ -199,9 +194,10 @@ proxy-groups:
       - 🇸🇬 新加坡♻️自动
       - 🇯🇵 日本♻️自动
       - 🎯 全球直连
-      - 🇯🇵 日本xTom
+      - 🇯🇵 日本大阪
       - 🇭🇰 中国香港-Alibaba
       - 🇯🇵 日本丨隐私指数89%
+      - 🇺🇸 美国-0丨特朗普专线
       - 🇺🇸 美国-1丨Google中国
       - 🇺🇸 美国-2丨Google中国
       - 🇺🇸 美国-3丨Google中国
@@ -238,10 +234,6 @@ proxy-groups:
       - 🇮🇩 印度尼西亚
       - 🇻🇳 越南-1
       - 🇻🇳 越南-2
-      - 🇨🇳 湖南长沙丨回国ip
-      - 🇨🇳 贵州贵阳丨回国ip
-      - 🇨🇳 河南洛阳丨回国ip
-      - 🇨🇳 湖北省襄阳丨回国ip
   - name: 📲 电报信息
     type: select
     proxies:
@@ -254,9 +246,10 @@ proxy-groups:
       - 🇸🇬 新加坡♻️自动
       - 🇯🇵 日本♻️自动
       - 🎯 全球直连
-      - 🇯🇵 日本xTom
+      - 🇯🇵 日本大阪
       - 🇭🇰 中国香港-Alibaba
       - 🇯🇵 日本丨隐私指数89%
+      - 🇺🇸 美国-0丨特朗普专线
       - 🇺🇸 美国-1丨Google中国
       - 🇺🇸 美国-2丨Google中国
       - 🇺🇸 美国-3丨Google中国
@@ -293,10 +286,6 @@ proxy-groups:
       - 🇮🇩 印度尼西亚
       - 🇻🇳 越南-1
       - 🇻🇳 越南-2
-      - 🇨🇳 湖南长沙丨回国ip
-      - 🇨🇳 贵州贵阳丨回国ip
-      - 🇨🇳 河南洛阳丨回国ip
-      - 🇨🇳 湖北省襄阳丨回国ip
   - name: 📺 YouTube
     type: select
     proxies:
@@ -309,9 +298,10 @@ proxy-groups:
       - 🇸🇬 新加坡♻️自动
       - 🇯🇵 日本♻️自动
       - 🎯 全球直连
-      - 🇯🇵 日本xTom
+      - 🇯🇵 日本大阪
       - 🇭🇰 中国香港-Alibaba
       - 🇯🇵 日本丨隐私指数89%
+      - 🇺🇸 美国-0丨特朗普专线
       - 🇺🇸 美国-1丨Google中国
       - 🇺🇸 美国-2丨Google中国
       - 🇺🇸 美国-3丨Google中国
@@ -348,10 +338,6 @@ proxy-groups:
       - 🇮🇩 印度尼西亚
       - 🇻🇳 越南-1
       - 🇻🇳 越南-2
-      - 🇨🇳 湖南长沙丨回国ip
-      - 🇨🇳 贵州贵阳丨回国ip
-      - 🇨🇳 河南洛阳丨回国ip
-      - 🇨🇳 湖北省襄阳丨回国ip
   - name: 🎵 TikTok
     type: select
     proxies:
@@ -364,9 +350,10 @@ proxy-groups:
       - 🇸🇬 新加坡♻️自动
       - 🇯🇵 日本♻️自动
       - 🎯 全球直连
-      - 🇯🇵 日本xTom
+      - 🇯🇵 日本大阪
       - 🇭🇰 中国香港-Alibaba
       - 🇯🇵 日本丨隐私指数89%
+      - 🇺🇸 美国-0丨特朗普专线
       - 🇺🇸 美国-1丨Google中国
       - 🇺🇸 美国-2丨Google中国
       - 🇺🇸 美国-3丨Google中国
@@ -403,10 +390,6 @@ proxy-groups:
       - 🇮🇩 印度尼西亚
       - 🇻🇳 越南-1
       - 🇻🇳 越南-2
-      - 🇨🇳 湖南长沙丨回国ip
-      - 🇨🇳 贵州贵阳丨回国ip
-      - 🇨🇳 河南洛阳丨回国ip
-      - 🇨🇳 湖北省襄阳丨回国ip
   - name: 🤖 OpenAI
     type: select
     proxies:
@@ -419,9 +402,10 @@ proxy-groups:
       - 🇸🇬 新加坡♻️自动
       - 🇯🇵 日本♻️自动
       - 🎯 全球直连
-      - 🇯🇵 日本xTom
+      - 🇯🇵 日本大阪
       - 🇭🇰 中国香港-Alibaba
       - 🇯🇵 日本丨隐私指数89%
+      - 🇺🇸 美国-0丨特朗普专线
       - 🇺🇸 美国-1丨Google中国
       - 🇺🇸 美国-2丨Google中国
       - 🇺🇸 美国-3丨Google中国
@@ -458,10 +442,6 @@ proxy-groups:
       - 🇮🇩 印度尼西亚
       - 🇻🇳 越南-1
       - 🇻🇳 越南-2
-      - 🇨🇳 湖南长沙丨回国ip
-      - 🇨🇳 贵州贵阳丨回国ip
-      - 🇨🇳 河南洛阳丨回国ip
-      - 🇨🇳 湖北省襄阳丨回国ip
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -474,9 +454,10 @@ proxy-groups:
       - 🇸🇬 新加坡♻️自动
       - 🇯🇵 日本♻️自动
       - 🎯 全球直连
-      - 🇯🇵 日本xTom
+      - 🇯🇵 日本大阪
       - 🇭🇰 中国香港-Alibaba
       - 🇯🇵 日本丨隐私指数89%
+      - 🇺🇸 美国-0丨特朗普专线
       - 🇺🇸 美国-1丨Google中国
       - 🇺🇸 美国-2丨Google中国
       - 🇺🇸 美国-3丨Google中国
@@ -513,10 +494,6 @@ proxy-groups:
       - 🇮🇩 印度尼西亚
       - 🇻🇳 越南-1
       - 🇻🇳 越南-2
-      - 🇨🇳 湖南长沙丨回国ip
-      - 🇨🇳 贵州贵阳丨回国ip
-      - 🇨🇳 河南洛阳丨回国ip
-      - 🇨🇳 湖北省襄阳丨回国ip
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -529,9 +506,10 @@ proxy-groups:
       - 🇸🇬 新加坡♻️自动
       - 🇯🇵 日本♻️自动
       - 🎯 全球直连
-      - 🇯🇵 日本xTom
+      - 🇯🇵 日本大阪
       - 🇭🇰 中国香港-Alibaba
       - 🇯🇵 日本丨隐私指数89%
+      - 🇺🇸 美国-0丨特朗普专线
       - 🇺🇸 美国-1丨Google中国
       - 🇺🇸 美国-2丨Google中国
       - 🇺🇸 美国-3丨Google中国
@@ -568,10 +546,6 @@ proxy-groups:
       - 🇮🇩 印度尼西亚
       - 🇻🇳 越南-1
       - 🇻🇳 越南-2
-      - 🇨🇳 湖南长沙丨回国ip
-      - 🇨🇳 贵州贵阳丨回国ip
-      - 🇨🇳 河南洛阳丨回国ip
-      - 🇨🇳 湖北省襄阳丨回国ip
   - name: 📡 谷歌服务
     type: select
     proxies:
@@ -584,9 +558,10 @@ proxy-groups:
       - 🇸🇬 新加坡♻️自动
       - 🇯🇵 日本♻️自动
       - 🎯 全球直连
-      - 🇯🇵 日本xTom
+      - 🇯🇵 日本大阪
       - 🇭🇰 中国香港-Alibaba
       - 🇯🇵 日本丨隐私指数89%
+      - 🇺🇸 美国-0丨特朗普专线
       - 🇺🇸 美国-1丨Google中国
       - 🇺🇸 美国-2丨Google中国
       - 🇺🇸 美国-3丨Google中国
@@ -623,10 +598,6 @@ proxy-groups:
       - 🇮🇩 印度尼西亚
       - 🇻🇳 越南-1
       - 🇻🇳 越南-2
-      - 🇨🇳 湖南长沙丨回国ip
-      - 🇨🇳 贵州贵阳丨回国ip
-      - 🇨🇳 河南洛阳丨回国ip
-      - 🇨🇳 湖北省襄阳丨回国ip
   - name: 📢 谷歌FCM
     type: select
     proxies:
@@ -639,9 +610,10 @@ proxy-groups:
       - 🇸🇬 新加坡♻️自动
       - 🇯🇵 日本♻️自动
       - 🎯 全球直连
-      - 🇯🇵 日本xTom
+      - 🇯🇵 日本大阪
       - 🇭🇰 中国香港-Alibaba
       - 🇯🇵 日本丨隐私指数89%
+      - 🇺🇸 美国-0丨特朗普专线
       - 🇺🇸 美国-1丨Google中国
       - 🇺🇸 美国-2丨Google中国
       - 🇺🇸 美国-3丨Google中国
@@ -678,19 +650,12 @@ proxy-groups:
       - 🇮🇩 印度尼西亚
       - 🇻🇳 越南-1
       - 🇻🇳 越南-2
-      - 🇨🇳 湖南长沙丨回国ip
-      - 🇨🇳 贵州贵阳丨回国ip
-      - 🇨🇳 河南洛阳丨回国ip
-      - 🇨🇳 湖北省襄阳丨回国ip
   - name: 🎯 全球直连
     type: select
     proxies:
       - DIRECT
       - ♻️ 自动选择
-      - 🇨🇳 湖南长沙丨回国ip
-      - 🇨🇳 贵州贵阳丨回国ip
-      - 🇨🇳 河南洛阳丨回国ip
-      - 🇨🇳 湖北省襄阳丨回国ip
+      - 🇺🇸 美国-0丨特朗普专线
       - 🇺🇸 美国♻️自动
       - 🇭🇰 香港♻️自动
       - 🇰🇷 韩国♻️自动
@@ -719,9 +684,10 @@ proxy-groups:
       - 🇸🇬 新加坡♻️自动
       - 🇯🇵 日本♻️自动
       - 🎯 全球直连
-      - 🇯🇵 日本xTom
+      - 🇯🇵 日本大阪
       - 🇭🇰 中国香港-Alibaba
       - 🇯🇵 日本丨隐私指数89%
+      - 🇺🇸 美国-0丨特朗普专线
       - 🇺🇸 美国-1丨Google中国
       - 🇺🇸 美国-2丨Google中国
       - 🇺🇸 美国-3丨Google中国
@@ -758,16 +724,13 @@ proxy-groups:
       - 🇮🇩 印度尼西亚
       - 🇻🇳 越南-1
       - 🇻🇳 越南-2
-      - 🇨🇳 湖南长沙丨回国ip
-      - 🇨🇳 贵州贵阳丨回国ip
-      - 🇨🇳 河南洛阳丨回国ip
-      - 🇨🇳 湖北省襄阳丨回国ip
   - name: 🇺🇸 美国♻️自动
     type: url-test
     url: https://www.apple.com/library/test/success.html
     interval: 1800
     tolerance: 90
     proxies:
+      - 🇺🇸 美国-0丨特朗普专线
       - 🇺🇸 美国-1丨Google中国
       - 🇺🇸 美国-2丨Google中国
       - 🇺🇸 美国-3丨Google中国
@@ -823,7 +786,7 @@ proxy-groups:
     interval: 1800
     tolerance: 90
     proxies:
-      - 🇯🇵 日本xTom
+      - 🇯🇵 日本大阪
       - 🇯🇵 日本丨隐私指数89%
       - 🇯🇵 日本-1
       - 🇯🇵 日本-2
